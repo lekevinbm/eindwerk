@@ -1,6 +1,7 @@
 
 // Fonts
 @import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 // Variables
 @import "variables";
@@ -11,8 +12,13 @@
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 html,body{
+  color: $gray-text;
+  position: relative;
   height: 100vh;
   width: 100vw;
+  max-height: 100vh;
+  max-width: 100vw;
+  font-family: 'Montserrat', sans-serif;
 
   .btn-primary{
     background-color: $pink;
@@ -28,17 +34,21 @@ html,body{
     color: $white;
   }
 
-  main{
+  #menu-btn{
+    position: absolute;
+    left: 5%;
+    top: 2%;
+  }
+
+  .app-page{
+    margin:0; 
+  }
+
+  #guest-main{
     position: relative;
     padding: 0;
     height: 100%;
     width: 100%;
-
-    .app-page{
-      padding: 20px;
-      max-height: 100%;
-      max-width: 100%;
-    }
 
     #login-page,#register-page{
       position: relative;
@@ -69,6 +79,66 @@ html,body{
       }
       #register-page-1.active,#register-page-2.active{
         display:block;
+      }
+    }
+  }
+
+  main{
+    padding: 0;
+    height: 90%;
+    width: 100%;
+    background-color: $gray-background;
+
+    #home-page{
+      height: 90%;
+      width: 100%;
+      padding:0;
+
+      #saldo-section{
+        text-align: center;
+        background-color: $pink;
+        color: $white;
+        width: 100%;
+        height: 25%;
+        padding-top:10%;
+        font-weight: 500;
+
+        #saldo{
+          font-size:3em;          
+        }
+        a{
+          text-decoration: none;
+          color: $white;
+        }
+      }
+    }
+
+    
+  }
+
+  nav{
+    margin:0!important;
+  }
+
+  .navbar{
+    padding:0!important;
+    height:10%!important;
+    background-color: $white!important;
+    font-weight: 400!important;
+    font-size: 0.8em!important;
+    position:relative;
+    #navbar-row{
+      width: 100%;
+      height: 100%;
+      margin:0;
+      padding:0;
+      a{
+        padding-top: 4%;
+        padding-left: 0;
+        padding-right: 0;
+        color: $gray-text;
+        text-decoration: none;
+        text-align: center;
       }
     }
   }

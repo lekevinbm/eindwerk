@@ -25,5 +25,27 @@
         <main>
             @yield('content')
         </main>
+        <nav class="navbar align-items-center fixed-bottom">
+            <div id="navbar-row" class="row">
+                <a class="col align-items-center" href="#">
+                    <i class="fas fa-home fa-2x"></i><br>
+                    Home
+                </a>
+                <a class="col align-items-center" href="#">
+                    <i class="fas fa-tachometer-alt fa-2x"></i><br>
+                    Programma's
+                </a>
+                <a class="col align-items-center" href="#">
+                    <i class="fas fa-shopping-cart fa-2x"></i><br>
+                    Shop
+                </a>
+                <a class="col align-items-center" href="#">
+                    <i class="fas fa-lightbulb fa-2x"></i><br>
+                    Tips & tricks
+                </a>
+
+            </div>
+        </nav>
     </body>
 </html>
+@include('front.modals.menu')

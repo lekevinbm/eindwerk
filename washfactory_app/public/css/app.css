@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);.login-input,
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);@import url(https://fonts.googleapis.com/css?family=Montserrat);.login-input,
 .register-input {
   color: #F7FFF7 !important;
   background-color: #FF6B6B !important;
@@ -10538,8 +10538,13 @@ a.text-dark:focus {
 
 html,
 body {
+  color: #434343;
+  position: relative;
   height: 100vh;
   width: 100vw;
+  max-height: 100vh;
+  max-width: 100vw;
+  font-family: 'Montserrat', sans-serif;
 }
 
 html .btn-primary,
@@ -10559,25 +10564,30 @@ body .close-page-btn {
   color: #F7FFF7;
 }
 
-html main,
-body main {
+html #menu-btn,
+body #menu-btn {
+  position: absolute;
+  left: 5%;
+  top: 2%;
+}
+
+html .app-page,
+body .app-page {
+  margin: 0;
+}
+
+html #guest-main,
+body #guest-main {
   position: relative;
   padding: 0;
   height: 100%;
   width: 100%;
 }
 
-html main .app-page,
-body main .app-page {
-  padding: 20px;
-  max-height: 100%;
-  max-width: 100%;
-}
-
-html main #login-page,
-html main #register-page,
-body main #login-page,
-body main #register-page {
+html #guest-main #login-page,
+html #guest-main #register-page,
+body #guest-main #login-page,
+body #guest-main #register-page {
   position: relative;
   height: 100%;
   width: 100%;
@@ -10587,10 +10597,10 @@ body main #register-page {
   padding-bottom: 10%;
 }
 
-html main #login-page #logo,
-html main #register-page #logo,
-body main #login-page #logo,
-body main #register-page #logo {
+html #guest-main #login-page #logo,
+html #guest-main #register-page #logo,
+body #guest-main #login-page #logo,
+body #guest-main #register-page #logo {
   width: 50%;
   display: block;
   margin-left: auto;
@@ -10598,31 +10608,101 @@ body main #register-page #logo {
 }
 
 @media (min-width: 1024px) {
-  html main #login-page #logo,
-  html main #register-page #logo,
-  body main #login-page #logo,
-  body main #register-page #logo {
+  html #guest-main #login-page #logo,
+  html #guest-main #register-page #logo,
+  body #guest-main #login-page #logo,
+  body #guest-main #register-page #logo {
     width: 40%;
   }
 }
 
-html main #register-page h1,
-body main #register-page h1 {
+html #guest-main #register-page h1,
+body #guest-main #register-page h1 {
   text-align: center;
 }
 
-html main #register-page #register-page-1,
-html main #register-page #register-page-2,
-body main #register-page #register-page-1,
-body main #register-page #register-page-2 {
+html #guest-main #register-page #register-page-1,
+html #guest-main #register-page #register-page-2,
+body #guest-main #register-page #register-page-1,
+body #guest-main #register-page #register-page-2 {
   display: none;
 }
 
-html main #register-page #register-page-1.active,
-html main #register-page #register-page-2.active,
-body main #register-page #register-page-1.active,
-body main #register-page #register-page-2.active {
+html #guest-main #register-page #register-page-1.active,
+html #guest-main #register-page #register-page-2.active,
+body #guest-main #register-page #register-page-1.active,
+body #guest-main #register-page #register-page-2.active {
   display: block;
+}
+
+html main,
+body main {
+  padding: 0;
+  height: 90%;
+  width: 100%;
+  background-color: #e9e8e8;
+}
+
+html main #home-page,
+body main #home-page {
+  height: 90%;
+  width: 100%;
+  padding: 0;
+}
+
+html main #home-page #saldo-section,
+body main #home-page #saldo-section {
+  text-align: center;
+  background-color: #FF6B6B;
+  color: #F7FFF7;
+  width: 100%;
+  height: 25%;
+  padding-top: 10%;
+  font-weight: 500;
+}
+
+html main #home-page #saldo-section #saldo,
+body main #home-page #saldo-section #saldo {
+  font-size: 3em;
+}
+
+html main #home-page #saldo-section a,
+body main #home-page #saldo-section a {
+  text-decoration: none;
+  color: #F7FFF7;
+}
+
+html nav,
+body nav {
+  margin: 0 !important;
+}
+
+html .navbar,
+body .navbar {
+  padding: 0 !important;
+  height: 10% !important;
+  background-color: #F7FFF7 !important;
+  font-weight: 400 !important;
+  font-size: 0.8em !important;
+  position: relative;
+}
+
+html .navbar #navbar-row,
+body .navbar #navbar-row {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+html .navbar #navbar-row a,
+body .navbar #navbar-row a {
+  padding-top: 4%;
+  padding-left: 0;
+  padding-right: 0;
+  color: #434343;
+  text-decoration: none;
+  text-align: center;
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {

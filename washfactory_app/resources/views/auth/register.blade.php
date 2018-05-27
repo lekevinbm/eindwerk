@@ -1,7 +1,7 @@
 @extends('layouts.guest')
 
 @section('content')
-    <div id="register-page" class="container">
+    <div id="register-page" class="container app-page">
         <a href="{{route('login')}}"><i class="fas fa-times fa-lg close-page-btn"></i></a>
         <div class="row justify-content-center">
             <div class="col-md-6">
