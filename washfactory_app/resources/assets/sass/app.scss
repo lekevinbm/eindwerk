@@ -1,7 +1,7 @@
 
 // Fonts
 @import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500');
 
 // Variables
 @import "variables";
@@ -34,7 +34,7 @@ html,body{
     color: $white;
   }
 
-  #menu-btn{
+  #menu-btn,#back-btn{
     position: absolute;
     left: 5%;
     top: 2%;
@@ -42,6 +42,44 @@ html,body{
 
   .app-page{
     margin:0; 
+  }
+
+  #menu_modal{
+    .modal-dialog{
+      margin:0;      
+
+      .modal-content{
+        text-align: center;
+        background-color: $pink;
+        width:75%;
+        height: 100vh;
+        border:none;
+        border-radius:0;
+        position: relative;
+
+        #logo{
+          margin: 10% auto;
+          width: 75%;
+          max-height: 25%;
+        }
+
+        a{
+          margin: 5% 0; 
+          text-decoration: none;
+          color: $white;
+          font-weight: 500;
+        }
+
+        #menu-footer{
+          color: $white;
+          margin: 50% 10%;
+          img{
+            width: 28.8px;
+          }
+        }
+      }
+    }
+    
   }
 
   #guest-main{
@@ -84,14 +122,16 @@ html,body{
   }
 
   main{
+    position: relative;
     padding: 0;
     height: 90%;
     width: 100%;
     background-color: $gray-background;
 
     #home-page{
-      height: 90%;
+      position: relative;
       width: 100%;
+      height: 100%;
       padding:0;
 
       #saldo-section{
@@ -111,9 +151,105 @@ html,body{
           color: $white;
         }
       }
-    }
 
-    
+      #top-page-section{
+        height:10%;
+        text-align: center;
+        background-color: $pink;
+        color:$white;
+        padding-top:5%;
+        #title{
+          font-size:1em;
+          font-weight:500;
+        }
+        a{
+          text-decoration: none;
+          color: $white;
+        }
+      }
+
+      #top-open-reserved-wasmachine{
+        height: 30%;
+        background: $light-blue url("/img/devices/wm-big-cut.png") no-repeat right;
+        background-size: auto 100%;
+      }
+      #top-open-reserved-dryer{
+        height: 30%;
+        background: $yellow url("/img/devices/dry-big-cut.png") no-repeat right;
+        background-size: auto 100%;
+      }
+
+      #reserved-devices{
+        background-color: $gray-background;
+        overflow-y: hidden;
+
+        .reserved-device{
+          background-color: $white;
+          margin: 1% 0 0 0;
+          text-decoration: none;
+          color: $gray-text;
+
+          .wash-reserved-device-number,.dry-reserved-device-number{
+            width: 16%;          
+            color: $white;
+            font-size:2em;
+            font-weight: 500;
+            margin-top: 1%;
+            text-align: center;
+          }
+  
+          .wash-reserved-device-number{
+            background: $light-blue url("/img/devices/wm-blue-cut.png") no-repeat left;
+            background-size: 90% 90%;
+          }
+
+          .dry-reserved-device-number{
+            background: $yellow url("/img/devices/dry-yellow-cut.png") no-repeat left;
+            background-size: 90% 90%;
+          }
+
+          .reserved-device-information{
+            width: 80%;
+            text-align: right;
+            padding-right:20px;            
+            
+            .reserved-device-status{
+              font-size: 1.5em;
+              font-weight: 500;
+
+              &.done{
+                color: $green;
+              }
+              &.in-use{
+                color: $orange;
+              }
+            }
+
+            .reserved-device-extra-information{
+              font-size:1em;
+            }
+          }
+          
+        }
+      }
+      
+      #reserve-device-btn{
+        position:fixed;
+        bottom:12%;
+        right: 3%;
+        width: 60px;
+        height: 60px;
+        border-radius: 100%;
+        color: $white;
+        background-color: $pink;
+        text-align:center;
+        box-shadow: 1px 3px $gray-text;
+
+        i{
+          margin-top:25%;
+        }        
+      }
+    }
   }
 
   nav{
@@ -139,6 +275,9 @@ html,body{
         color: $gray-text;
         text-decoration: none;
         text-align: center;
+        i{
+          color: gray;
+        }
       }
     }
   }

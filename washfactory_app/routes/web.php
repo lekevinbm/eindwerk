@@ -14,5 +14,6 @@
 Auth::routes();
 
 Route::group(['middleware' => ['auth']], function () {
-    Route::get('/', 'HomeController@index');
+    Route::get('/', 'HomeController@index')->name('home');
+    Route::get('device/reserved/', 'DeviceController@openReserved')->name('device.open_reserved');
 });
