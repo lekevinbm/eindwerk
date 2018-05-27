@@ -1,0 +1,91 @@
+
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+
+// Variables
+@import "variables";
+
+// Forms
+@import "forms";
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+html,body{
+  height: 100vh;
+  width: 100vw;
+
+  .btn-primary{
+    background-color: $pink;
+    border:none;
+  }
+
+  h1{
+    font-size: 2.0em;
+    margin: 25px 0;
+  }
+
+  .close-page-btn{
+    color: $white;
+  }
+
+  main{
+    position: relative;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+
+    .app-page{
+      padding: 20px;
+      max-height: 100%;
+      max-width: 100%;
+    }
+
+    #login-page,#register-page{
+      position: relative;
+      height: 100%;
+      width: 100%;
+      background-color: $pink;
+      color: $white;
+      padding-top: 10%;
+      padding-bottom: 10%;
+      
+      #logo{
+        width: 50%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        @media (min-width: $bp-tablet) {
+          width: 40%;
+        }
+      }
+    }
+
+    #register-page{
+      h1{
+        text-align: center;
+      }
+      #register-page-1,#register-page-2{
+        display:none;
+      }
+      #register-page-1.active,#register-page-2.active{
+        display:block;
+      }
+    }
+  }
+
+}
+
+//Orientation lock
+@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+  html {
+    transform: rotate(-90deg);
+    transform-origin: left top;
+    width: 100vh;
+    height: 100vw;
+    overflow-x: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+}
+

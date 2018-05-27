@@ -1,0 +1,66 @@
+.login-input,.register-input{
+    color: $white!important;
+    background-color: $pink!important;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid $white!important;
+    &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: $white;
+        opacity: 1; /* Firefox */
+    }
+    
+    &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color: $white;
+    }
+    
+    &::-ms-input-placeholder { /* Microsoft Edge */
+        color: $white;
+    }
+    &:-webkit-autofill,
+    &:-webkit-autofill:hover, 
+    &:-webkit-autofill:focus
+    &:-webkit-autofill,
+    &:-webkit-autofill {
+        -webkit-box-shadow: 0 0 0 1000px $pink inset!important;
+        -webkit-text-fill-color: $white !important;
+        transition: background-color 5000s ease-in-out 0s;
+        
+    }
+    
+    
+}
+
+label{
+    color:#E3EBE3;
+    font-size: 0.8em;
+}
+
+.password-link{
+    float: right;
+}
+
+#login-button-section,#register-button-section{
+    text-align: center;
+    margin: 20px 0;
+    #login-button,.register-btn{
+        width: 100%;
+        border: 1px solid;
+        border-radius: 25px;
+        margin-bottom: 25px;
+    }
+    #login-button:active,.register-btn:active,#login-button:focus,.register-btn:target,#login-button:focus,.register-btn:target{
+        background-color: $pink;
+    }
+}
+
+#register-button-section{
+    text-align: center;
+}
+
+.btn-link,.register-link{
+    color: $white !important;
+}
+
+.login-input:focus, .login-input:focus,.register-input:focus, .register-input:focus{
+    outline: none;
+}
