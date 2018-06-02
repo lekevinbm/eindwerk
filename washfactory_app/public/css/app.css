@@ -11022,6 +11022,13 @@ body main #home-page .app-block .app-block-right {
   text-align: center;
 }
 
+html main #home-page .app-block .app-block-text.normal-text,
+html main #home-page .app-block .app-block-right.normal-text,
+body main #home-page .app-block .app-block-text.normal-text,
+body main #home-page .app-block .app-block-right.normal-text {
+  font-size: 1em;
+}
+
 html main #home-page .app-block .app-block-text,
 body main #home-page .app-block .app-block-text {
   width: 40%;
@@ -11038,6 +11045,17 @@ body main #home-page .app-text-row {
   color: #434343;
   padding: 2% 0 0 0;
   margin: 1% 0 0 0;
+}
+
+html main #home-page .app-text-row .app-text-row-symbol-begin,
+body main #home-page .app-text-row .app-text-row-symbol-begin {
+  width: 50%;
+  padding-left: 5%;
+}
+
+html main #home-page .app-text-row .app-text-row-symbol-begin.charge-date,
+body main #home-page .app-text-row .app-text-row-symbol-begin.charge-date {
+  padding-top: 2%;
 }
 
 html main #home-page .app-text-row .app-text-row-title,
@@ -11084,9 +11102,9 @@ body main #home-page .app-text-row .app-text-row-tab-value {
 }
 
 html main #home-page #credit-charge-amount-section,
-html main #home-page #credit-charge-method-section,
+html main #home-page .choose-section,
 body main #home-page #credit-charge-amount-section,
-body main #home-page #credit-charge-method-section {
+body main #home-page .choose-section {
   margin-top: 1%;
   padding-top: 5%;
   text-align: center;
@@ -11098,25 +11116,39 @@ body main #home-page #credit-charge-amount-section {
   height: 30%;
 }
 
-html main #home-page #credit-charge-method-section,
-body main #home-page #credit-charge-method-section {
+html main #home-page .choose-section,
+body main #home-page .choose-section {
   position: relative;
   height: 30%;
 }
 
-html main #home-page #credit-charge-method-section .payment-methode-row,
-body main #home-page #credit-charge-method-section .payment-methode-row {
+html main #home-page .choose-section .payment-methode-row,
+html main #home-page .choose-section .choose-section-row,
+body main #home-page .choose-section .payment-methode-row,
+body main #home-page .choose-section .choose-section-row {
   position: relative;
   margin: 5% 0 0 0;
 }
 
-html main #home-page #credit-charge-method-section .payment-methode-row div,
-body main #home-page #credit-charge-method-section .payment-methode-row div {
+html main #home-page .choose-section .payment-methode-row div,
+html main #home-page .choose-section .choose-section-row div,
+body main #home-page .choose-section .payment-methode-row div,
+body main #home-page .choose-section .choose-section-row div {
   width: 33%;
 }
 
-html main #home-page #credit-charge-method-section .payment-methode-row div .pay-method-img,
-body main #home-page #credit-charge-method-section .payment-methode-row div .pay-method-img {
+html main #home-page .choose-section .payment-methode-row div label,
+html main #home-page .choose-section .choose-section-row div label,
+body main #home-page .choose-section .payment-methode-row div label,
+body main #home-page .choose-section .choose-section-row div label {
+  color: #434343;
+  font-size: 1.4em;
+}
+
+html main #home-page .choose-section .payment-methode-row div .pay-method-img,
+html main #home-page .choose-section .choose-section-row div .pay-method-img,
+body main #home-page .choose-section .payment-methode-row div .pay-method-img,
+body main #home-page .choose-section .choose-section-row div .pay-method-img {
   max-width: 100%;
   height: 60px;
 }

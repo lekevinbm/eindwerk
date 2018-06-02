@@ -21,7 +21,7 @@
                     <input id="method" type="hidden" class="app-input" name="method">
                 </form>      
             </div>
-            <div id="credit-charge-method-section">
+            <div id="credit-charge-method-section" class="choose-section">
                 Kies een betaalmethode
                 <div class="row payment-methode-row">
                     <div>
