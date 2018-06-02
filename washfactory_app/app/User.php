@@ -26,4 +26,8 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    public function credit_charges(){
+        return $this->hasMany('App\Credit_charge','user_id')->orderBy('created_at','desc');
+    }
 }

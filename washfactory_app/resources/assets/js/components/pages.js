@@ -8,3 +8,12 @@ $('#register-page-1-btn').click(function(){
         $('#register-page-2').addClass('active');
     }
 });
+
+$('.page-slide-activator').click(function(){
+    var activator_id = $(this).attr('id').split('-');
+    activator_id.splice(-1,1);
+    var target_id = activator_id.join('-');
+    console.log(target_id);
+    $('#'+target_id).addClass('active-child-slide');
+    $('#slide-page-1').addClass('non-active-top-slide');
+});

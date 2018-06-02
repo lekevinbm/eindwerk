@@ -7,3 +7,5 @@
 
 require('./bootstrap');
 require('./components/pages');
+require('./components/forms');
+require('./components/tabs');

@@ -5,7 +5,7 @@
         <div id="saldo-section">
             <div id="menu-btn" data-toggle="modal" data-target="#menu_modal"><i class="fas fa-bars fa-lg"></i></div>            
             <span id="saldo">&euro; {{number_format(Auth::user()->credits,2,',',' ')}}</span><br>
-            <a href="#">Opladen <i class="fas fa-angle-right"></i></a>
+            <a href="{{route('user.charge.open')}}">Opladen <i class="fas fa-angle-right"></i></a>
         </div>
         <div id="reserved-devices">
             <a class="row reserved-device" href="{{ route('device.open_reserved') }}">

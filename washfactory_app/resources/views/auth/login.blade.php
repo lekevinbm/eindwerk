@@ -12,7 +12,7 @@
 
                 <div class="form-group row justify-content-center">
                     <div class="col">
-                        <label for="formGroupExampleInput">@lang('EMAIL')</label>
+                        <label for="email">@lang('EMAIL')</label>
                         <input id="email" type="email" class="login-input" name="email" value="{{ old('email') }}" required autofocus>
 
                         @if ($errors->has('email'))
@@ -26,7 +26,7 @@
                 <div class="form-group row justify-content-center">
 
                     <div class="col">
-                        <label for="formGroupExampleInput">@lang('WACHTWOORD')</label>
+                        <label for="password">@lang('WACHTWOORD')</label>
                         <input id="password" type="password" class="login-input" name="password" required>
 
                         @if ($errors->has('password'))

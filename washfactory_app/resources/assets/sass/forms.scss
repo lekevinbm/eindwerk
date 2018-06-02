@@ -30,6 +30,63 @@
     
 }
 
+.app-input{
+    color: $gray-text;
+    background-color: $white!important;
+    width: 100%;
+    border: none;
+    
+    &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: $gray-text;
+        opacity: 1; /* Firefox */
+    }
+    
+    &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color: $gray-text;
+    }
+    
+    &::-ms-input-placeholder { /* Microsoft Edge */
+        color: $gray-text;
+    }
+    &:-webkit-autofill,
+    &:-webkit-autofill:hover, 
+    &:-webkit-autofill:focus
+    &:-webkit-autofill,
+    &:-webkit-autofill {
+        -webkit-box-shadow: 0 0 0 1000px $white inset!important;
+        -webkit-text-fill-color: $gray-text !important;
+        transition: background-color 5000s ease-in-out 0s;
+    }
+    
+    &#amount{
+        width: 50%;
+        border: none;
+        font-size: 4em;
+        text-align: center;
+        &:focus{
+            border:none;
+        }
+    }
+    
+}
+
+main{
+    .page-primary-button-section{
+        text-align: center;
+
+        input{
+            background-color: $pink;
+            border: none;
+            margin-top: 10%;
+            width: 90%;
+            border-radius: 5px;
+            color: $white;
+        }
+
+    }
+}
+
+
 label{
     color:#E3EBE3;
     font-size: 0.8em;

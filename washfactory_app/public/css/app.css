@@ -67,6 +67,85 @@
   transition: background-color 5000s ease-in-out 0s;
 }
 
+.app-input {
+  color: #434343;
+  background-color: #F7FFF7 !important;
+  width: 100%;
+  border: none;
+}
+
+.app-input::-webkit-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #434343;
+  opacity: 1;
+  /* Firefox */
+}
+
+.app-input:-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #434343;
+  opacity: 1;
+  /* Firefox */
+}
+
+.app-input::-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #434343;
+  opacity: 1;
+  /* Firefox */
+}
+
+.app-input::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #434343;
+  opacity: 1;
+  /* Firefox */
+}
+
+.app-input:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #434343;
+}
+
+.app-input::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #434343;
+}
+
+.app-input:-webkit-autofill,
+.app-input:-webkit-autofill:hover,
+.app-input:-webkit-autofill:focus .app-input:-webkit-autofill,
+.app-input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px #F7FFF7 inset !important;
+  -webkit-text-fill-color: #434343 !important;
+  -webkit-transition: background-color 5000s ease-in-out 0s;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.app-input#amount {
+  width: 50%;
+  border: none;
+  font-size: 4em;
+  text-align: center;
+}
+
+.app-input#amount:focus {
+  border: none;
+}
+
+main .page-primary-button-section {
+  text-align: center;
+}
+
+main .page-primary-button-section input {
+  background-color: #FF6B6B;
+  border: none;
+  margin-top: 10%;
+  width: 90%;
+  border-radius: 5px;
+  color: #F7FFF7;
+}
+
 label {
   color: #E3EBE3;
   font-size: 0.8em;
@@ -10570,7 +10649,6 @@ body #menu-btn,
 body #back-btn {
   position: absolute;
   left: 5%;
-  top: 2%;
 }
 
 html .app-page,
@@ -10612,12 +10690,25 @@ body #menu_modal .modal-dialog .modal-content a {
 html #menu_modal .modal-dialog .modal-content #menu-footer,
 body #menu_modal .modal-dialog .modal-content #menu-footer {
   color: #F7FFF7;
-  margin: 50% 10%;
+  margin: 50% 0;
+  font-weight: 500;
 }
 
-html #menu_modal .modal-dialog .modal-content #menu-footer img,
-body #menu_modal .modal-dialog .modal-content #menu-footer img {
+html #menu_modal .modal-dialog .modal-content #menu-footer .col,
+body #menu_modal .modal-dialog .modal-content #menu-footer .col {
+  height: 100%;
+  margin: 0;
+}
+
+html #menu_modal .modal-dialog .modal-content #menu-footer .col img,
+body #menu_modal .modal-dialog .modal-content #menu-footer .col img {
   width: 28.8px;
+}
+
+html #menu_modal .modal-dialog .modal-content #menu-footer .col .menu-footer-text,
+body #menu_modal .modal-dialog .modal-content #menu-footer .col .menu-footer-text {
+  font-size: 0.8em;
+  line-height: 1.6;
 }
 
 html #guest-main,
@@ -10696,6 +10787,12 @@ body main #home-page {
   padding: 0;
 }
 
+html main #home-page #contact-section,
+body main #home-page #contact-section {
+  text-align: center;
+  padding-bottom: 5%;
+}
+
 html main #home-page #saldo-section,
 body main #home-page #saldo-section {
   text-align: center;
@@ -10720,7 +10817,12 @@ body main #home-page #saldo-section a {
 
 html main #home-page #top-page-section,
 body main #home-page #top-page-section {
-  height: 10%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1030;
+  height: 10vh;
   text-align: center;
   background-color: #FF6B6B;
   color: #F7FFF7;
@@ -10739,16 +10841,45 @@ body main #home-page #top-page-section a {
   color: #F7FFF7;
 }
 
+html main #home-page #page-content,
+body main #home-page #page-content {
+  position: relative;
+  padding: 10vh 0;
+}
+
+html main #home-page #top-open-reserved-wasmachine,
+html main #home-page #top-open-reserved-dryer,
+body main #home-page #top-open-reserved-wasmachine,
+body main #home-page #top-open-reserved-dryer {
+  height: 30%;
+  padding-top: 7%;
+  padding-left: 5%;
+}
+
+html main #home-page #top-open-reserved-wasmachine .top-reserved-detail,
+html main #home-page #top-open-reserved-dryer .top-reserved-detail,
+body main #home-page #top-open-reserved-wasmachine .top-reserved-detail,
+body main #home-page #top-open-reserved-dryer .top-reserved-detail {
+  width: 60%;
+  color: #fff;
+  font-weight: 500;
+}
+
+html main #home-page #top-open-reserved-wasmachine .top-reserved-detail .time-left,
+html main #home-page #top-open-reserved-dryer .top-reserved-detail .time-left,
+body main #home-page #top-open-reserved-wasmachine .top-reserved-detail .time-left,
+body main #home-page #top-open-reserved-dryer .top-reserved-detail .time-left {
+  font-size: 3.5em;
+}
+
 html main #home-page #top-open-reserved-wasmachine,
 body main #home-page #top-open-reserved-wasmachine {
-  height: 30%;
   background: #4ECDC4 url("/img/devices/wm-big-cut.png") no-repeat right;
   background-size: auto 100%;
 }
 
 html main #home-page #top-open-reserved-dryer,
 body main #home-page #top-open-reserved-dryer {
-  height: 30%;
   background: #FFE66D url("/img/devices/dry-big-cut.png") no-repeat right;
   background-size: auto 100%;
 }
@@ -10819,6 +10950,177 @@ body main #home-page #reserved-devices .reserved-device .reserved-device-informa
   font-size: 1em;
 }
 
+html main #home-page .app-block,
+body main #home-page .app-block {
+  text-align: center;
+  padding: 10% 0 0 0;
+  margin: 0;
+  width: 100%;
+  position: relative;
+  color: #F7FFF7;
+}
+
+html main #home-page .app-block.app-block-4,
+body main #home-page .app-block.app-block-4 {
+  height: 20vh;
+}
+
+html main #home-page .app-block.app-block-3,
+body main #home-page .app-block.app-block-3 {
+  height: 26.6vh;
+}
+
+html main #home-page .app-block.light-blue-block,
+body main #home-page .app-block.light-blue-block {
+  background-color: #4ECDC4;
+}
+
+html main #home-page .app-block.dark-blue-block,
+body main #home-page .app-block.dark-blue-block {
+  background-color: #1A535C;
+}
+
+html main #home-page .app-block.pink-block,
+body main #home-page .app-block.pink-block {
+  background-color: #FF6B6B;
+}
+
+html main #home-page .app-block.yellow-block,
+body main #home-page .app-block.yellow-block {
+  color: #FF6B6B;
+  background-color: #FFE66D;
+}
+
+html main #home-page .app-block.white-block,
+body main #home-page .app-block.white-block {
+  background-color: #F7FFF7;
+  color: #434343;
+}
+
+html main #home-page .app-block .app-block-icon,
+body main #home-page .app-block .app-block-icon {
+  text-align: center;
+  width: 40%;
+}
+
+html main #home-page .app-block .app-block-icon img,
+body main #home-page .app-block .app-block-icon img {
+  height: 50%;
+}
+
+html main #home-page .app-block .app-block-icon i,
+body main #home-page .app-block .app-block-icon i {
+  font-size: 2em;
+}
+
+html main #home-page .app-block .app-block-text,
+html main #home-page .app-block .app-block-right,
+body main #home-page .app-block .app-block-text,
+body main #home-page .app-block .app-block-right {
+  font-size: 2em;
+  font-weight: 500;
+  text-align: center;
+}
+
+html main #home-page .app-block .app-block-text,
+body main #home-page .app-block .app-block-text {
+  width: 40%;
+}
+
+html main #home-page .app-block .app-block-right,
+body main #home-page .app-block .app-block-right {
+  width: 20%;
+}
+
+html main #home-page .app-text-row,
+body main #home-page .app-text-row {
+  background-color: #F7FFF7;
+  color: #434343;
+  padding: 2% 0 0 0;
+  margin: 1% 0 0 0;
+}
+
+html main #home-page .app-text-row .app-text-row-title,
+body main #home-page .app-text-row .app-text-row-title {
+  width: 50%;
+  padding-left: 5%;
+}
+
+html main #home-page .app-text-row .app-text-row-title.charge-date,
+body main #home-page .app-text-row .app-text-row-title.charge-date {
+  padding-top: 2%;
+}
+
+html main #home-page .app-text-row .app-text-row-value,
+body main #home-page .app-text-row .app-text-row-value {
+  text-align: right;
+  width: 50%;
+  padding-right: 5%;
+}
+
+html main #home-page .app-text-row .app-text-row-tab,
+body main #home-page .app-text-row .app-text-row-tab {
+  margin: 0 5%;
+}
+
+html main #home-page .app-text-row .app-text-row-tab .faq-carret,
+body main #home-page .app-text-row .app-text-row-tab .faq-carret {
+  width: 5%;
+}
+
+html main #home-page .app-text-row .app-text-row-tab .app-text-row-tab-text,
+body main #home-page .app-text-row .app-text-row-tab .app-text-row-tab-text {
+  width: 95%;
+  font-weight: 500;
+  padding-left: 5%;
+}
+
+html main #home-page .app-text-row .app-text-row-tab-value,
+body main #home-page .app-text-row .app-text-row-tab-value {
+  display: none;
+  background-color: #e9e8e8;
+  width: 100%;
+  padding: 5% 10%;
+}
+
+html main #home-page #credit-charge-amount-section,
+html main #home-page #credit-charge-method-section,
+body main #home-page #credit-charge-amount-section,
+body main #home-page #credit-charge-method-section {
+  margin-top: 1%;
+  padding-top: 5%;
+  text-align: center;
+  background-color: #F7FFF7;
+}
+
+html main #home-page #credit-charge-amount-section,
+body main #home-page #credit-charge-amount-section {
+  height: 30%;
+}
+
+html main #home-page #credit-charge-method-section,
+body main #home-page #credit-charge-method-section {
+  position: relative;
+  height: 30%;
+}
+
+html main #home-page #credit-charge-method-section .payment-methode-row,
+body main #home-page #credit-charge-method-section .payment-methode-row {
+  position: relative;
+  margin: 5% 0 0 0;
+}
+
+html main #home-page #credit-charge-method-section .payment-methode-row div,
+body main #home-page #credit-charge-method-section .payment-methode-row div {
+  width: 33%;
+}
+
+html main #home-page #credit-charge-method-section .payment-methode-row div .pay-method-img,
+body main #home-page #credit-charge-method-section .payment-methode-row div .pay-method-img {
+  max-width: 100%;
+  height: 60px;
+}
+
 html main #home-page #reserve-device-btn,
 body main #home-page #reserve-device-btn {
   position: fixed;
@@ -10839,6 +11141,64 @@ body main #home-page #reserve-device-btn i {
   margin-top: 25%;
 }
 
+html main #home-page #slide-page-1,
+body main #home-page #slide-page-1 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+html main #home-page #slide-page-1.non-active-top-slide,
+body main #home-page #slide-page-1.non-active-top-slide {
+  position: absolute;
+  -webkit-animation: non-active-top-slide-page 0.5s forwards;
+  -webkit-animation-delay: 0s;
+  animation: non-active-top-slide-page 0.5s forwards;
+  animation-delay: 0s;
+}
+
+@-webkit-keyframes non-active-top-slide-page {
+  100% {
+    left: -100%;
+  }
+}
+
+@keyframes non-active-top-slide-page {
+  100% {
+    left: -100%;
+  }
+}
+
+html main #home-page .slide-page,
+body main #home-page .slide-page {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  right: -100%;
+  display: none;
+}
+
+html main #home-page .slide-page.active-child-slide,
+body main #home-page .slide-page.active-child-slide {
+  display: block;
+  -webkit-animation: active-child-slide-page 0.5s forwards;
+  -webkit-animation-delay: 0s;
+  animation: active-child-slide-page 0.5s forwards;
+  animation-delay: 0s;
+}
+
+@-webkit-keyframes active-child-slide-page {
+  100% {
+    right: 0;
+  }
+}
+
+@keyframes active-child-slide-page {
+  100% {
+    right: 0;
+  }
+}
+
 html nav,
 body nav {
   margin: 0 !important;
@@ -10851,7 +11211,6 @@ body .navbar {
   background-color: #F7FFF7 !important;
   font-weight: 400 !important;
   font-size: 0.8em !important;
-  position: relative;
 }
 
 html .navbar #navbar-row,
