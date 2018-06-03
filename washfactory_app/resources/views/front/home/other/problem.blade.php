@@ -48,7 +48,7 @@
                 <div class="row app-block app-block-4 white-block">    
                     <span class="app-block-icon">
                         <img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDQ4MCA0ODAiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDQ4MCA0ODA7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iMTI4cHgiIGhlaWdodD0iMTI4cHgiPgo8Zz4KCTxnPgoJCTxwYXRoIGQ9Ik04MCw0OEgxNkM3LjE2OCw0OCwwLDU1LjE2OCwwLDY0djY0YzAsOC44MzIsNy4xNjgsMTYsMTYsMTZjOC44MzIsMCwxNi03LjE2OCwxNi0xNlY4MGg0OGM4LjgzMiwwLDE2LTcuMTY4LDE2LTE2ICAgIEM5Niw1NS4xNjgsODguODMyLDQ4LDgwLDQ4eiIgZmlsbD0iIzAwMDAwMCIvPgoJPC9nPgo8L2c+CjxnPgoJPGc+CgkJPHBhdGggZD0iTTQ2NCwzMzZjLTguODMyLDAtMTYsNy4xNjgtMTYsMTZ2NDhoLTQ4Yy04LjgzMiwwLTE2LDcuMTY4LTE2LDE2YzAsOC44MzIsNy4xNjgsMTYsMTYsMTZoNjRjOC44MzIsMCwxNi03LjE2OCwxNi0xNnYtNjQgICAgQzQ4MCwzNDMuMTY4LDQ3Mi44MzIsMzM2LDQ2NCwzMzZ6IiBmaWxsPSIjMDAwMDAwIi8+Cgk8L2c+CjwvZz4KPGc+Cgk8Zz4KCQk8cGF0aCBkPSJNNDY0LDQ4aC02NGMtOC44MzIsMC0xNiw3LjE2OC0xNiwxNmMwLDguODMyLDcuMTY4LDE2LDE2LDE2aDQ4djQ4YzAsOC44MzIsNy4xNjgsMTYsMTYsMTZjOC44MzIsMCwxNi03LjE2OCwxNi0xNlY2NCAgICBDNDgwLDU1LjE2OCw0NzIuODMyLDQ4LDQ2NCw0OHoiIGZpbGw9IiMwMDAwMDAiLz4KCTwvZz4KPC9nPgo8Zz4KCTxnPgoJCTxwYXRoIGQ9Ik04MCw0MDBIMzJ2LTQ4YzAtOC44MzItNy4xNjgtMTYtMTYtMTZjLTguODMyLDAtMTYsNy4xNjgtMTYsMTZ2NjRjMCw4LjgzMiw3LjE2OCwxNiwxNiwxNmg2NGM4LjgzMiwwLDE2LTcuMTY4LDE2LTE2ICAgIEM5Niw0MDcuMTY4LDg4LjgzMiw0MDAsODAsNDAweiIgZmlsbD0iIzAwMDAwMCIvPgoJPC9nPgo8L2c+CjxnPgoJPGc+CgkJPHJlY3QgeD0iNjQiIHk9IjExMiIgd2lkdGg9IjMyIiBoZWlnaHQ9IjI1NiIgZmlsbD0iIzAwMDAwMCIvPgoJPC9nPgo8L2c+CjxnPgoJPGc+CgkJPHJlY3QgeD0iMTI4IiB5PSIxMTIiIHdpZHRoPSIzMiIgaGVpZ2h0PSIxOTIiIGZpbGw9IiMwMDAwMDAiLz4KCTwvZz4KPC9nPgo8Zz4KCTxnPgoJCTxyZWN0IHg9IjE5MiIgeT0iMTEyIiB3aWR0aD0iMzIiIGhlaWdodD0iMTkyIiBmaWxsPSIjMDAwMDAwIi8+Cgk8L2c+CjwvZz4KPGc+Cgk8Zz4KCQk8cmVjdCB4PSIyNTYiIHk9IjExMiIgd2lkdGg9IjMyIiBoZWlnaHQ9IjI1NiIgZmlsbD0iIzAwMDAwMCIvPgoJPC9nPgo8L2c+CjxnPgoJPGc+CgkJPHJlY3QgeD0iMzIwIiB5PSIxMTIiIHdpZHRoPSIzMiIgaGVpZ2h0PSIxOTIiIGZpbGw9IiMwMDAwMDAiLz4KCTwvZz4KPC9nPgo8Zz4KCTxnPgoJCTxyZWN0IHg9IjM4NCIgeT0iMTEyIiB3aWR0aD0iMzIiIGhlaWdodD0iMjU2IiBmaWxsPSIjMDAwMDAwIi8+Cgk8L2c+CjwvZz4KPGc+Cgk8Zz4KCQk8cmVjdCB4PSIxMjgiIHk9IjMzNiIgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiBmaWxsPSIjMDAwMDAwIi8+Cgk8L2c+CjwvZz4KPGc+Cgk8Zz4KCQk8cmVjdCB4PSIxOTIiIHk9IjMzNiIgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiBmaWxsPSIjMDAwMDAwIi8+Cgk8L2c+CjwvZz4KPGc+Cgk8Zz4KCQk8cmVjdCB4PSIzMjAiIHk9IjMzNiIgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiBmaWxsPSIjMDAwMDAwIi8+Cgk8L2c+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==" />
-                </span>
+                    </span>
                     <span class="app-block-text normal-text">Scan de QR code van het toestel</span>
                     <span class="app-block-right"><i class="fas fa-angle-right"></i></span>
                 </div>
@@ -75,20 +75,87 @@
                         </div>
                     </div>
                 </div>
+                <div class="row app-block app-block-5 white-block block-margin add-image-block">    
+                    <span class="app-block-icon">
+                        <img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA1MDQgNTA0IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MDQgNTA0OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjI1NnB4IiBoZWlnaHQ9IjI1NnB4Ij4KPGc+Cgk8Zz4KCQk8cGF0aCBkPSJNMzExLjMsMTA4Ljc0Yy0xNS4zMDQsMC0yNy43NTIsMTIuNDQ0LTI3Ljc1MiwyNy43NTJjMC4wMDQsMTUuMywxMi40NTIsMjcuNzQ0LDI3Ljc1MiwyNy43NDRzMjcuNzUyLTEyLjQ0LDI3Ljc1Mi0yNy43NDQgICAgQzMzOS4wNTIsMTIxLjE4OCwzMjYuNjA0LDEwOC43NCwzMTEuMywxMDguNzR6IiBmaWxsPSIjMDAwMDAwIi8+Cgk8L2c+CjwvZz4KPGc+Cgk8Zz4KCQk8cGF0aCBkPSJNMjUyLjE2NCwyODYuMWMtNDkuOTkyLDAtOTAuNTA4LDQwLjUyLTkwLjUwOCw5MC41YzAsNDkuOTg0LDQwLjUxNiw5MC41MDgsOTAuNTA4LDkwLjUwOHM5MC41MTItNDAuNTI0LDkwLjUxMi05MC41MDggICAgQzM0Mi42NzYsMzI2LjYyLDMwMi4xNTYsMjg2LjEsMjUyLjE2NCwyODYuMXogTTMwMy4xNDgsMzg3LjMyOGgtMzkuMzM2djQwLjM0NGMwLDYuNDc2LTUuMzM2LDExLjc0NC0xMS44MTIsMTEuNzQ0ICAgIHMtMTEuODEyLTUuMjY0LTExLjgxMi0xMS43NDR2LTQwLjM0NGgtMzkuMTcyYy02LjQ3NiwwLTExLjc0OC01LjMzNi0xMS43NDgtMTEuODEyczUuMjY4LTExLjgxMiwxMS43NDgtMTEuODEyaDM5LjE3MnYtMzguMTY4ICAgIGMwLTYuNDcyLDUuMzM2LTExLjc0NCwxMS44MTItMTEuNzQ0czExLjgxMiw1LjI2OCwxMS44MTIsMTEuNzQ0djM4LjE2OGgzOS4zMzZjNi40NzYsMCwxMS43NDgsNS4zMzYsMTEuNzQ4LDExLjgxMiAgICBTMzA5LjYyNCwzODcuMzI4LDMwMy4xNDgsMzg3LjMyOHoiIGZpbGw9IiMwMDAwMDAiLz4KCTwvZz4KPC9nPgo8Zz4KCTxnPgoJCTxwYXRoIGQ9Ik00ODQuMzU2LDM2Ljg5MkgxOS45NzZDOS4xMiwzNi44OTIsMCw0Ni41NiwwLDU3LjQxNnYyOTkuNDk2YzAsMTAuODYsOS4xMiwxOC42LDE5Ljk3NiwxOC42aDExOC4wNTYgICAgYzAtNjMsNTEuMi0xMTQuMTI0LDExNC4xMzItMTE0LjEyNGM2Mi45MzYsMCwxMTQuMTM2LDUxLjEyNCwxMTQuMTM2LDExNC4xMjRoMTE4LjA1NmMxMC44NTYsMCwxOS42NDQtNy43NDQsMTkuNjQ0LTE4LjZWNTcuNDE2ICAgIEM1MDQsNDYuNTYsNDk1LjIxMiwzNi44OTIsNDg0LjM1NiwzNi44OTJ6IE0zOTEuNSwxNzIuNTUybC03NC40NTYsNzQuNDcyTDIwMy43MTIsMTMzLjcwOGMtMS41NC0xLjU0LTQuMDI0LTEuNTQtNS41NjQsMCAgICBsLTcxLjg4NCw3MS44OGwtMzIuODE2LTMyLjgxMmMtMS41MzYtMS41NC00LjE3Mi0xLjU0LTUuNzA4LDBsLTUyLjMwNCw1Mi4xNlY3Mi4zMjhINDY4LjU2djE3MS43NDhsLTcxLjUtNzEuNTI0ICAgIEMzOTUuNTIsMTcxLjAxMiwzOTMuMDQsMTcxLjAxMiwzOTEuNSwxNzIuNTUyeiIgZmlsbD0iIzAwMDAwMCIvPgoJPC9nPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=" />
+                    </span>
+                    <span class="app-block-text normal-text add-image-block-btn">Foto toevoegen (optioneel)</span>
+                    <span class="app-block-right add-image-block-btn"><i class="fas fa-angle-right"></i></span>
+                </div>
+                <div class="app-text-row full">
+                    <form id="device-problem-form" method="post" action="{{route('problem.report')}}" enctype="multipart/form-data">
+                        @csrf
+                        <input type="hidden" name="problem-category" value="device">
+                        <input id="device" type="hidden" name="device">
+                        <input id="problem-type" type="hidden" name="problem-type">
+                        <label for="extra-explanation-input">Extra uitleg (optioneel)</label><br>
+                        <textarea id="extra-explanation-input" name="extra_explanation" rows="5"></textarea>
+                        <input class="hidden-file-input problem-image" type="file" name="image" accept="image/*" capture> 
+                    </form>
+                </div>
+                <div class="page-primary-button-section">
+                    <input type="submit" form="device-problem-form" value="Probleem melden">
+                </div>
                 
             </div>
         </div>
         <div id="problem-laundry-room-page" class="slide-page">
             <div id="top-page-section">
             <a id="back-btn" href="{{route('problem')}}"><i class="fas fa-angle-left"></i></a>
-                <span id="title">Wasruimte probleem melden</span>
+                <span id="title">Probleem in de wasruimte melden</span>
             </div>
             <div id="page-content">
-                <div class="row app-block app-block-4 light-blue-block">
+                <div class="row app-block app-block-4 white-block">    
                     <span class="app-block-icon">
-                        <img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTguMS4xLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDUyNS4xNTMgNTI1LjE1MyIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTI1LjE1MyA1MjUuMTUzOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjEyOHB4IiBoZWlnaHQ9IjEyOHB4Ij4KPGc+Cgk8cGF0aCBkPSJNMTg4LjI3OCwzODkuMzc5YzQwLjk4NCw0MC45ODQsMTA3LjY1Niw0MC45ODQsMTQ4LjY0LDBzNDAuOTg0LTEwNy42NTYsMC0xNDguNTUzTDE4OC4yNzgsMzg5LjM3OXogTTQyMC4xMTEsMC4zMDYgICBMMTA1LjA2MywwQzc1Ljg5NSwwLDUyLjUyNiwyMy40MTMsNTIuNTI2LDUyLjQ3MXY0MjAuMTg4YzAsMjkuMDgsMjMuMzY5LDUyLjQ5Myw1Mi41MzcsNTIuNDkzaDMxNS4wNDggICBjMjkuMTQ2LDAsNTIuNTE1LTIzLjQxMyw1Mi41MTUtNTIuNDcxVjUyLjQ3MUM0NzIuNjQ4LDIzLjQxMyw0NDkuMjU3LDAuMzA2LDQyMC4xMTEsMC4zMDZ6IE0yMTAuMDcyLDUyLjQ3MSAgIGMxNC40NjQsMCwyNi4yOCwxMS44MTYsMjYuMjgsMjYuMzIzYzAsMTQuNDItMTEuODE2LDI2LjIzNi0yNi4yOCwyNi4yMzZjLTE0LjQ0MiwwLjAyMi0yNi4yNTgtMTEuNzk0LTI2LjI1OC0yNi4yMTQgICBDMTgzLjgxNCw2NC4yODcsMTk1LjYzLDUyLjQ3MSwyMTAuMDcyLDUyLjQ3MXogTTEzMS4yOTksNTIuNDcxYzE0LjQyLDAsMjYuMjM2LDExLjgxNiwyNi4yMzYsMjYuMzIzICAgYzAsMTQuNDItMTEuODE2LDI2LjIzNi0yNi4yMzYsMjYuMjM2cy0yNi4yMzYtMTEuODE2LTI2LjIzNi0yNi4yMzZDMTA1LjA2Myw2NC4yODcsMTE2Ljg3OSw1Mi40NzEsMTMxLjI5OSw1Mi40NzF6ICAgIE0yNjIuNTg3LDQ3Mi42ODFjLTg2LjkxMywwLTE1Ny41MjQtNzAuNjU1LTE1Ny41MjQtMTU3LjYxMWMwLTg2Ljg5MSw3MC42MTEtMTU3LjUyNCwxNTcuNTI0LTE1Ny41MjQgICBjODYuOTM1LDAsMTU3LjUyNCw3MC42NTUsMTU3LjUyNCwxNTcuNTI0QzQyMC4xMTEsNDAyLjAyNiwzNDkuNTIyLDQ3Mi42ODEsMjYyLjU4Nyw0NzIuNjgxeiIgZmlsbD0iI0ZGRkZGRiIvPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=" />   
+                        <img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDQ4MCA0ODAiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDQ4MCA0ODA7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iMTI4cHgiIGhlaWdodD0iMTI4cHgiPgo8Zz4KCTxnPgoJCTxwYXRoIGQ9Ik04MCw0OEgxNkM3LjE2OCw0OCwwLDU1LjE2OCwwLDY0djY0YzAsOC44MzIsNy4xNjgsMTYsMTYsMTZjOC44MzIsMCwxNi03LjE2OCwxNi0xNlY4MGg0OGM4LjgzMiwwLDE2LTcuMTY4LDE2LTE2ICAgIEM5Niw1NS4xNjgsODguODMyLDQ4LDgwLDQ4eiIgZmlsbD0iIzAwMDAwMCIvPgoJPC9nPgo8L2c+CjxnPgoJPGc+CgkJPHBhdGggZD0iTTQ2NCwzMzZjLTguODMyLDAtMTYsNy4xNjgtMTYsMTZ2NDhoLTQ4Yy04LjgzMiwwLTE2LDcuMTY4LTE2LDE2YzAsOC44MzIsNy4xNjgsMTYsMTYsMTZoNjRjOC44MzIsMCwxNi03LjE2OCwxNi0xNnYtNjQgICAgQzQ4MCwzNDMuMTY4LDQ3Mi44MzIsMzM2LDQ2NCwzMzZ6IiBmaWxsPSIjMDAwMDAwIi8+Cgk8L2c+CjwvZz4KPGc+Cgk8Zz4KCQk8cGF0aCBkPSJNNDY0LDQ4aC02NGMtOC44MzIsMC0xNiw3LjE2OC0xNiwxNmMwLDguODMyLDcuMTY4LDE2LDE2LDE2aDQ4djQ4YzAsOC44MzIsNy4xNjgsMTYsMTYsMTZjOC44MzIsMCwxNi03LjE2OCwxNi0xNlY2NCAgICBDNDgwLDU1LjE2OCw0NzIuODMyLDQ4LDQ2NCw0OHoiIGZpbGw9IiMwMDAwMDAiLz4KCTwvZz4KPC9nPgo8Zz4KCTxnPgoJCTxwYXRoIGQ9Ik04MCw0MDBIMzJ2LTQ4YzAtOC44MzItNy4xNjgtMTYtMTYtMTZjLTguODMyLDAtMTYsNy4xNjgtMTYsMTZ2NjRjMCw4LjgzMiw3LjE2OCwxNiwxNiwxNmg2NGM4LjgzMiwwLDE2LTcuMTY4LDE2LTE2ICAgIEM5Niw0MDcuMTY4LDg4LjgzMiw0MDAsODAsNDAweiIgZmlsbD0iIzAwMDAwMCIvPgoJPC9nPgo8L2c+CjxnPgoJPGc+CgkJPHJlY3QgeD0iNjQiIHk9IjExMiIgd2lkdGg9IjMyIiBoZWlnaHQ9IjI1NiIgZmlsbD0iIzAwMDAwMCIvPgoJPC9nPgo8L2c+CjxnPgoJPGc+CgkJPHJlY3QgeD0iMTI4IiB5PSIxMTIiIHdpZHRoPSIzMiIgaGVpZ2h0PSIxOTIiIGZpbGw9IiMwMDAwMDAiLz4KCTwvZz4KPC9nPgo8Zz4KCTxnPgoJCTxyZWN0IHg9IjE5MiIgeT0iMTEyIiB3aWR0aD0iMzIiIGhlaWdodD0iMTkyIiBmaWxsPSIjMDAwMDAwIi8+Cgk8L2c+CjwvZz4KPGc+Cgk8Zz4KCQk8cmVjdCB4PSIyNTYiIHk9IjExMiIgd2lkdGg9IjMyIiBoZWlnaHQ9IjI1NiIgZmlsbD0iIzAwMDAwMCIvPgoJPC9nPgo8L2c+CjxnPgoJPGc+CgkJPHJlY3QgeD0iMzIwIiB5PSIxMTIiIHdpZHRoPSIzMiIgaGVpZ2h0PSIxOTIiIGZpbGw9IiMwMDAwMDAiLz4KCTwvZz4KPC9nPgo8Zz4KCTxnPgoJCTxyZWN0IHg9IjM4NCIgeT0iMTEyIiB3aWR0aD0iMzIiIGhlaWdodD0iMjU2IiBmaWxsPSIjMDAwMDAwIi8+Cgk8L2c+CjwvZz4KPGc+Cgk8Zz4KCQk8cmVjdCB4PSIxMjgiIHk9IjMzNiIgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiBmaWxsPSIjMDAwMDAwIi8+Cgk8L2c+CjwvZz4KPGc+Cgk8Zz4KCQk8cmVjdCB4PSIxOTIiIHk9IjMzNiIgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiBmaWxsPSIjMDAwMDAwIi8+Cgk8L2c+CjwvZz4KPGc+Cgk8Zz4KCQk8cmVjdCB4PSIzMjAiIHk9IjMzNiIgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiBmaWxsPSIjMDAwMDAwIi8+Cgk8L2c+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==" />
                     </span>
-                    <span class="app-block-text">Toestel</span>
+                    <span class="app-block-text normal-text">Scan de QR code van een toestel in de wasruimte</span>
+                    <span class="app-block-right"><i class="fas fa-angle-right"></i></span>
+                </div>
+                <div class="choose-section">
+                    Probleem in de wasruimte door:
+                    <div class="row choose-section-row">
+                        <div>
+                            <label for="filthy-room-input">
+                                Vuiligheid
+                            </label>
+                            <br><input id="filthy-room-input" class="choose-problem-select" type="radio" name="problem-type">
+                        </div>
+                        <div>
+                            <label for="intruders-room-input">
+                                Ongewensten
+                            </label>
+                            <br><input id="intruders-room-input" class="choose-problem-select" type="radio" name="problem-type">
+                        </div>
+                        <div>
+                            <label for="other-room-input">
+                                Ander
+                            </label>
+                            <br><input id="other-room-input" class="choose-problem-select" type="radio" name="problem-type">
+                        </div>
+                    </div>
+                </div>
+                <div class="row app-block app-block-5 white-block block-margin add-image-block">    
+                    <span class="app-block-icon">
+                        <img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA1MDQgNTA0IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MDQgNTA0OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjI1NnB4IiBoZWlnaHQ9IjI1NnB4Ij4KPGc+Cgk8Zz4KCQk8cGF0aCBkPSJNMzExLjMsMTA4Ljc0Yy0xNS4zMDQsMC0yNy43NTIsMTIuNDQ0LTI3Ljc1MiwyNy43NTJjMC4wMDQsMTUuMywxMi40NTIsMjcuNzQ0LDI3Ljc1MiwyNy43NDRzMjcuNzUyLTEyLjQ0LDI3Ljc1Mi0yNy43NDQgICAgQzMzOS4wNTIsMTIxLjE4OCwzMjYuNjA0LDEwOC43NCwzMTEuMywxMDguNzR6IiBmaWxsPSIjMDAwMDAwIi8+Cgk8L2c+CjwvZz4KPGc+Cgk8Zz4KCQk8cGF0aCBkPSJNMjUyLjE2NCwyODYuMWMtNDkuOTkyLDAtOTAuNTA4LDQwLjUyLTkwLjUwOCw5MC41YzAsNDkuOTg0LDQwLjUxNiw5MC41MDgsOTAuNTA4LDkwLjUwOHM5MC41MTItNDAuNTI0LDkwLjUxMi05MC41MDggICAgQzM0Mi42NzYsMzI2LjYyLDMwMi4xNTYsMjg2LjEsMjUyLjE2NCwyODYuMXogTTMwMy4xNDgsMzg3LjMyOGgtMzkuMzM2djQwLjM0NGMwLDYuNDc2LTUuMzM2LDExLjc0NC0xMS44MTIsMTEuNzQ0ICAgIHMtMTEuODEyLTUuMjY0LTExLjgxMi0xMS43NDR2LTQwLjM0NGgtMzkuMTcyYy02LjQ3NiwwLTExLjc0OC01LjMzNi0xMS43NDgtMTEuODEyczUuMjY4LTExLjgxMiwxMS43NDgtMTEuODEyaDM5LjE3MnYtMzguMTY4ICAgIGMwLTYuNDcyLDUuMzM2LTExLjc0NCwxMS44MTItMTEuNzQ0czExLjgxMiw1LjI2OCwxMS44MTIsMTEuNzQ0djM4LjE2OGgzOS4zMzZjNi40NzYsMCwxMS43NDgsNS4zMzYsMTEuNzQ4LDExLjgxMiAgICBTMzA5LjYyNCwzODcuMzI4LDMwMy4xNDgsMzg3LjMyOHoiIGZpbGw9IiMwMDAwMDAiLz4KCTwvZz4KPC9nPgo8Zz4KCTxnPgoJCTxwYXRoIGQ9Ik00ODQuMzU2LDM2Ljg5MkgxOS45NzZDOS4xMiwzNi44OTIsMCw0Ni41NiwwLDU3LjQxNnYyOTkuNDk2YzAsMTAuODYsOS4xMiwxOC42LDE5Ljk3NiwxOC42aDExOC4wNTYgICAgYzAtNjMsNTEuMi0xMTQuMTI0LDExNC4xMzItMTE0LjEyNGM2Mi45MzYsMCwxMTQuMTM2LDUxLjEyNCwxMTQuMTM2LDExNC4xMjRoMTE4LjA1NmMxMC44NTYsMCwxOS42NDQtNy43NDQsMTkuNjQ0LTE4LjZWNTcuNDE2ICAgIEM1MDQsNDYuNTYsNDk1LjIxMiwzNi44OTIsNDg0LjM1NiwzNi44OTJ6IE0zOTEuNSwxNzIuNTUybC03NC40NTYsNzQuNDcyTDIwMy43MTIsMTMzLjcwOGMtMS41NC0xLjU0LTQuMDI0LTEuNTQtNS41NjQsMCAgICBsLTcxLjg4NCw3MS44OGwtMzIuODE2LTMyLjgxMmMtMS41MzYtMS41NC00LjE3Mi0xLjU0LTUuNzA4LDBsLTUyLjMwNCw1Mi4xNlY3Mi4zMjhINDY4LjU2djE3MS43NDhsLTcxLjUtNzEuNTI0ICAgIEMzOTUuNTIsMTcxLjAxMiwzOTMuMDQsMTcxLjAxMiwzOTEuNSwxNzIuNTUyeiIgZmlsbD0iIzAwMDAwMCIvPgoJPC9nPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=" />
+                    </span>
+                    <span class="app-block-text normal-text add-image-block-btn">Foto toevoegen (optioneel)</span>
+                    <span class="app-block-right add-image-block-btn"><i class="fas fa-angle-right"></i></span>
+                </div>
+                <div class="app-text-row full">
+                    <form id="room-problem-form" method="post" action="{{route('problem.report')}}" enctype="multipart/form-data">
+                        @csrf
+                        <input type="hidden" name="problem-category" value="location">
+                        <input id="laundry-location" type="hidden" name="laundry-location">
+                        <input id="problem-type" type="hidden" name="problem-type">
+                        <label for="extra-explanation-input">Extra uitleg (optioneel)</label><br>
+                        <textarea id="extra-explanation-input" name="extra_explanation" rows="5"></textarea>
+                        <input class="hidden-file-input problem-image" type="file" name="image" accept="image/*" capture> 
+                    </form>
+                    
+                </div>
+                <div class="page-primary-button-section">
+                    <input type="submit" form="credit-charge-form" value="Probleem melden">
                 </div>
                 
             </div>
@@ -99,13 +166,58 @@
                 <span id="title">Kledij probleem melden</span>
             </div>
             <div id="page-content">
-                <div class="row app-block app-block-4 white-block">
-                    <span class="app-block-icon">
-                        <i class="fas fa-tshirt"></i>
-                    </span>           
-                    <span class="app-block-text">kledij</span>
+                <div class="choose-section">
+                    U heeft een kledingstuk...
+                    <div class="row choose-section-row">
+                        <div class="choose-option-4">
+                            <label for="damaged-clothes-input">
+                                Beschadigd
+                            </label>
+                            <br><input id="damaged-clothes-input" class="choose-problem-select" type="radio" name="problem-type">
+                        </div>
+                        <div class="choose-option-4">
+                            <label for="lost-clothes-input">
+                                Verloren
+                            </label>
+                            <br><input id="lost-clothes-input" class="choose-problem-select" type="radio" name="problem-type">
+                        </div>
+                    </div>
+                    <div class="row choose-section-row">
+                        <div class="choose-option-4">
+                            <label for="found-clothes-input">
+                                Gevonden
+                            </label>
+                            <br><input id="found-clothes-input" class="choose-problem-select" type="radio" name="problem-type">
+                        </div>
+                        <div class="choose-option-4">
+                            <label for="other-clothes-input">
+                                Andere
+                            </label>
+                            <br><input id="other-clothes-input" class="choose-problem-select" type="radio" name="problem-type">
+                        </div>
+                    </div>
                 </div>
-                
+                <div class="row app-block app-block-5 white-block block-margin add-image-block">    
+                    <span class="app-block-icon">
+                        <img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA1MDQgNTA0IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MDQgNTA0OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjI1NnB4IiBoZWlnaHQ9IjI1NnB4Ij4KPGc+Cgk8Zz4KCQk8cGF0aCBkPSJNMzExLjMsMTA4Ljc0Yy0xNS4zMDQsMC0yNy43NTIsMTIuNDQ0LTI3Ljc1MiwyNy43NTJjMC4wMDQsMTUuMywxMi40NTIsMjcuNzQ0LDI3Ljc1MiwyNy43NDRzMjcuNzUyLTEyLjQ0LDI3Ljc1Mi0yNy43NDQgICAgQzMzOS4wNTIsMTIxLjE4OCwzMjYuNjA0LDEwOC43NCwzMTEuMywxMDguNzR6IiBmaWxsPSIjMDAwMDAwIi8+Cgk8L2c+CjwvZz4KPGc+Cgk8Zz4KCQk8cGF0aCBkPSJNMjUyLjE2NCwyODYuMWMtNDkuOTkyLDAtOTAuNTA4LDQwLjUyLTkwLjUwOCw5MC41YzAsNDkuOTg0LDQwLjUxNiw5MC41MDgsOTAuNTA4LDkwLjUwOHM5MC41MTItNDAuNTI0LDkwLjUxMi05MC41MDggICAgQzM0Mi42NzYsMzI2LjYyLDMwMi4xNTYsMjg2LjEsMjUyLjE2NCwyODYuMXogTTMwMy4xNDgsMzg3LjMyOGgtMzkuMzM2djQwLjM0NGMwLDYuNDc2LTUuMzM2LDExLjc0NC0xMS44MTIsMTEuNzQ0ICAgIHMtMTEuODEyLTUuMjY0LTExLjgxMi0xMS43NDR2LTQwLjM0NGgtMzkuMTcyYy02LjQ3NiwwLTExLjc0OC01LjMzNi0xMS43NDgtMTEuODEyczUuMjY4LTExLjgxMiwxMS43NDgtMTEuODEyaDM5LjE3MnYtMzguMTY4ICAgIGMwLTYuNDcyLDUuMzM2LTExLjc0NCwxMS44MTItMTEuNzQ0czExLjgxMiw1LjI2OCwxMS44MTIsMTEuNzQ0djM4LjE2OGgzOS4zMzZjNi40NzYsMCwxMS43NDgsNS4zMzYsMTEuNzQ4LDExLjgxMiAgICBTMzA5LjYyNCwzODcuMzI4LDMwMy4xNDgsMzg3LjMyOHoiIGZpbGw9IiMwMDAwMDAiLz4KCTwvZz4KPC9nPgo8Zz4KCTxnPgoJCTxwYXRoIGQ9Ik00ODQuMzU2LDM2Ljg5MkgxOS45NzZDOS4xMiwzNi44OTIsMCw0Ni41NiwwLDU3LjQxNnYyOTkuNDk2YzAsMTAuODYsOS4xMiwxOC42LDE5Ljk3NiwxOC42aDExOC4wNTYgICAgYzAtNjMsNTEuMi0xMTQuMTI0LDExNC4xMzItMTE0LjEyNGM2Mi45MzYsMCwxMTQuMTM2LDUxLjEyNCwxMTQuMTM2LDExNC4xMjRoMTE4LjA1NmMxMC44NTYsMCwxOS42NDQtNy43NDQsMTkuNjQ0LTE4LjZWNTcuNDE2ICAgIEM1MDQsNDYuNTYsNDk1LjIxMiwzNi44OTIsNDg0LjM1NiwzNi44OTJ6IE0zOTEuNSwxNzIuNTUybC03NC40NTYsNzQuNDcyTDIwMy43MTIsMTMzLjcwOGMtMS41NC0xLjU0LTQuMDI0LTEuNTQtNS41NjQsMCAgICBsLTcxLjg4NCw3MS44OGwtMzIuODE2LTMyLjgxMmMtMS41MzYtMS41NC00LjE3Mi0xLjU0LTUuNzA4LDBsLTUyLjMwNCw1Mi4xNlY3Mi4zMjhINDY4LjU2djE3MS43NDhsLTcxLjUtNzEuNTI0ICAgIEMzOTUuNTIsMTcxLjAxMiwzOTMuMDQsMTcxLjAxMiwzOTEuNSwxNzIuNTUyeiIgZmlsbD0iIzAwMDAwMCIvPgoJPC9nPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=" />
+                    </span>
+                    <span class="app-block-text normal-text add-image-block-btn">Foto toevoegen</span>
+                    <span class="app-block-right add-image-block-btn"><i class="fas fa-angle-right"></i></span>
+                </div>
+                <div class="app-text-row full">
+                    <form id="clothes-problem-form" method="post" action="{{route('problem.report')}}" enctype="multipart/form-data">
+                        @csrf
+                        <input type="hidden" name="problem-category" value="clothes">
+                        <input id="problem-type" type="hidden" name="problem-type">
+                        <label for="extra-explanation-input">Extra uitleg (datum van de wasbeurt/locatie van het toestel/nummer van het toestel)</label><br>
+                        <textarea id="extra-explanation-input" name="extra_explanation" rows="5"></textarea>
+                        <input class="hidden-file-input problem-image" type="file" name="image" accept="image/*" capture> 
+                    </form>
+                    
+                </div>
+                <div class="page-primary-button-section">
+                    <input type="submit" form="credit-charge-form" value="Probleem melden">
+                </div>                
             </div>
         </div>
         <div id="problem-other-page" class="slide-page">
@@ -114,13 +226,25 @@
                 <span id="title">Ander probleem melden</span>
             </div>
             <div id="page-content">
-                <div class="row app-block app-block-4 dark-blue-block">
-                    <span class="app-block-icon">
-                        <img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjEyOHB4IiBoZWlnaHQ9IjEyOHB4IiB2aWV3Qm94PSIwIDAgNDA0Ljk0MyA0MDQuOTQzIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA0MDQuOTQzIDQwNC45NDM7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPGc+Cgk8cGF0aCBkPSJNMzkxLjY5MSwxOC4yODRIMTMuMjUxQzUuOTMxLDE4LjI4NCwwLDI0LjIxOSwwLDMxLjUzNnYyNDIuNDhjMCw3LjMyLDUuOTMxLDEzLjI1MiwxMy4yNTEsMTMuMjUyaDIwMi42NzN2ODYuMTM3ICAgYzAsNS4zNTksMy4yMjksMTAuMTkzLDguMTgyLDEyLjI0NGMxLjYzOSwwLjY4LDMuMzU5LDEuMDEsNS4wNjYsMS4wMWMzLjQ0NiwwLDYuODM4LTEuMzQ4LDkuMzcyLTMuODgzbDk2LjE3My05NS41MDhoNTYuOTc1ICAgYzcuMzIsMCwxMy4yNTItNS45MzIsMTMuMjUyLTEzLjI1MlYzMS41MzVDNDA0Ljk0MywyNC4yMTgsMzk5LjAxMiwxOC4yODQsMzkxLjY5MSwxOC4yODR6IE0xODMuOTcyLDc3LjAzOSAgIGMwLTEwLjIwMSw4LjI5OS0xOC41LDE4LjUtMTguNWMxMC4yMDIsMCwxOC41LDguMjk5LDE4LjUsMTguNXYxMDFjMCwxMC4yMDEtOC4yOTksMTguNS0xOC41LDE4LjVjLTEwLjIwMSwwLTE4LjUtOC4yOTktMTguNS0xOC41ICAgVjc3LjAzOXogTTIwMi40NzIsMjQ3LjczOWMtMTEuMjI1LDAtMjAuMzU3LTkuMTMyLTIwLjM1Ny0yMC4zNTdzOS4xMzMtMjAuMzU3LDIwLjM1Ny0yMC4zNTdjMTEuMjI2LDAsMjAuMzU3LDkuMTMyLDIwLjM1NywyMC4zNTcgICBDMjIyLjgyOSwyMzguNjA2LDIxMy42OTgsMjQ3LjczOSwyMDIuNDcyLDI0Ny43Mzl6IiBmaWxsPSIjRkZGRkZGIi8+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==" />
-                    </span>          
-                    <span class="app-block-text">Andere</span>
+                <div class="app-text-row full">
+                    <form id="other-problem-form" method="post" action="{{route('problem.report')}}" enctype="multipart/form-data">
+                        @csrf
+                        <input type="hidden" name="problem-category" value="other">
+                        <label for="extra-explanation-input">Leg het probleem uit en voeg desnoods een afbeelding toe.</label><br>
+                        <textarea id="extra-explanation-input" name="extra_explanation" rows="5"></textarea>
+                        <input class="hidden-file-input problem-image" type="file" name="image" accept="image/*" capture>
+                    </form>                    
                 </div>
-                
+                <div class="row app-block app-block-5 white-block block-margin add-image-block">    
+                    <span class="app-block-icon">
+                        <img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA1MDQgNTA0IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MDQgNTA0OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjI1NnB4IiBoZWlnaHQ9IjI1NnB4Ij4KPGc+Cgk8Zz4KCQk8cGF0aCBkPSJNMzExLjMsMTA4Ljc0Yy0xNS4zMDQsMC0yNy43NTIsMTIuNDQ0LTI3Ljc1MiwyNy43NTJjMC4wMDQsMTUuMywxMi40NTIsMjcuNzQ0LDI3Ljc1MiwyNy43NDRzMjcuNzUyLTEyLjQ0LDI3Ljc1Mi0yNy43NDQgICAgQzMzOS4wNTIsMTIxLjE4OCwzMjYuNjA0LDEwOC43NCwzMTEuMywxMDguNzR6IiBmaWxsPSIjMDAwMDAwIi8+Cgk8L2c+CjwvZz4KPGc+Cgk8Zz4KCQk8cGF0aCBkPSJNMjUyLjE2NCwyODYuMWMtNDkuOTkyLDAtOTAuNTA4LDQwLjUyLTkwLjUwOCw5MC41YzAsNDkuOTg0LDQwLjUxNiw5MC41MDgsOTAuNTA4LDkwLjUwOHM5MC41MTItNDAuNTI0LDkwLjUxMi05MC41MDggICAgQzM0Mi42NzYsMzI2LjYyLDMwMi4xNTYsMjg2LjEsMjUyLjE2NCwyODYuMXogTTMwMy4xNDgsMzg3LjMyOGgtMzkuMzM2djQwLjM0NGMwLDYuNDc2LTUuMzM2LDExLjc0NC0xMS44MTIsMTEuNzQ0ICAgIHMtMTEuODEyLTUuMjY0LTExLjgxMi0xMS43NDR2LTQwLjM0NGgtMzkuMTcyYy02LjQ3NiwwLTExLjc0OC01LjMzNi0xMS43NDgtMTEuODEyczUuMjY4LTExLjgxMiwxMS43NDgtMTEuODEyaDM5LjE3MnYtMzguMTY4ICAgIGMwLTYuNDcyLDUuMzM2LTExLjc0NCwxMS44MTItMTEuNzQ0czExLjgxMiw1LjI2OCwxMS44MTIsMTEuNzQ0djM4LjE2OGgzOS4zMzZjNi40NzYsMCwxMS43NDgsNS4zMzYsMTEuNzQ4LDExLjgxMiAgICBTMzA5LjYyNCwzODcuMzI4LDMwMy4xNDgsMzg3LjMyOHoiIGZpbGw9IiMwMDAwMDAiLz4KCTwvZz4KPC9nPgo8Zz4KCTxnPgoJCTxwYXRoIGQ9Ik00ODQuMzU2LDM2Ljg5MkgxOS45NzZDOS4xMiwzNi44OTIsMCw0Ni41NiwwLDU3LjQxNnYyOTkuNDk2YzAsMTAuODYsOS4xMiwxOC42LDE5Ljk3NiwxOC42aDExOC4wNTYgICAgYzAtNjMsNTEuMi0xMTQuMTI0LDExNC4xMzItMTE0LjEyNGM2Mi45MzYsMCwxMTQuMTM2LDUxLjEyNCwxMTQuMTM2LDExNC4xMjRoMTE4LjA1NmMxMC44NTYsMCwxOS42NDQtNy43NDQsMTkuNjQ0LTE4LjZWNTcuNDE2ICAgIEM1MDQsNDYuNTYsNDk1LjIxMiwzNi44OTIsNDg0LjM1NiwzNi44OTJ6IE0zOTEuNSwxNzIuNTUybC03NC40NTYsNzQuNDcyTDIwMy43MTIsMTMzLjcwOGMtMS41NC0xLjU0LTQuMDI0LTEuNTQtNS41NjQsMCAgICBsLTcxLjg4NCw3MS44OGwtMzIuODE2LTMyLjgxMmMtMS41MzYtMS41NC00LjE3Mi0xLjU0LTUuNzA4LDBsLTUyLjMwNCw1Mi4xNlY3Mi4zMjhINDY4LjU2djE3MS43NDhsLTcxLjUtNzEuNTI0ICAgIEMzOTUuNTIsMTcxLjAxMiwzOTMuMDQsMTcxLjAxMiwzOTEuNSwxNzIuNTUyeiIgZmlsbD0iIzAwMDAwMCIvPgoJPC9nPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=" />
+                    </span>
+                    <span class="app-block-text normal-text add-image-block-btn">Foto toevoegen (optioneel)</span>
+                    <span class="app-block-right add-image-block-btn"><i class="fas fa-angle-right"></i></span>
+                </div>
+                <div class="page-primary-button-section">
+                    <input type="submit" form="credit-charge-form" value="Probleem melden">
+                </div>                
             </div>
         </div>
     </div>

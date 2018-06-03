@@ -16,10 +16,12 @@ Auth::routes();
 Route::group(['middleware' => ['auth']], function () {
     Route::get('/', 'HomeController@index')->name('home');
 
-    Route::get('/faq','HomeController@faq')->name('faq');
-    Route::get('/contact','HomeController@contact')->name('contact');
-    Route::get('/problem','HomeController@problem')->name('problem');
+    Route::get('faq','HomeController@faq')->name('faq');
+    Route::get('contact','HomeController@contact')->name('contact');
+    Route::get('problem','HomeController@problem')->name('problem');
+    Route::post('problem/report/','HomeController@reportProblem')->name('problem.report');
 
+    Route::get('reservation/create', 'ReservationController@create')->name('reservation.create');
     Route::get('device/reserved/', 'DeviceController@openReserved')->name('device.open_reserved');
     
     Route::get('user/charge/', 'UserController@openCharge')->name('user.charge.open');

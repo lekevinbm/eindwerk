@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Http\Requests\CreateReportFormRequest;
 
 class HomeController extends Controller
 {
@@ -34,6 +35,10 @@ class HomeController extends Controller
     }
 
     public function problem(){
+        return view('front.home.other.problem');
+    }
+
+    public function reportProblem(CreateReportFormRequest $request){
         return view('front.home.other.problem');
     }
     

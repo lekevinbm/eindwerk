@@ -140,7 +140,7 @@ main .page-primary-button-section {
 main .page-primary-button-section input {
   background-color: #FF6B6B;
   border: none;
-  margin-top: 10%;
+  margin: 5% 0;
   width: 90%;
   border-radius: 5px;
   color: #F7FFF7;
@@ -200,6 +200,10 @@ label {
 .register-input:focus,
 .register-input:focus {
   outline: none;
+}
+
+.hidden-file-input {
+  display: none;
 }
 
 /*!
@@ -10624,6 +10628,7 @@ body {
   max-height: 100vh;
   max-width: 100vw;
   font-family: 'Montserrat', sans-serif;
+  background-color: #e9e8e8;
 }
 
 html .btn-primary,
@@ -10953,11 +10958,15 @@ body main #home-page #reserved-devices .reserved-device .reserved-device-informa
 html main #home-page .app-block,
 body main #home-page .app-block {
   text-align: center;
-  padding: 10% 0 0 0;
   margin: 0;
   width: 100%;
   position: relative;
   color: #F7FFF7;
+}
+
+html main #home-page .app-block.app-block-5,
+body main #home-page .app-block.app-block-5 {
+  height: 16vh;
 }
 
 html main #home-page .app-block.app-block-4,
@@ -10997,10 +11006,16 @@ body main #home-page .app-block.white-block {
   color: #434343;
 }
 
+html main #home-page .app-block.block-margin,
+body main #home-page .app-block.block-margin {
+  margin-top: 1%;
+}
+
 html main #home-page .app-block .app-block-icon,
 body main #home-page .app-block .app-block-icon {
+  padding: 10% 0 0 0;
   text-align: center;
-  width: 40%;
+  width: 30%;
 }
 
 html main #home-page .app-block .app-block-icon img,
@@ -11013,10 +11028,25 @@ body main #home-page .app-block .app-block-icon i {
   font-size: 2em;
 }
 
+html main #home-page .app-block .app-block-icon .delete-image-cross,
+body main #home-page .app-block .app-block-icon .delete-image-cross {
+  position: absolute;
+  top: 5%;
+  left: 20%;
+  color: #FF6B6B;
+  display: none;
+}
+
+html main #home-page .app-block .app-block-icon .delete-image-cross.active,
+body main #home-page .app-block .app-block-icon .delete-image-cross.active {
+  display: block;
+}
+
 html main #home-page .app-block .app-block-text,
 html main #home-page .app-block .app-block-right,
 body main #home-page .app-block .app-block-text,
 body main #home-page .app-block .app-block-right {
+  padding: 10% 0 0 0;
   font-size: 2em;
   font-weight: 500;
   text-align: center;
@@ -11031,7 +11061,7 @@ body main #home-page .app-block .app-block-right.normal-text {
 
 html main #home-page .app-block .app-block-text,
 body main #home-page .app-block .app-block-text {
-  width: 40%;
+  width: 50%;
 }
 
 html main #home-page .app-block .app-block-right,
@@ -11045,6 +11075,23 @@ body main #home-page .app-text-row {
   color: #434343;
   padding: 2% 0 0 0;
   margin: 1% 0 0 0;
+}
+
+html main #home-page .app-text-row label,
+body main #home-page .app-text-row label {
+  color: #434343;
+  font-size: 1.0em;
+}
+
+html main #home-page .app-text-row.full,
+body main #home-page .app-text-row.full {
+  padding: 2% 5%;
+}
+
+html main #home-page .app-text-row.full textarea,
+body main #home-page .app-text-row.full textarea {
+  width: 100%;
+  background-color: #e9e8e8;
 }
 
 html main #home-page .app-text-row .app-text-row-symbol-begin,
@@ -11106,7 +11153,7 @@ html main #home-page .choose-section,
 body main #home-page #credit-charge-amount-section,
 body main #home-page .choose-section {
   margin-top: 1%;
-  padding-top: 5%;
+  padding: 5% 0;
   text-align: center;
   background-color: #F7FFF7;
 }
@@ -11137,12 +11184,19 @@ body main #home-page .choose-section .choose-section-row div {
   width: 33%;
 }
 
+html main #home-page .choose-section .payment-methode-row div.choose-option-4,
+html main #home-page .choose-section .choose-section-row div.choose-option-4,
+body main #home-page .choose-section .payment-methode-row div.choose-option-4,
+body main #home-page .choose-section .choose-section-row div.choose-option-4 {
+  width: 50%;
+}
+
 html main #home-page .choose-section .payment-methode-row div label,
 html main #home-page .choose-section .choose-section-row div label,
 body main #home-page .choose-section .payment-methode-row div label,
 body main #home-page .choose-section .choose-section-row div label {
   color: #434343;
-  font-size: 1.4em;
+  font-size: 1.2em;
 }
 
 html main #home-page .choose-section .payment-methode-row div .pay-method-img,
