@@ -5,6 +5,7 @@
   width: 100%;
   border: none;
   border-bottom: 1px solid #F7FFF7 !important;
+  margin-bottom: 5%;
 }
 
 .login-input::-webkit-input-placeholder,
@@ -72,6 +73,7 @@
   background-color: #F7FFF7 !important;
   width: 100%;
   border: none;
+  border-bottom: 1px solid #e9e8e8;
 }
 
 .app-input::-webkit-input-placeholder {
@@ -141,6 +143,7 @@ main .page-primary-button-section input {
   background-color: #FF6B6B;
   border: none;
   margin: 5% 0;
+  padding: 2%;
   width: 90%;
   border-radius: 5px;
   color: #F7FFF7;
@@ -169,6 +172,7 @@ label {
   border: 1px solid;
   border-radius: 25px;
   margin-bottom: 25px;
+  padding: 5% 0;
 }
 
 #login-button-section #login-button:active,
@@ -204,6 +208,73 @@ label {
 
 .hidden-file-input {
   display: none;
+}
+
+/* The switch - the box around the slider */
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+
+.switch input {
+  display: none;
+}
+
+/* The slider */
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #F7FFF7;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #FF6B6B;
+}
+
+input:focus + .slider {
+  -webkit-box-shadow: 0 0 1px #FF6B6B;
+          box-shadow: 0 0 1px #FF6B6B;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+
+.slider.round {
+  border-radius: 34px;
+  height: 28px;
+  width: 55px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
 }
 
 #slide-page-1 {
@@ -283,6 +354,50 @@ label {
     right: 0;
     display: block;
   }
+}
+
+.message-modal .modal-dialog {
+  margin: 50%;
+}
+
+.message-modal .modal-dialog .modal-content {
+  height: 50vh;
+  width: 80vw;
+  margin: 20% 1%;
+  padding-top: 5%;
+  text-align: center;
+}
+
+.message-modal .modal-dialog .modal-content .message-icon img {
+  width: 25%;
+}
+
+.message-modal .modal-dialog .modal-content .device-type-number {
+  font-weight: 500;
+  color: #FF6B6B;
+  margin-top: 5%;
+  margin-bottom: -5%;
+  font-size: 1.3em;
+}
+
+.message-modal .modal-dialog .modal-content .page-primary-button-section {
+  position: absolute;
+  width: 90%;
+  bottom: 0;
+}
+
+.message-modal .modal-dialog .modal-content .switch-row {
+  margin-top: 5%;
+  font-weight: 500;
+}
+
+.message-modal .modal-dialog .modal-content .switch-row .switch-label {
+  width: 70%;
+  padding-top: 1%;
+}
+
+.message-modal .modal-dialog .modal-content .switch-row .switch-block {
+  width: 30%;
 }
 
 /*!
@@ -10716,16 +10831,41 @@ body .btn-primary {
   border: none;
 }
 
+html *:focus,
+html *:hover,
+html *:active,
+html *:visited,
+body *:focus,
+body *:hover,
+body *:active,
+body *:visited {
+  outline: none;
+}
+
 html h1,
 body h1 {
-  font-size: 2.0em;
-  margin: 25px 0;
+  font-size: 1.5em;
+  margin: 5% 3%;
+}
+
+html a,
+html a:hover,
+html a:active,
+html a:visited,
+html a:focus,
+body a,
+body a:hover,
+body a:active,
+body a:visited,
+body a:focus {
+  text-decoration: none;
+  outline: none;
 }
 
 html .row,
 body .row {
-  margin: 0 !important;
-  padding: 0 !important;
+  margin: 0;
+  padding: 0;
 }
 
 html .close-page-btn,
@@ -10780,7 +10920,7 @@ body #menu_modal .modal-dialog .modal-content a {
 html #menu_modal .modal-dialog .modal-content #menu-footer,
 body #menu_modal .modal-dialog .modal-content #menu-footer {
   color: #F7FFF7;
-  margin: 50% 0;
+  margin: 50% 0 !important;
   font-weight: 500;
 }
 
@@ -10788,6 +10928,7 @@ html #menu_modal .modal-dialog .modal-content #menu-footer .col,
 body #menu_modal .modal-dialog .modal-content #menu-footer .col {
   height: 100%;
   margin: 0;
+  padding: 0 5%;
 }
 
 html #menu_modal .modal-dialog .modal-content #menu-footer .col img,
@@ -10798,7 +10939,9 @@ body #menu_modal .modal-dialog .modal-content #menu-footer .col img {
 html #menu_modal .modal-dialog .modal-content #menu-footer .col .menu-footer-text,
 body #menu_modal .modal-dialog .modal-content #menu-footer .col .menu-footer-text {
   font-size: 0.8em;
-  line-height: 1.6;
+  line-height: 1.3;
+  display: inline-block;
+  margin-top: 5%;
 }
 
 html #guest-main,
@@ -10890,7 +11033,7 @@ body main #home-page #saldo-section {
   color: #F7FFF7;
   width: 100%;
   height: 25%;
-  padding-top: 10%;
+  padding: 8% 0;
   font-weight: 500;
 }
 
@@ -10916,7 +11059,7 @@ body main #home-page #top-page-section {
   text-align: center;
   background-color: #FF6B6B;
   color: #F7FFF7;
-  padding-top: 5%;
+  padding-top: 6%;
 }
 
 html main #home-page #top-page-section #title,
@@ -10944,7 +11087,7 @@ body main #home-page .device-square {
   width: 33vw;
   margin: 0.16vw;
   text-align: center;
-  padding-top: 2%;
+  padding-top: 5%;
   font-size: 3em;
   font-weight: 500;
   position: relative;
@@ -10959,7 +11102,6 @@ body main #home-page .device-square.unoccupied {
 html main #home-page .device-square.unoccupied .time-box,
 body main #home-page .device-square.unoccupied .time-box {
   background-color: #50BF70;
-  border-top: 3px solid #45A561;
 }
 
 html main #home-page .device-square.occupied,
@@ -10971,19 +11113,18 @@ body main #home-page .device-square.occupied {
 html main #home-page .device-square.occupied .time-box,
 body main #home-page .device-square.occupied .time-box {
   background-color: #BF9E50;
-  border-top: 3px solid #A58945;
 }
 
 html main #home-page .device-square.out-of-service,
 body main #home-page .device-square.out-of-service {
   background-color: #FF6B6B;
   color: #A54545;
+  opacity: 0.6;
 }
 
 html main #home-page .device-square.out-of-service .time-box,
 body main #home-page .device-square.out-of-service .time-box {
   background-color: #BF5050;
-  border-top: 3px solid #A54545;
 }
 
 html main #home-page .device-square .time-box,
@@ -11193,7 +11334,7 @@ body main #home-page .app-block.transparant-block {
 
 html main #home-page .app-block.block-margin,
 body main #home-page .app-block.block-margin {
-  margin-top: 1%;
+  margin-top: 1% !important;
 }
 
 html main #home-page .app-block.non-active,
@@ -11305,7 +11446,7 @@ body main #home-page .app-block .app-block-icon img {
 
 html main #home-page .app-block .app-block-icon i,
 body main #home-page .app-block .app-block-icon i {
-  font-size: 2em;
+  font-size: 2.4em;
 }
 
 html main #home-page .app-block .app-block-icon .delete-image-cross,
@@ -11358,7 +11499,7 @@ html main #home-page .app-text-row,
 body main #home-page .app-text-row {
   background-color: #F7FFF7;
   color: #434343;
-  padding: 2% 0 0 0;
+  padding: 3% 0;
   margin: 1% 0 0 0;
 }
 
@@ -11376,6 +11517,11 @@ html main #home-page .app-text-row label,
 body main #home-page .app-text-row label {
   color: #434343;
   font-size: 1.0em;
+}
+
+html main #home-page .app-text-row .bold-label,
+body main #home-page .app-text-row .bold-label {
+  font-weight: 500;
 }
 
 html main #home-page .app-text-row.full,
@@ -11411,6 +11557,13 @@ body main #home-page .app-text-row .app-text-row-title.charge-date {
   padding-top: 2%;
 }
 
+html main #home-page .app-text-row .app-text-row-title.form-label,
+body main #home-page .app-text-row .app-text-row-title.form-label {
+  padding-top: 1%;
+  width: 45%;
+  font-weight: 500;
+}
+
 html main #home-page .app-text-row .app-text-row-value,
 body main #home-page .app-text-row .app-text-row-value {
   text-align: right;
@@ -11425,14 +11578,14 @@ body main #home-page .app-text-row .app-text-row-tab {
 
 html main #home-page .app-text-row .app-text-row-tab .faq-carret,
 body main #home-page .app-text-row .app-text-row-tab .faq-carret {
-  width: 5%;
+  width: 15%;
+  text-align: center;
 }
 
 html main #home-page .app-text-row .app-text-row-tab .app-text-row-tab-text,
 body main #home-page .app-text-row .app-text-row-tab .app-text-row-tab-text {
-  width: 95%;
+  width: 85%;
   font-weight: 500;
-  padding-left: 5%;
 }
 
 html main #home-page .app-text-row .app-text-row-tab-value,
@@ -11449,6 +11602,13 @@ body main #home-page .app-text-row .app-text-row-large {
   padding-left: 5%;
 }
 
+html main #home-page .app-text-row .app-text-row-extra-large,
+body main #home-page .app-text-row .app-text-row-extra-large {
+  width: 90%;
+  padding-left: 5%;
+  padding-top: 1%;
+}
+
 html main #home-page .app-text-row .app-text-row-large-value,
 body main #home-page .app-text-row .app-text-row-large-value {
   width: 20%;
@@ -11458,7 +11618,7 @@ body main #home-page .app-text-row .app-text-row-large-value {
 html main #home-page .app-text-row .app-text-row-large-end,
 body main #home-page .app-text-row .app-text-row-large-end {
   width: 10%;
-  padding-top: 2%;
+  padding-top: 1%;
 }
 
 html main #home-page #credit-charge-amount-section,
@@ -11530,8 +11690,6 @@ body main #home-page #reserve-device-btn {
   border-radius: 100%;
   background-color: #FF6B6B;
   text-align: center;
-  -webkit-box-shadow: 1px 3px #434343;
-          box-shadow: 1px 3px #434343;
 }
 
 html main #home-page #reserve-device-btn i,

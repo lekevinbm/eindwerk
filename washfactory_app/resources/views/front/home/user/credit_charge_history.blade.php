@@ -11,7 +11,7 @@
                 <div class="row app-text-row">           
                     <div class="app-text-row-title charge-date">{{date('j/n/y', strtotime($charge->created_at))}}</div>
                     <div class="app-text-row-value">
-                    <span>&euro; {{number_format($charge->amount,2,',',' ')}}</span><br>
+                    <span>+ &euro; {{number_format($charge->amount,2,',',' ')}}</span><br>
                     {{$charge->method}} 
                     </div>
                 </div>

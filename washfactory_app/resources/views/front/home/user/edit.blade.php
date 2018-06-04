@@ -9,15 +9,15 @@
             </div>
             <div id="page-content">
                 <div id="edit-personal-info-page-activator" class="row app-text-row page-slide-activator">           
-                    <div class="app-text-row-title">Persoonlijke info wijzigen</div>
-                    <div class="app-text-row-value">
-                    <i class="fas fa-angle-right"></i>
+                    <div class="app-text-row-extra-large">Persoonlijke info wijzigen</div>
+                    <div class="app-text-row-large-end">
+                        <i class="fas fa-angle-right"></i>
                     </div>
                 </div>
                 <div id="edit-password-page-activator" class="row app-text-row page-slide-activator">           
-                    <div class="app-text-row-title">Wachtwoord wijzigen</div>
-                    <div class="app-text-row-value">
-                    <i class="fas fa-angle-right"></i>
+                    <div class="app-text-row-extra-large">Wachtwoord wijzigen</div>
+                    <div class="app-text-row-large-end">
+                        <i class="fas fa-angle-right"></i>
                     </div>
                 </div>
             </div>
@@ -32,49 +32,49 @@
                 <form method="post" action="{{route('user.update')}}">
                     @csrf
                     <div class="row app-text-row">           
-                        <div class="app-text-row-title">Voornaam</div>
+                        <div class="app-text-row-title form-label">Voornaam</div>
                         <div class="app-text-row-value">
                             <input type="text" class="app-input" name="firstname" value="{{Auth::user()->firstname}}">
                         </div>
                     </div>
                     <div class="row app-text-row">           
-                        <div class="app-text-row-title">Achternaam</div>
+                        <div class="app-text-row-title form-label">Achternaam</div>
                         <div class="app-text-row-value">
                             <input type="text" class="app-input" name="lastname" value="{{Auth::user()->lastname}}">
                         </div>
                     </div>
                     <div class="row app-text-row">           
-                        <div class="app-text-row-title">Email</div>
+                        <div class="app-text-row-title form-label">Email</div>
                         <div class="app-text-row-value">
                             <input type="email" class="app-input" name="email" value="{{Auth::user()->email}}">
                         </div>
                     </div>
                     <div class="row app-text-row">           
-                        <div class="app-text-row-title">Geboortedatum</div>
+                        <div class="app-text-row-title form-label">Geboortedatum</div>
                         <div class="app-text-row-value">
                             <input type="text" class="app-input" name="date_of_birth" value="{{Auth::user()->date_of_birth}}">
                         </div>
                     </div>
                     <div class="row app-text-row">           
-                        <div class="app-text-row-title">Straatnaam</div>
+                        <div class="app-text-row-title form-label">Straatnaam</div>
                         <div class="app-text-row-value">
                             <input type="text" class="app-input" name="street_name" value="{{Auth::user()->street_name}}">
                         </div>
                     </div>
                     <div class="row app-text-row">           
-                        <div class="app-text-row-title">Nummer</div>
+                        <div class="app-text-row-title form-label">Nummer</div>
                         <div class="app-text-row-value">
                             <input type="text" class="app-input" name="street_number" value="{{Auth::user()->street_number}}">
                         </div>
                     </div>
                     <div class="row app-text-row">           
-                        <div class="app-text-row-title">Postcode</div>
+                        <div class="app-text-row-title form-label">Postcode</div>
                         <div class="app-text-row-value">
                             <input type="text" class="app-input" name="postcode" value="{{Auth::user()->postcode}}">
                         </div>
                     </div>
                     <div class="row app-text-row">           
-                        <div class="app-text-row-title">Stad</div>
+                        <div class="app-text-row-title form-label">Stad</div>
                         <div class="app-text-row-value">
                             <input type="text" class="app-input" name="city" value="{{Auth::user()->city}}">
                         </div>
@@ -95,20 +95,20 @@
                 <form method="post" action="{{route('user.password.update')}}">
                     @csrf
                     <div class="row app-text-row">           
-                        <div class="app-text-row-title">Uw oud wachtwoord</div>
-                        <div class="app-text-row-value">
+                        <div class="app-text-row-extra-large bold-label">Uw oud wachtwoord</div>
+                        <div class="app-text-row-extra-large">
                             <input type="password" class="app-input" name="old_password">
                         </div>
                     </div>
                     <div class="row app-text-row">           
-                        <div class="app-text-row-title">Uw nieuw wachtwoord</div>
-                        <div class="app-text-row-value">
+                        <div class="app-text-row-extra-large bold-label">Uw nieuw wachtwoord</div>
+                        <div class="app-text-row-extra-large">
                             <input type="password" class="app-input" name="password">
                         </div>
                     </div>
                     <div class="row app-text-row">           
-                        <div class="app-text-row-title">Bevestig uw nieuw wachtwoord</div>
-                        <div class="app-text-row-value">
+                        <div class="app-text-row-extra-large bold-label">Bevestig uw nieuw wachtwoord</div>
+                        <div class="app-text-row-extra-large">
                             <input type="password" class="app-input" name="password_confirmation">
                         </div>
                     </div>

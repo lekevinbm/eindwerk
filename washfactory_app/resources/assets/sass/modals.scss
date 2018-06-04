@@ -1,0 +1,44 @@
+.message-modal{
+    .modal-dialog{
+        margin: 50%;
+
+        .modal-content{
+            height: 50vh;
+            width: 80vw;
+            margin: 20% 1%;
+            padding-top: 5%;
+            text-align: center;
+
+            .message-icon img{
+                width: 25%;
+            }
+
+            .device-type-number{
+                font-weight: 500;
+                color: $pink;
+                margin-top: 5%;
+                margin-bottom: -5%;
+                font-size: 1.3em;
+            }
+            .page-primary-button-section{
+                position: absolute;
+                width: 90%;
+                bottom: 0;
+            }
+
+            .switch-row{
+                margin-top: 5%;
+                font-weight: 500;
+                .switch-label{
+                    width: 70%;
+                    padding-top: 1%;
+                }
+                .switch-block{
+                    width: 30%;
+                }
+            }
+            
+        }
+    }
+    
+}

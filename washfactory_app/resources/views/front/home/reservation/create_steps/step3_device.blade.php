@@ -4,38 +4,44 @@
     <div id="home-page">
         <div id="slide-page-1">
             <div id="top-page-section">
-                <a id="back-btn" href="{{route('home')}}"><i class="fas fa-angle-left"></i></a>            
+                <a id="back-btn" href="{{route('reservation.create.step2_type')}}"><i class="fas fa-angle-left"></i></a>            
                 <span id="title">Kies uw toestel</span>
             </div>
             <div id="page-content">
-                <div class="row">
-                    <div class="device-square unoccupied">
-                        2
+                <div class="row">                    
+                    <div class="device-square unoccupied" data-toggle="modal" data-target="#confirm_modal">
                         <div class="time-box">vrij</div>
-                    </div>
-                    <div class="device-square unoccupied">
-                        4
-                        <div class="time-box">vrij</div>
-                    </div>
-                    <div class="device-square occupied">
-                        1
+                        2                        
+                    </div>                
+                
+                    <div class="device-square unoccupied" data-toggle="modal" data-target="#confirm_modal">
+                    <div class="time-box">vrij</div>
+                        4                        
+                    </div>                
+                
+                    <div class="device-square occupied" data-toggle="modal" data-target="#confirm_modal">
                         <div class="time-box"><i class="far fa-clock"></i> 7:34</div>
-                    </div>
-                    <div class="device-square occupied">
-                        3
+                        1                        
+                    </div>                
+                
+                    <div class="device-square occupied" data-toggle="modal" data-target="#confirm_modal">
                         <div class="time-box"><i class="far fa-clock"></i> 11:28</div>
+                        3                        
                     </div>
-                    <div class="device-square occupied">
-                        6
+                
+                    <div class="device-square occupied" data-toggle="modal" data-target="#confirm_modal">
                         <div class="time-box"><i class="far fa-clock"></i> 22:27</div>
-                    </div>
+                        6                        
+                    </div>                
+                
                     <div class="device-square out-of-service">
-                        5
                         <div class="time-box">Buiten gebruik</div>
-                    </div>
+                        5                        
+                    </div>                    
                 </div>
 
             </div>
         </div>
     </div>
+    @include('front.home.reservation.modals.confirm')
 @endsection

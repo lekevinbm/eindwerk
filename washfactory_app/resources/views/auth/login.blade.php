@@ -2,7 +2,7 @@
 
 @section('content')
 
-<div id="login-page" class="container app-page">
+<div id="login-page" class="app-page">
     <img id="logo" src="{{ asset('img/logo-white.png') }}" alt="Logo of washfactory in white">
     <div class="row justify-content-center">
         <div class="col-md-6">
@@ -51,7 +51,7 @@
                     <div id="register-button-section" class="col">
                         Nog geen account?
                         <a class="register-link" href="{{ route('register') }}">
-                            <strong>{{ __('Account aanmaken') }}</strong>
+                            <strong>{!! __('Account&nbsp;aanmaken') !!}</strong>
                         </a>                        
                     </div>
                 </div>

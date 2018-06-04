@@ -22,7 +22,9 @@ Route::group(['middleware' => ['auth']], function () {
     Route::post('problem/report/','HomeController@reportProblem')->name('problem.report');
 
     Route::get('reservation/create/step1', 'ReservationController@createStep1Location')->name('reservation.create.step1_location');
+    Route::get('reservation/create/step2', 'ReservationController@createStep2Type')->name('reservation.create.step2_type');
     Route::get('reservation/create/step3', 'ReservationController@createStep3Device')->name('reservation.create.step3_device');
+    Route::get('reservation/create/step4', 'ReservationController@createStep4Confirm')->name('reservation.create.step4_confirm');
     Route::get('reservation/open', 'ReservationController@open')->name('reservation.open');
     
     Route::get('user/charge/', 'UserController@openCharge')->name('user.charge.open');
