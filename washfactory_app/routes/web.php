@@ -21,8 +21,9 @@ Route::group(['middleware' => ['auth']], function () {
     Route::get('problem','HomeController@problem')->name('problem');
     Route::post('problem/report/','HomeController@reportProblem')->name('problem.report');
 
-    Route::get('reservation/create', 'ReservationController@create')->name('reservation.create');
-    Route::get('device/reserved/', 'DeviceController@openReserved')->name('device.open_reserved');
+    Route::get('reservation/create/step1', 'ReservationController@createStep1Location')->name('reservation.create.step1_location');
+    Route::get('reservation/create/step3', 'ReservationController@createStep3Device')->name('reservation.create.step3_device');
+    Route::get('reservation/open', 'ReservationController@open')->name('reservation.open');
     
     Route::get('user/charge/', 'UserController@openCharge')->name('user.charge.open');
     Route::post('user/charge/', 'UserController@charge')->name('user.charge.create');

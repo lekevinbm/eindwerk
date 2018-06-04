@@ -6,6 +6,8 @@
  */
 
 require('./bootstrap');
+require('./gmap3.min');
 require('./components/pages');
 require('./components/forms');
 require('./components/tabs');
+require('./components/maps');

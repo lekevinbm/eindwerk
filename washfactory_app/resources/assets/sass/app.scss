@@ -9,6 +9,9 @@
 // Forms
 @import "forms";
 
+//pages
+@import "pages";
+
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 html,body{
@@ -29,6 +32,11 @@ html,body{
   h1{
     font-size: 2.0em;
     margin: 25px 0;
+  }
+  
+  .row{
+    margin: 0 !important;
+    padding: 0 !important;
   }
 
   .close-page-btn{
@@ -190,6 +198,58 @@ html,body{
       #page-content{
         position: relative;
         padding: 10vh 0;
+        min-height: 90vh;
+      }
+
+      .device-square{
+        height:33vw;
+        width: 33vw;
+        margin:0.16vw;
+        text-align: center;
+        padding-top: 2%;
+        font-size: 3em;
+        font-weight: 500;
+        position: relative;
+
+        &.unoccupied{
+          background-color:$green;
+          color: #45A561;
+          .time-box{
+            background-color:#50BF70;
+            border-top: 3px solid #45A561;
+          }
+        }
+        &.occupied{
+          background-color:$orange;
+          color: #A58945;
+          .time-box{
+            background-color: #BF9E50;
+            border-top: 3px solid #A58945;
+          }
+        }
+        &.out-of-service{
+          background-color:$pink;
+          color:#A54545;
+          .time-box{
+            background-color: #BF5050;
+            border-top: 3px solid #A54545;
+          }
+        }
+
+        .time-box{
+          color:
+          $white;
+          position: absolute;
+          bottom: 0;
+          width:100%;
+          font-weight: 400;
+          font-size: 0.3em;
+          height: 25%;
+          padding-top: 3%;
+          
+        }
+
+
       }
 
       #top-open-reserved-wasmachine,#top-open-reserved-dryer{
@@ -276,6 +336,12 @@ html,body{
         position: relative;
         color:$white;
 
+        &.app-block-8{
+          height: 10vh;
+        }
+        &.app-block-6{
+          height: 13.33vh;
+        }
         &.app-block-5{
           height: 16vh;
         }
@@ -284,6 +350,23 @@ html,body{
         }
         &.app-block-3{
           height: 26.6vh;
+        }
+        &.app-block-2{
+          height: 40vh;
+
+          a{
+            text-decoration: none;
+          }
+
+          .big-text{
+            text-align: right;
+            padding-top: 15%;
+            font-weight: 500;
+            font-size: 1.5em;
+            .device-info{
+              font-size: 0.8em;
+            }
+          }
         }
         &.light-blue-block{
           background-color: $light-blue;
@@ -302,9 +385,94 @@ html,body{
           background-color: $white;
           color: $gray-text;
         }
+        &.transparant-block{
+          background-color: $gray-background;
+          color: $gray-text;
+        }
         &.block-margin{
           margin-top: 1%;
         }
+        &.non-active{
+          display:none;
+        }
+
+        &.wasmachine-background-img{
+          background: $light-blue url("/img/devices/wm-blue-cut.png") no-repeat left;
+          background-size: auto 90%;
+        }
+
+        &.dryer-background-img{
+          background: $yellow url("/img/devices/dry-yellow-cut.png") no-repeat left;
+          background-size: auto 90%;
+        }
+
+        &#laundry-room-map.large{
+          position: absolute !important;
+          height: 64vh;
+          margin-top: 10vh;
+          top: 0;
+          z-index: 2;
+        }
+
+        &.hide-large-map-block{
+          position: absolute;
+          bottom:0;
+        }
+      
+        .step-block{
+          font-size: 1.2em;
+          font-weight: 500;
+          color: $gray-text;
+          padding-top: 7%;
+          z-index:1;
+
+          &.step-block-3{
+            width: 33.33%;
+          }
+          .step-number-box{
+            border-radius: 100%;
+            background-color: $gray-background;
+            margin:0 auto;
+            width: 40px;
+            height: 40px;
+            display: inline-block;
+
+            &.active{
+              background-color: $light-blue;
+              color: $white;
+            }
+
+            .step-number{
+              display: inline-block;
+              vertical-align: middle;
+              padding-top: 15%;              
+            }
+          }
+          
+          
+        }
+        .step-bar{
+          width: 33%;
+          height: 8%;            
+          background-color: #e9e8e8;
+          position: absolute;            
+          z-index: 0;
+
+          &.active{
+            background-color: $pink;
+          }
+
+          &#step-bar-1{
+            left: 20%;
+            top: 50%;
+          }
+
+          &#step-bar-2{
+            right: 20%;
+            top: 50%;
+          }
+
+        }   
 
         .app-block-icon{          
           padding: 10% 0 0 0;
@@ -341,11 +509,14 @@ html,body{
         }
 
         .app-block-text{
-          width: 50%;
+          width: 55%;
         }
 
         .app-block-right{
-          width: 20%;
+          width: 15%;
+          &.big-icon-block{
+            padding-top: 25%;
+          }
         }
         
       }
@@ -355,6 +526,13 @@ html,body{
         color: $gray-text;
         padding: 2% 0 0 0;
         margin: 1% 0 0 0;
+
+        .big-text{
+          font-weight: 500;
+        }
+        .small-text{
+          font-size:0.8em;
+        }
 
         label{
           color:$gray-text;
@@ -405,6 +583,20 @@ html,body{
           width: 100%;
           padding: 5% 10%;
         }
+
+        .app-text-row-large{
+          width: 70%;
+          padding-left: 5%;
+        }
+        .app-text-row-large-value{
+          width: 20%;
+          padding-top: 2%;
+        }
+        .app-text-row-large-end{
+          width: 10%;
+          padding-top: 2%;
+        }
+        
       }
 
       #credit-charge-amount-section,.choose-section{
@@ -453,61 +645,16 @@ html,body{
         width: 60px;
         height: 60px;
         border-radius: 100%;
-        color: $white;
         background-color: $pink;
         text-align:center;
         box-shadow: 1px 3px $gray-text;
 
         i{
           margin-top:25%;
+          color: $white;
         }        
       }
 
-      #slide-page-1{
-        width: 100%;
-        height: 100%;
-        position: relative;
-        &.non-active-top-slide{
-          position: absolute;
-          -webkit-animation: non-active-top-slide-page 0.5s forwards;
-          -webkit-animation-delay: 0s;
-          animation: non-active-top-slide-page 0.5s forwards;
-          animation-delay: 0s;
-        }
-
-        @-webkit-keyframes non-active-top-slide-page {
-          100% { left: -100%; }
-        }
-        
-        @keyframes non-active-top-slide-page {
-            100% { left: -100%; }
-        }
-      }
-
-      .slide-page{
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        right: -100%;
-        display:none;
-
-        &.active-child-slide{
-          display:block;
-          -webkit-animation: active-child-slide-page 0.5s forwards;
-          -webkit-animation-delay: 0s;
-          animation: active-child-slide-page 0.5s forwards;
-          animation-delay: 0s;
-        }
-
-        @-webkit-keyframes active-child-slide-page {
-          100% { right: 0; }
-        }
-        
-        @keyframes active-child-slide-page {
-            100% { right: 0; }
-        }
-      }
-      
     }
   }
 
@@ -521,6 +668,7 @@ html,body{
     background-color: $white!important;
     font-weight: 400!important;
     font-size: 0.8em!important;
+    border-top: 0.018px solid $gray-background;
     #navbar-row{
       width: 100%;
       height: 100%;
