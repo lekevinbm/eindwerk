@@ -3,17 +3,14 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500');
 
-// Variables
+
 @import "variables";
-
-// Forms
 @import "forms";
-
-//pages
 @import "pages";
-
-//pages
 @import "modals";
+@import "open_reservation";
+@import "admin";
+
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
@@ -57,6 +54,7 @@ html,body{
   #menu-btn,#back-btn{
     position: absolute;
     left: 5%;
+    cursor: pointer;
   }
 
   .app-page{
@@ -224,6 +222,7 @@ html,body{
         font-size: 3em;
         font-weight: 500;
         position: relative;
+        cursor: pointer;
 
         &.unoccupied{
           background-color:$green;

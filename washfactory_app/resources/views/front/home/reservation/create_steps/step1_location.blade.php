@@ -30,3 +30,7 @@
         </div>        
     </div>
 @endsection
+
+@section('scripts')
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJiNEPVy4xA5KcdWT-XvXjqjXoIL22m0Y" async defer></script>
+@endsection

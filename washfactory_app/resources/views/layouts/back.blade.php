@@ -8,7 +8,7 @@
         <!-- CSRF Token -->
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <title>{{ config('app.name', 'Washfactory') }}</title>
+        <title>{{ config('app.name', 'Wasfactory Admin') }}</title>
         <!-- Fonts -->
         <link rel="dns-prefetch" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600" rel="stylesheet" type="text/css">
@@ -17,33 +17,24 @@
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     </head>
-    <body>
+    <body id="admin-body">
+        <nav id="admin-nav">
+            <div id="logo-section">
+                <img src="{{asset('img/logo-white.png')}}" alt="Logo of Washfactory">
+            </div>
+            <div id="nav-links">
+                <a class="nav-link" href="{{route('admin.devices')}}">Toestellen</a>
+                <a class="nav-link" href="{{route('admin.locations')}}">Locaties</a>
+                <a class="nav-link" href="{{route('admin.users')}}">Gebruikers</a>
+                <a class="nav-link" href="#">Tips & Tricks</a>
+            </div>
+            
+        </nav>
         <main>
             @yield('content')
         </main>
-        <nav class="navbar align-items-center fixed-bottom">
-            <div id="navbar-row" class="row">
-                <a class="col align-items-center" href="{{route('home')}}">
-                    <i class="fas fa-home fa-2x"></i><br>
-                    Home
-                </a>
-                <a class="col align-items-center" href="#">
-                    <i class="fas fa-tachometer-alt fa-2x"></i><br>
-                    Programma's
-                </a>
-                <a class="col align-items-center" href="#">
-                    <i class="fas fa-shopping-cart fa-2x"></i><br>
-                    Shop
-                </a>
-                <a class="col align-items-center" href="#">
-                    <i class="fas fa-lightbulb fa-2x"></i><br>
-                    Tips & tricks
-                </a>
-
-            </div>
-        </nav>
+       
         <script src="{{ asset('js/app.js') }}" defer></script>
         @yield('scripts')
     </body>    
 </html>
-@include('front.modals.menu')

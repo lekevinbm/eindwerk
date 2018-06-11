@@ -8,14 +8,14 @@
             <a href="{{route('user.charge.open')}}">Opladen <i class="fas fa-angle-right"></i></a>
         </div>
         <div id="reserved-devices">
-            <a class="row reserved-device" href="{{ route('reservation.open') }}">
+            <a class="row reserved-device" href="{{ route('reservation.open','link=countdown') }}">
                 <div class="wash-reserved-device-number">15</div>
                 <div class="reserved-device-information">
                     <span class="reserved-device-status done">Gereed</span><br>
                     <span class="reserved-device-extra-information">Ledig het toestel</span>
                 </div>
             </a>
-            <a class="row reserved-device" href="{{ route('reservation.open') }}">
+            <a class="row reserved-device" href="{{ route('reservation.open','link=ready') }}">
                 <div class="wash-reserved-device-number">14</div>
                 <div class="reserved-device-information">
                     <span class="reserved-device-status in-use">5:30</span><br>

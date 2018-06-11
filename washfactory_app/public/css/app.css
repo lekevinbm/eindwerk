@@ -357,7 +357,8 @@ input:checked + .slider:before {
 }
 
 .message-modal .modal-dialog {
-  margin: 50%;
+  margin: 25vw 10vw;
+  width: 100%;
 }
 
 .message-modal .modal-dialog .modal-content {
@@ -398,6 +399,164 @@ input:checked + .slider:before {
 
 .message-modal .modal-dialog .modal-content .switch-row .switch-block {
   width: 30%;
+}
+
+.open-reservation {
+  background-color: #FF6B6B;
+  text-align: center;
+  color: #F7FFF7;
+}
+
+.open-reservation .time-status {
+  font-size: 5em;
+}
+
+.open-reservation .time-status-extra {
+  font-size: 1.2em;
+  margin-bottom: 10%;
+}
+
+.open-reservation .device-info-section .device-info-title {
+  font-size: 0.8em;
+}
+
+.open-reservation .device-info-section .device-info-value {
+  font-size: 3em;
+}
+
+.open-reservation .device-info-section .device-info-value img {
+  width: 30%;
+}
+
+.open-reservation .device-info-section .device-info-value.location {
+  font-size: 0.8em;
+}
+
+.open-reservation #play-device-btn.active,
+.open-reservation #stop-device-btn.active,
+.open-reservation .open-device-icon.active,
+.open-reservation #cancel-reservation-btn.active {
+  display: inline-block;
+}
+
+.open-reservation #play-device-btn.deactivated,
+.open-reservation #stop-device-btn.deactivated,
+.open-reservation .open-device-icon.deactivated,
+.open-reservation #cancel-reservation-btn.deactivated {
+  display: none;
+}
+
+.open-reservation #play-device-btn.locked,
+.open-reservation #stop-device-btn.locked,
+.open-reservation .open-device-icon.locked,
+.open-reservation #cancel-reservation-btn.locked {
+  display: inline-block;
+  opacity: 0.5;
+}
+
+.open-reservation #play-stop-row {
+  margin-top: 10%;
+  position: absolute;
+  bottom: 20%;
+  width: 100%;
+}
+
+.open-reservation .open-reservation-bottom {
+  margin-top: 10%;
+  position: absolute;
+  bottom: 5%;
+  width: 100%;
+}
+
+.open-reservation .open-reservation-bottom .open-device-icon {
+  width: 20%;
+}
+
+.open-reservation .open-reservation-bottom .open-device-icon img {
+  width: 50%;
+}
+
+.open-reservation .open-reservation-bottom #cancel-reservation-btn {
+  width: 50%;
+}
+
+#admin-body #admin-nav {
+  height: 100%;
+  width: 15%;
+  background-color: #FF6B6B;
+  float: left;
+  position: fixed;
+}
+
+#admin-body #admin-nav #logo-section {
+  width: 100%;
+  margin: 15% 0;
+  text-align: center;
+}
+
+#admin-body #admin-nav #logo-section img {
+  width: 75%;
+}
+
+#admin-body #admin-nav #nav-links {
+  text-decoration: none;
+  color: #F7FFF7;
+  padding-left: 10%;
+}
+
+#admin-body #admin-nav #nav-links .nav-link {
+  color: #F7FFF7;
+  font-size: 1.2em;
+}
+
+#admin-body main {
+  background-color: #F7FFF7;
+  width: 85%;
+  float: right;
+  padding: 2% 5%;
+  min-height: 100%;
+}
+
+#admin-body main h1 {
+  margin: 2% 0;
+  font-size: 2.25rem !important;
+}
+
+#admin-body main .index-primary-btn-row {
+  text-align: right;
+  margin: 2% 0;
+}
+
+#admin-body main form .form-group {
+  margin: 2% 0;
+}
+
+#admin-body main form .form-group label {
+  color: #434343;
+}
+
+#admin-body main form .form-group input {
+  border-color: #e9e8e8;
+}
+
+#admin-body main .activation-status.active {
+  background-color: #6BFF95;
+}
+
+#admin-body main .activation-status.out-of-service {
+  background-color: #FF6B6B;
+}
+
+#admin-body main .activation-status.non-active {
+  background-color: #ffd36b;
+}
+
+#admin-body .btn-primary:focus,
+#admin-body .btn-primary:hover,
+#admin-body .btn-primary:active,
+#admin-body .btn-primary:visited {
+  background-color: #FF6B6B;
+  border-color: #FF6B6B;
 }
 
 /*!
@@ -10879,6 +11038,7 @@ body #menu-btn,
 body #back-btn {
   position: absolute;
   left: 5%;
+  cursor: pointer;
 }
 
 html .app-page,
@@ -11091,6 +11251,7 @@ body main #home-page .device-square {
   font-size: 3em;
   font-weight: 500;
   position: relative;
+  cursor: pointer;
 }
 
 html main #home-page .device-square.unoccupied,

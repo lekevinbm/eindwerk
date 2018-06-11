@@ -45,3 +45,11 @@
     </div>
     @include('front.home.reservation.modals.confirm')
 @endsection
+@section('scripts')
+<script>/*
+$('.device-square.unoccupied').click(function(){
+    $('#confirm_modal').modal('show');
+})*/
+
+<script>
+@endsection

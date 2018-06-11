@@ -1,0 +1,78 @@
+#admin-body{
+    #admin-nav{
+        height: 100%;
+        width: 15%;
+        background-color: $pink;
+        float: left;
+        position: fixed;
+
+        #logo-section{
+            width: 100%;
+            margin: 15% 0;
+            text-align:center;
+            img{
+                width:75%;
+            }
+        }
+
+        #nav-links{
+            text-decoration: none;
+            color: $white;
+            padding-left: 10%;
+
+            .nav-link{
+                color:$white;
+                font-size: 1.2em;
+            }
+        }
+    }
+
+    main{
+        background-color: $white;
+        width: 85%;
+        float: right;
+        padding: 2% 5%;
+        min-height: 100%;
+
+        h1{
+            margin: 2% 0;
+            font-size: 2.25rem !important;
+        }
+
+        .index-primary-btn-row{
+            text-align: right;
+            margin: 2% 0;
+        }
+        
+        form{
+            .form-group{
+                margin: 2% 0;
+                label{
+                    color:$gray-text;
+                }
+    
+                input{
+                    border-color: $gray-background;
+                }
+            }
+            
+        }
+
+        .activation-status{
+            &.active{
+                background-color: $green;
+            }
+            &.out-of-service{
+                background-color: $pink;
+            }
+            &.non-active{
+                background-color: $orange;
+            }
+        }
+    }
+
+    .btn-primary:focus,.btn-primary:hover,.btn-primary:active,.btn-primary:visited,{
+        background-color: $pink;
+        border-color: $pink;
+    }
+}

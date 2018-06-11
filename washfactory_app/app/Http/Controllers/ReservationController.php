@@ -6,8 +6,15 @@ use Illuminate\Http\Request;
 
 class ReservationController extends Controller
 {
-    public function open(){
-        return view('front.home.reservation.open');
+    public function open(Request $request){
+        $link = "";
+        if($request->link)
+        {
+            $link= $request->link;
+        }
+        return view('front.home.reservation.open',[
+            'link' => $link
+        ]);
     }
     public function createStep1Location(){
         return view('front.home.reservation.create_steps.step1_location');

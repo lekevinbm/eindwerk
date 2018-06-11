@@ -20,9 +20,8 @@ class CreateDevicesTable extends Migration
             $table->string('brand');
             $table->string('manufacturer_code');
             $table->text('description')->nullable();     
-            $table->string('qr_code');
             $table->string('activation_status');
-            $table->string('task_status');
+            $table->string('task_status')->default('unoccupied');
             $table->integer('location_id')->unsigned();
             $table->timestamps();
             $table->softDeletes();
