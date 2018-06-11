@@ -31,7 +31,7 @@ class DeviceController extends Controller
      */
     public function create()
     {
-        $locations = Location::all();
+        $locations = Location::all()->sortBy('name');;
         return view('back.devices.create',[
             'locations' => $locations
         ]);
@@ -45,15 +45,41 @@ class DeviceController extends Controller
      */
     public function store(CreateDeviceFormRequest $request)
     {
+        $location = Location::find($request->location);
+        $location_code = $location->location_code;
+        if($request->type == 'wash'){
+            $foundAFreeCodeName = false;
+            $amount = $location->washing_machines->count() + 1;
+            while(!$foundAFreeCodeName){
+                $code_name = 'WM-'.$location_code.'-'.$amount;
+                $deviceWithSameCode = Device::where('code_name',$code_name)->first();
+                if($deviceWithSameCode){         
+                    $amount--;
+                }else{
+                    $foundAFreeCodeName = true;
+                }
+            }
+        }else{
+            $foundAFreeCodeName = false;
+            $amount = $location->dryers->count() + 1;
+            while(!$foundAFreeCodeName){
+                $code_name = 'DRY-'.$location_code.'-'.$amount;
+                $deviceWithSameCode = Device::where('code_name',$code_name)->first();
+                if($deviceWithSameCode){         
+                    $amount--;
+                }else{
+                    $foundAFreeCodeName = true;
+                }
+            }
+        }
         Device::create([
             'type' => $request->type,
-            'code_name' => $request->code_name,
+            'code_name' => $code_name,
             'brand' => $request->brand,
             'manufacturer_code' => $request->manufacturer_code,
             'activation_status' => $request->activation_status,
             'task_status' => 'unoccupied',
             'location_id' => $request->location,
-            'qr_code' => 'unknown'
         ]);
 
         return redirect()->route('admin.devices');
@@ -67,7 +93,7 @@ class DeviceController extends Controller
      */
     public function edit(Device $device)
     {
-        $locations = Location::all();
+        $locations = Location::all()->sortBy('name');
         return view('back.devices.edit',[
             'device' => $device,
             'locations' => $locations
@@ -83,12 +109,43 @@ class DeviceController extends Controller
      */
     public function update(UpdateDeviceFormRequest $request, Device $device)
     {
+        $location = Location::find($request->location);
+        $location_id = $request->location;
+        $location_code = $location->location_code;
+        if($device->location_id != $location_id || $device->type != $request->type){
+            if($request->type == 'wash'){
+                $foundAFreeCodeName = false;
+                $amount = $location->washing_machines->count() + 1;
+                while(!$foundAFreeCodeName){             
+                    $code_name = 'WM-'.$location_code.'-'.$amount;
+                    $deviceWithSameCode = Device::where('code_name',$code_name)->first();
+                    if($deviceWithSameCode){         
+                        $amount--;
+                    }else{
+                        $foundAFreeCodeName = true;
+                    }
+                }
+            }else{
+                $foundAFreeCodeName = false;
+                $amount = $location->dryers->count() + 1;
+                while(!$foundAFreeCodeName){      
+                    $code_name = 'DRY-'.$location_code.'-'.$amount;
+                    $deviceWithSameCode = Device::where('code_name',$code_name)->first();
+                    if($deviceWithSameCode){         
+                        $amount--;
+                    }else{
+                        $foundAFreeCodeName = true;
+                    }
+                }
+            }
+        }
+
         $device->type = $request->type;
-        $device->code_name = $request->code_name;
         $device->brand = $request->brand;
         $device->manufacturer_code = $request->manufacturer_code;
         $device->activation_status = $request->activation_status;
-        $device->location_id = $request->location;
+        $device->location_id = $location_id;
+        $device->code_name = $code_name;
         $device->save();
 
         return redirect()->route('admin.devices');

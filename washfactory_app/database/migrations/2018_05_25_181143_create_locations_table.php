@@ -20,7 +20,8 @@ class CreateLocationsTable extends Migration
             $table->string('street_number');
             $table->string('postcode');
             $table->string('city');
-            $table->text('description')->nullable();
+            $table->string('location_code');
+            $table->text('description')->nullable();            
             $table->timestamps();
             $table->softDeletes();
             

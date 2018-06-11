@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class CreateDeviceFormRequest extends FormRequest
+class CreateArticleFormRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -24,11 +24,10 @@ class CreateDeviceFormRequest extends FormRequest
     public function rules()
     {
         return [
-            'type' => 'required|in:wash,dry',
-            'brand' => 'required|string|max:191',
-            'manufacturer_code' => 'required|string|max:191',
-            'activation_status' => 'required|in:active,out-of-service,non-active|max:191',
-            'location' => 'required|numeric|exists:locations,id',
+            'title' => 'required|string|max:191',
+            'content' => 'required|string|max:191',
+            'publication_status' => 'required|in:online,offline',
+            'image' => 'required|image|max:10000'
         ];
     }
 }

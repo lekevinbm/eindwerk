@@ -75,6 +75,20 @@
         </div>
 
         <div class="form-group row">
+            <label for="location_code" class="col-md-5 col-form-label text-md-right">Locatiecode*</label>
+
+            <div class="col-md-4">
+                <input id="location_code" type="text" class="form-control{{ $errors->has('location_code') ? ' is-invalid' : '' }}" name="location_code" value="{{ $location->location_code }}" required autofocus>
+
+                @if ($errors->has('location_code'))
+                    <span class="invalid-feedback">
+                        <strong>{{ $errors->first('location_code') }}</strong>
+                    </span>
+                @endif
+            </div>
+        </div>
+
+        <div class="form-group row">
             <label for="description" class="col-md-5 col-form-label text-md-right">Beschrijving</label>
 
             <div class="col-md-4">

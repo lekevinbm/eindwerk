@@ -3,6 +3,7 @@
 namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Validation\Rule;
 
 class UpdateLocationFormRequest extends FormRequest
 {
@@ -23,13 +24,15 @@ class UpdateLocationFormRequest extends FormRequest
      */
     public function rules()
     {
+        $location = $this->route('location');
         return [
             'name' => 'required|string|max:191',
             'street_name' => 'required|string|max:191',
             'street_number' => 'required|string|max:191',
             'postcode' => 'required|string|max:191',
             'city' => 'required|string|max:191',
-            'description' => 'nullable|string|max:191'
+            'location_code' => ['required','string','max:191',Rule::unique('locations')->ignore($location->id)],
+            'description' => 'nullable|string|max:191',            
         ];
     }
 }

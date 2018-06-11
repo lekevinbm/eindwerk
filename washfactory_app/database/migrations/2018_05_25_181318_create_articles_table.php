@@ -19,6 +19,7 @@ class CreateArticlesTable extends Migration
             $table->text('content');
             $table->string('image')->nullable();
             $table->string('video_link')->nullable();
+            $table->date('publication_date')->nullable();
             $table->timestamps();
             $table->softDeletes();
         });

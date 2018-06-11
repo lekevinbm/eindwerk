@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Back;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\UpdateBackUserFormRequest;
+use Spatie\Permission\Models\Role;
 use App\User;
 
 class UserController extends Controller
@@ -31,8 +32,10 @@ class UserController extends Controller
      */
     public function edit(User $user)
     {
+        $roles = Role::all();
         return view('back.users.edit',[
-            'user' => $user
+            'user' => $user,
+            'roles' => $roles
         ]);
     }
 
@@ -53,6 +56,7 @@ class UserController extends Controller
         $user->postcode = $request->postcode;
         $user->city = $request->city;
         $user->save();
+        $user->syncRoles([$request->role]);
 
         return redirect()->route('admin.users');
     }

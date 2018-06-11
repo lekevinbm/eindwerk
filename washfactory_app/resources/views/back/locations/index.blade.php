@@ -10,6 +10,7 @@
             <table class="table">
                 <thead>
                     <tr>
+                        <th scope="col">Locatiecode</th>
                         <th scope="col">Naam</th>
                         <th scope="col">Adres</th>
                         <th scope="col">Stad</th>
@@ -21,6 +22,7 @@
                 <tbody>
                     @foreach($locations as $key => $location)
                         <tr>
+                            <td>{{$location->location_code}}</td>
                             <td>{{$location->name}}</td>
                             <td>{{$location->street_name}} {{$location->street_number}}</td>
                             <td>{{$location->city}} ({{$location->postcode}})</td>

@@ -29,6 +29,7 @@ class CreateLocationFormRequest extends FormRequest
             'street_number' => 'required|string|max:191',
             'postcode' => 'required|string|max:191',
             'city' => 'required|string|max:191',
+            'location_code' => 'required|string|max:191|unique:locations',
             'description' => 'nullable|string|max:191'
         ];
     }

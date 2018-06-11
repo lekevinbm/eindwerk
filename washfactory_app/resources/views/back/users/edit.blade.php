@@ -101,6 +101,24 @@
                 @endif
             </div>
         </div>
+        <div class="form-group row">
+            <label for="role" class="col-md-5 col-form-label text-md-right">Rol</label>
+            <div class="col-md-4">
+                <select id="role" class="form-control{{ $errors->has('rol') ? ' is-invalid' : '' }}" name="role">
+                    <option selected disabled>Kies een rol</option>
+                    @foreach($roles as $key => $role)
+                        <option value="{{$role->name}}" {{ $user->getRoleNames()->first() == $role->name ? 'selected' : '' }}>{{$role->name}}</option>
+                    @endforeach
+                </select>
+
+                @if ($errors->has('role'))
+                    <span class="invalid-feedback">
+                        <strong>{{ $errors->first('role') }}</strong>
+                    </span>
+                @endif
+            </div>
+            
+        </div>
 
 
         <div class="form-group row mb-0">

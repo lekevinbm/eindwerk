@@ -26,7 +26,7 @@
                 <a class="nav-link" href="{{route('admin.devices')}}">Toestellen</a>
                 <a class="nav-link" href="{{route('admin.locations')}}">Locaties</a>
                 <a class="nav-link" href="{{route('admin.users')}}">Gebruikers</a>
-                <a class="nav-link" href="#">Tips & Tricks</a>
+                <a class="nav-link" href="{{route('admin.articles')}}">Tips & Tricks</a>
             </div>
             
         </nav>

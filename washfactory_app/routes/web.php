@@ -53,5 +53,12 @@ Route::group(['middleware' => ['auth']], function () {
         Route::get('admin/users/{user}/edit', 'Back\UserController@edit')->name('admin.users.edit');
         Route::put('admin/users/{user}', 'Back\UserController@update')->name('admin.users.update');
         Route::delete('admin/users/{user}', 'Back\UserController@destroy')->name('admin.users.destroy');
+
+        Route::get('admin/articles', 'Back\ArticleController@index')->name('admin.articles');
+        Route::get('admin/articles/create', 'Back\ArticleController@create')->name('admin.articles.create');
+        Route::post('admin/articles/store', 'Back\ArticleController@store')->name('admin.articles.store');
+        Route::get('admin/articles/{article}/edit', 'Back\ArticleController@edit')->name('admin.articles.edit');
+        Route::put('admin/articles/{article}', 'Back\ArticleController@update')->name('admin.articles.update');
+        Route::delete('admin/articles/{article}', 'Back\ArticleController@destroy')->name('admin.articles.destroy');
     });
 });

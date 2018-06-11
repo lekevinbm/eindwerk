@@ -25,7 +25,6 @@ class UpdateDeviceFormRequest extends FormRequest
     {
         return [
             'type' => 'required|in:wash,dry',
-            'code_name' => 'required|string|max:191',
             'brand' => 'required|string|max:191',
             'manufacturer_code' => 'required|string|max:191',
             'activation_status' => 'required|in:active,out-of-service,non-active|max:191',

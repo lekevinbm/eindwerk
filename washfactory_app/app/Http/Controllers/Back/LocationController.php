@@ -43,13 +43,16 @@ class LocationController extends Controller
      */
     public function store(CreateLocationFormRequest $request)
     {
+        //dd($request->location_code);
         Location::create([
             'name' => $request->name,
             'street_name' => $request->street_name,
             'street_number' => $request->street_number,
             'postcode' => $request->postcode,
             'city' => $request->city,
+            'location_code' => $request->location_code,
             'description' => $request->description,
+            
         ]);
         return redirect()->route('admin.locations');
     }
@@ -80,8 +83,9 @@ class LocationController extends Controller
         $location->street_name = $request->street_name;
         $location->street_number = $request->street_number;
         $location->postcode = $request->postcode;
-        $location->postcode = $request->city;
-        $location->postcode = $request->description;
+        $location->city = $request->city;
+        $location->description = $request->description;
+        $location->location_code = $request->location_code;
         $location->save();
 
         return redirect()->route('admin.locations');

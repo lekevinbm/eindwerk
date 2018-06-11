@@ -33,7 +33,8 @@ class UpdateUserFormRequest extends FormRequest
             'street_name' => 'required|string|max:255',
             'street_number' => 'required|string|max:10',
             'postcode' => 'required|string|max:10',
-            'city' => 'required|string|max:255'
+            'city' => 'required|string|max:255',
+            'role' => 'required|string|in:Administrator,User',
         ];
     }
 }

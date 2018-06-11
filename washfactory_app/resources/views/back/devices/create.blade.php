@@ -28,19 +28,6 @@
                 @endif
             </div>
         </div>
-        <div class="form-group row">
-            <label for="code_name" class="col-md-5 col-form-label text-md-right">Toestelcode</label>
-
-            <div class="col-md-4">
-                <input id="code_name" type="text" class="form-control{{ $errors->has('code_name') ? ' is-invalid' : '' }}" name="code_name" value="{{ old('code_name') }}" required autofocus>
-
-                @if ($errors->has('code_name'))
-                    <span class="invalid-feedback">
-                        <strong>{{ $errors->first('code_name') }}</strong>
-                    </span>
-                @endif
-            </div>
-        </div>
 
         <div class="form-group row">
             <label for="brand" class="col-md-5 col-form-label text-md-right">Merk</label>
