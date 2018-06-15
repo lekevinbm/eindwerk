@@ -14,25 +14,30 @@
 Auth::routes();
 
 Route::group(['middleware' => ['auth']], function () {
-    Route::get('/', 'HomeController@index')->name('home');
+    Route::get('/', 'Front\ReservationController@index')->name('home');
 
-    Route::get('faq','HomeController@faq')->name('faq');
-    Route::get('contact','HomeController@contact')->name('contact');
-    Route::get('problem','HomeController@problem')->name('problem');
-    Route::post('problem/report/','HomeController@reportProblem')->name('problem.report');
+    Route::get('faq','Front\HomeController@faq')->name('faq');
+    Route::get('contact','Front\HomeController@contact')->name('contact');
+    Route::get('problem','Front\HomeController@problem')->name('problem');
+    Route::post('problem/report/','Front\HomeController@reportProblem')->name('problem.report');
 
-    Route::get('reservation/create/step1', 'ReservationController@createStep1Location')->name('reservation.create.step1_location');
-    Route::get('reservation/create/step2', 'ReservationController@createStep2Type')->name('reservation.create.step2_type');
-    Route::get('reservation/create/step3', 'ReservationController@createStep3Device')->name('reservation.create.step3_device');
-    Route::get('reservation/create/step4', 'ReservationController@createStep4Confirm')->name('reservation.create.step4_confirm');
-    Route::get('reservation/open', 'ReservationController@open')->name('reservation.open');
-    
-    Route::get('user/charge/', 'UserController@openCharge')->name('user.charge.open');
-    Route::post('user/charge/', 'UserController@charge')->name('user.charge.create');
-    Route::get('user/charge/history', 'UserController@chargeHistory')->name('user.charge.history');
-    Route::get('user/edit/', 'UserController@edit')->name('user.edit');
-    Route::post('user/update/', 'UserController@update')->name('user.update');
-    Route::post('user/password/update', 'UserController@updatePassword')->name('user.password.update');
+    //Reservation 
+    Route::get('reservation/create/step1', 'Front\ReservationController@createStep1Location')->name('reservation.create.step1_location');
+    Route::get('reservation/create/step2', 'Front\ReservationController@createStep2Type')->name('reservation.create.step2_type');
+    Route::get('reservation/create/step3', 'Front\ReservationController@createStep3Device')->name('reservation.create.step3_device');
+    Route::get('reservation/create/step4', 'Front\ReservationController@createStep4Confirm')->name('reservation.create.step4_confirm');
+    Route::get('reservation/open', 'Front\ReservationController@open')->name('reservation.open');
+
+    //Location
+    Route::get('locations/getall', 'Front\LocationController@getAll')->name('reservation.getall');
+
+    Route::get('user/charge/', 'Front\UserController@openCharge')->name('user.charge.open');
+    Route::post('user/charge/', 'Front\UserController@charge')->name('user.charge.create');
+    Route::get('user/charge/history', 'Front\UserController@chargeHistory')->name('user.charge.history');
+    Route::get('user/edit/', 'Front\UserController@edit')->name('user.edit');
+    Route::post('user/update/', 'Front\UserController@update')->name('user.update');
+    Route::post('user/password/update', 'Front\UserController@updatePassword')->name('user.password.update');
+    Route::get('user/getaddress', 'Front\UserController@getAddress')->name('user.getAddress');
 
     Route::group(['middleware' => ['role:Administrator']], function () {
         Route::get('admin/devices', 'Back\DeviceController@index')->name('admin.devices');

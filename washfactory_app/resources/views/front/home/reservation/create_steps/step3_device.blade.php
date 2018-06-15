@@ -4,40 +4,31 @@
     <div id="home-page">
         <div id="slide-page-1">
             <div id="top-page-section">
-                <a id="back-btn" href="{{route('reservation.create.step2_type')}}"><i class="fas fa-angle-left"></i></a>            
+                <a id="back-btn" href="{{route('reservation.create.step2_type',['location='.$location->id])}}"><i class="fas fa-angle-left"></i></a>            
                 <span id="title">Kies uw toestel</span>
             </div>
             <div id="page-content">
-                <div class="row">                    
-                    <div class="device-square unoccupied" data-toggle="modal" data-target="#confirm_modal">
-                        <div class="time-box">vrij</div>
-                        2                        
-                    </div>                
+                <div class="row">
+                    @foreach($devices->where('task_status','unoccupied')->where('activation_status','active') as $device)
+                        <div class="device-square unoccupied" data-toggle="modal" data-target="#confirm_modal">
+                            <div class="time-box">vrij</div>
+                            {{explode('-',$device->code_name)[2]}}                    
+                        </div>
+                    @endforeach          
+
+                    @foreach($devices->where('task_status','occupied')->where('activation_status','active') as $device)
+                        <div class="device-square occupied" data-toggle="modal" data-target="#confirm_modal">
+                            <div class="time-box"><i class="far fa-clock"></i> 7:34</div>
+                            {{explode('-',$device->code_name)[2]}}                        
+                        </div>
+                    @endforeach            
                 
-                    <div class="device-square unoccupied" data-toggle="modal" data-target="#confirm_modal">
-                    <div class="time-box">vrij</div>
-                        4                        
-                    </div>                
-                
-                    <div class="device-square occupied" data-toggle="modal" data-target="#confirm_modal">
-                        <div class="time-box"><i class="far fa-clock"></i> 7:34</div>
-                        1                        
-                    </div>                
-                
-                    <div class="device-square occupied" data-toggle="modal" data-target="#confirm_modal">
-                        <div class="time-box"><i class="far fa-clock"></i> 11:28</div>
-                        3                        
-                    </div>
-                
-                    <div class="device-square occupied" data-toggle="modal" data-target="#confirm_modal">
-                        <div class="time-box"><i class="far fa-clock"></i> 22:27</div>
-                        6                        
-                    </div>                
-                
-                    <div class="device-square out-of-service">
-                        <div class="time-box">Buiten gebruik</div>
-                        5                        
-                    </div>                    
+                    @foreach($devices->where('activation_status','out-of-service') as $device)
+                        <div class="device-square out-of-service">
+                            <div class="time-box">Buiten gebruik</div>
+                            {{explode('-',$device->code_name)[2]}}
+                        </div>
+                    @endforeach                  
                 </div>
 
             </div>

@@ -1,8 +1,9 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Front;
 
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 use App\Http\Requests\CreditFormRequest;
 use App\Http\Requests\UpdateUserFormRequest;
 use App\Http\Requests\UpdatePasswordFormRequest;
@@ -63,5 +64,10 @@ class UserController extends Controller
         $user->save();
         
         return view('front.home.user.edit');
+    }
+
+    public function getAddress(){
+        
+        return Auth::user()->street_name.' '.Auth::user()->street_number.', '.Auth::user()->postcode.' '.Auth::user()->city.', België';
     }
 }
