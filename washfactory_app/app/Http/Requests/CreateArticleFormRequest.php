@@ -25,7 +25,7 @@ class CreateArticleFormRequest extends FormRequest
     {
         return [
             'title' => 'required|string|max:191',
-            'content' => 'required|string|max:191',
+            'content' => 'required|string',
             'publication_status' => 'required|in:online,offline',
             'image' => 'required|image|max:10000'
         ];

@@ -10,14 +10,14 @@
             <div id="page-content">
                 <div class="row">
                     @foreach($devices->where('task_status','unoccupied')->where('activation_status','active') as $device)
-                        <div class="device-square unoccupied" data-toggle="modal" data-target="#confirm_modal">
+                        <div id="device-{{$device->id}}" class="device-square unoccupied" data-toggle="modal" data-target="#confirm_modal">
                             <div class="time-box">vrij</div>
                             {{explode('-',$device->code_name)[2]}}                    
                         </div>
                     @endforeach          
 
                     @foreach($devices->where('task_status','occupied')->where('activation_status','active') as $device)
-                        <div class="device-square occupied" data-toggle="modal" data-target="#confirm_modal">
+                        <div id="device-{{$device->id}}" class="device-square occupied" data-toggle="modal" data-target="#confirm_modal">
                             <div class="time-box"><i class="far fa-clock"></i> 7:34</div>
                             {{explode('-',$device->code_name)[2]}}                        
                         </div>

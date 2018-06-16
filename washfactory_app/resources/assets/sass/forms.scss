@@ -109,8 +109,10 @@ label{
         margin-bottom: 25px;
         padding: 5% 0;
     }
-    #login-button:active,.register-btn:active,#login-button:focus,.register-btn:target,#login-button:focus,.register-btn:target{
-        background-color: $pink;
+    #login-button:active,.register-btn:active,#login-button:focus,.register-btn:target,#login-button:focus,.register-btn:target,#login-button:visited,.register-btn:visited,#login-button:hover,.register-btn:hover{
+        background-color: $pink!important;
+        outline: none !important;
+        box-shadow: none!important;
     }
 }
 

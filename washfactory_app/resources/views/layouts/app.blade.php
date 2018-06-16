@@ -3,7 +3,8 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1,minimum-scale=1,user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
 
         <!-- CSRF Token -->
         <meta name="csrf-token" content="{{ csrf_token() }}">
@@ -30,15 +31,15 @@
                 <a class="col align-items-center" href="#">
                     <i class="fas fa-tachometer-alt fa-2x"></i><br>
                     Programma's
-                </a>
-                <a class="col align-items-center" href="#">
-                    <i class="fas fa-shopping-cart fa-2x"></i><br>
-                    Shop
-                </a>
-                <a class="col align-items-center" href="#">
+                </a>                
+                <a class="col align-items-center" href="{{route('articles.index')}}">
                     <i class="fas fa-lightbulb fa-2x"></i><br>
                     Tips & tricks
                 </a>
+                <div class="col align-items-center" data-toggle="modal" data-target="#menu_modal">
+                    <i class="fas fa-cog fa-2x"></i><br>
+                    Instellingen
+                </div>
 
             </div>
         </nav>

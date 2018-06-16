@@ -41,7 +41,7 @@
 
         <div id="problem-device-page" class="slide-page">
             <div id="top-page-section">
-            <a id="back-btn" href="{{route('problem')}}"><i class="fas fa-angle-left"></i></a>
+                <a id="back-btn" href="{{route('problem')}}"><i class="fas fa-angle-left"></i></a>
                 <span id="title">Toestel probleem melden</span>
             </div>
             <div id="page-content">

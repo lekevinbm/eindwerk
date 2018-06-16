@@ -11,3 +11,4 @@ require('./components/pages');
 require('./components/forms');
 require('./components/tabs');
 require('./components/maps');
+require('./components/modals');

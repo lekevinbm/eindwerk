@@ -181,13 +181,24 @@ label {
 #login-button-section .register-btn:target,
 #login-button-section #login-button:focus,
 #login-button-section .register-btn:target,
+#login-button-section #login-button:visited,
+#login-button-section .register-btn:visited,
+#login-button-section #login-button:hover,
+#login-button-section .register-btn:hover,
 #register-button-section #login-button:active,
 #register-button-section .register-btn:active,
 #register-button-section #login-button:focus,
 #register-button-section .register-btn:target,
 #register-button-section #login-button:focus,
-#register-button-section .register-btn:target {
-  background-color: #FF6B6B;
+#register-button-section .register-btn:target,
+#register-button-section #login-button:visited,
+#register-button-section .register-btn:visited,
+#register-button-section #login-button:hover,
+#register-button-section .register-btn:hover {
+  background-color: #FF6B6B !important;
+  outline: none !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
 }
 
 #register-button-section {
@@ -11041,6 +11052,23 @@ body #back-btn {
   cursor: pointer;
 }
 
+html #favorites-btn,
+body #favorites-btn {
+  position: absolute;
+  right: 5%;
+  cursor: pointer;
+}
+
+html #favorites-btn.save-article-btn,
+body #favorites-btn.save-article-btn {
+  top: 5%;
+}
+
+html #favorites-btn.save-article-btn i,
+body #favorites-btn.save-article-btn i {
+  color: #ffd36b;
+}
+
 html .app-page,
 body .app-page {
   margin: 0;
@@ -11173,7 +11201,9 @@ body main {
 }
 
 html main #home-page,
-body main #home-page {
+html main #articles-page,
+body main #home-page,
+body main #articles-page {
   position: relative;
   width: 100%;
   height: 100%;
@@ -11181,13 +11211,17 @@ body main #home-page {
 }
 
 html main #home-page #contact-section,
-body main #home-page #contact-section {
+html main #articles-page #contact-section,
+body main #home-page #contact-section,
+body main #articles-page #contact-section {
   text-align: center;
   padding-bottom: 5%;
 }
 
 html main #home-page #saldo-section,
-body main #home-page #saldo-section {
+html main #articles-page #saldo-section,
+body main #home-page #saldo-section,
+body main #articles-page #saldo-section {
   text-align: center;
   background-color: #FF6B6B;
   color: #F7FFF7;
@@ -11198,18 +11232,24 @@ body main #home-page #saldo-section {
 }
 
 html main #home-page #saldo-section #saldo,
-body main #home-page #saldo-section #saldo {
+html main #articles-page #saldo-section #saldo,
+body main #home-page #saldo-section #saldo,
+body main #articles-page #saldo-section #saldo {
   font-size: 3em;
 }
 
 html main #home-page #saldo-section a,
-body main #home-page #saldo-section a {
+html main #articles-page #saldo-section a,
+body main #home-page #saldo-section a,
+body main #articles-page #saldo-section a {
   text-decoration: none;
   color: #F7FFF7;
 }
 
 html main #home-page #top-page-section,
-body main #home-page #top-page-section {
+html main #articles-page #top-page-section,
+body main #home-page #top-page-section,
+body main #articles-page #top-page-section {
   position: fixed;
   top: 0;
   left: 0;
@@ -11223,26 +11263,67 @@ body main #home-page #top-page-section {
 }
 
 html main #home-page #top-page-section #title,
-body main #home-page #top-page-section #title {
+html main #articles-page #top-page-section #title,
+body main #home-page #top-page-section #title,
+body main #articles-page #top-page-section #title {
   font-size: 1em;
   font-weight: 500;
 }
 
 html main #home-page #top-page-section a,
-body main #home-page #top-page-section a {
+html main #articles-page #top-page-section a,
+body main #home-page #top-page-section a,
+body main #articles-page #top-page-section a {
   text-decoration: none;
   color: #F7FFF7;
 }
 
 html main #home-page #page-content,
-body main #home-page #page-content {
+html main #articles-page #page-content,
+body main #home-page #page-content,
+body main #articles-page #page-content {
   position: relative;
   padding: 10vh 0;
   min-height: 90vh;
 }
 
+html main #home-page .article-content,
+html main #articles-page .article-content,
+body main #home-page .article-content,
+body main #articles-page .article-content {
+  min-height: 53.4vh;
+  background-color: #F7FFF7;
+  position: relative;
+}
+
+html main #home-page .article-content h1,
+html main #articles-page .article-content h1,
+body main #home-page .article-content h1,
+body main #articles-page .article-content h1 {
+  padding: 0 5%;
+  margin: 0;
+  width: 90%;
+}
+
+html main #home-page .article-content .article-date,
+html main #articles-page .article-content .article-date,
+body main #home-page .article-content .article-date,
+body main #articles-page .article-content .article-date {
+  padding: 5% 0 0 5%;
+}
+
+html main #home-page .article-content .article-content-text,
+html main #articles-page .article-content .article-content-text,
+body main #home-page .article-content .article-content-text,
+body main #articles-page .article-content .article-content-text {
+  padding: 5%;
+  margin: 0;
+}
+
 html main #home-page .device-square,
-body main #home-page .device-square {
+html main #articles-page .device-square,
+body main #home-page .device-square,
+body main #articles-page .device-square {
   height: 33vw;
   width: 33vw;
   margin: 0.16vw;
@@ -11255,41 +11336,55 @@ body main #home-page .device-square {
 }
 
 html main #home-page .device-square.unoccupied,
-body main #home-page .device-square.unoccupied {
+html main #articles-page .device-square.unoccupied,
+body main #home-page .device-square.unoccupied,
+body main #articles-page .device-square.unoccupied {
   background-color: #6BFF95;
   color: #45A561;
 }
 
 html main #home-page .device-square.unoccupied .time-box,
-body main #home-page .device-square.unoccupied .time-box {
+html main #articles-page .device-square.unoccupied .time-box,
+body main #home-page .device-square.unoccupied .time-box,
+body main #articles-page .device-square.unoccupied .time-box {
   background-color: #50BF70;
 }
 
 html main #home-page .device-square.occupied,
-body main #home-page .device-square.occupied {
+html main #articles-page .device-square.occupied,
+body main #home-page .device-square.occupied,
+body main #articles-page .device-square.occupied {
   background-color: #ffd36b;
   color: #A58945;
 }
 
 html main #home-page .device-square.occupied .time-box,
-body main #home-page .device-square.occupied .time-box {
+html main #articles-page .device-square.occupied .time-box,
+body main #home-page .device-square.occupied .time-box,
+body main #articles-page .device-square.occupied .time-box {
   background-color: #BF9E50;
 }
 
 html main #home-page .device-square.out-of-service,
-body main #home-page .device-square.out-of-service {
+html main #articles-page .device-square.out-of-service,
+body main #home-page .device-square.out-of-service,
+body main #articles-page .device-square.out-of-service {
   background-color: #FF6B6B;
   color: #A54545;
   opacity: 0.6;
 }
 
 html main #home-page .device-square.out-of-service .time-box,
-body main #home-page .device-square.out-of-service .time-box {
+html main #articles-page .device-square.out-of-service .time-box,
+body main #home-page .device-square.out-of-service .time-box,
+body main #articles-page .device-square.out-of-service .time-box {
   background-color: #BF5050;
 }
 
 html main #home-page .device-square .time-box,
-body main #home-page .device-square .time-box {
+html main #articles-page .device-square .time-box,
+body main #home-page .device-square .time-box,
+body main #articles-page .device-square .time-box {
   color: #F7FFF7;
   position: absolute;
   bottom: 0;
@@ -11302,8 +11397,12 @@ body main #home-page .device-square .time-box {
 
 html main #home-page #top-open-reserved-wasmachine,
 html main #home-page #top-open-reserved-dryer,
+html main #articles-page #top-open-reserved-wasmachine,
+html main #articles-page #top-open-reserved-dryer,
 body main #home-page #top-open-reserved-wasmachine,
-body main #home-page #top-open-reserved-dryer {
+body main #home-page #top-open-reserved-dryer,
+body main #articles-page #top-open-reserved-wasmachine,
+body main #articles-page #top-open-reserved-dryer {
   height: 30%;
   padding-top: 7%;
   padding-left: 5%;
@@ -11311,8 +11410,12 @@ body main #home-page #top-open-reserved-dryer {
 
 html main #home-page #top-open-reserved-wasmachine .top-reserved-detail,
 html main #home-page #top-open-reserved-dryer .top-reserved-detail,
+html main #articles-page #top-open-reserved-wasmachine .top-reserved-detail,
+html main #articles-page #top-open-reserved-dryer .top-reserved-detail,
 body main #home-page #top-open-reserved-wasmachine .top-reserved-detail,
-body main #home-page #top-open-reserved-dryer .top-reserved-detail {
+body main #home-page #top-open-reserved-dryer .top-reserved-detail,
+body main #articles-page #top-open-reserved-wasmachine .top-reserved-detail,
+body main #articles-page #top-open-reserved-dryer .top-reserved-detail {
   width: 60%;
   color: #fff;
   font-weight: 500;
@@ -11320,31 +11423,43 @@ body main #home-page #top-open-reserved-dryer .top-reserved-detail {
 
 html main #home-page #top-open-reserved-wasmachine .top-reserved-detail .time-left,
 html main #home-page #top-open-reserved-dryer .top-reserved-detail .time-left,
+html main #articles-page #top-open-reserved-wasmachine .top-reserved-detail .time-left,
+html main #articles-page #top-open-reserved-dryer .top-reserved-detail .time-left,
 body main #home-page #top-open-reserved-wasmachine .top-reserved-detail .time-left,
-body main #home-page #top-open-reserved-dryer .top-reserved-detail .time-left {
+body main #home-page #top-open-reserved-dryer .top-reserved-detail .time-left,
+body main #articles-page #top-open-reserved-wasmachine .top-reserved-detail .time-left,
+body main #articles-page #top-open-reserved-dryer .top-reserved-detail .time-left {
   font-size: 3.5em;
 }
 
 html main #home-page #top-open-reserved-wasmachine,
-body main #home-page #top-open-reserved-wasmachine {
+html main #articles-page #top-open-reserved-wasmachine,
+body main #home-page #top-open-reserved-wasmachine,
+body main #articles-page #top-open-reserved-wasmachine {
   background: #4ECDC4 url("/img/devices/wm-big-cut.png") no-repeat right;
   background-size: auto 100%;
 }
 
 html main #home-page #top-open-reserved-dryer,
-body main #home-page #top-open-reserved-dryer {
+html main #articles-page #top-open-reserved-dryer,
+body main #home-page #top-open-reserved-dryer,
+body main #articles-page #top-open-reserved-dryer {
   background: #FFE66D url("/img/devices/dry-big-cut.png") no-repeat right;
   background-size: auto 100%;
 }
 
 html main #home-page #reserved-devices,
-body main #home-page #reserved-devices {
+html main #articles-page #reserved-devices,
+body main #home-page #reserved-devices,
+body main #articles-page #reserved-devices {
   background-color: #e9e8e8;
   overflow-y: hidden;
 }
 
 html main #home-page #reserved-devices .reserved-device,
-body main #home-page #reserved-devices .reserved-device {
+html main #articles-page #reserved-devices .reserved-device,
+body main #home-page #reserved-devices .reserved-device,
+body main #articles-page #reserved-devices .reserved-device {
   background-color: #F7FFF7;
   margin: 1% 0 0 0;
   text-decoration: none;
@@ -11353,8 +11468,12 @@ body main #home-page #reserved-devices .reserved-device {
 
 html main #home-page #reserved-devices .reserved-device .wash-reserved-device-number,
 html main #home-page #reserved-devices .reserved-device .dry-reserved-device-number,
+html main #articles-page #reserved-devices .reserved-device .wash-reserved-device-number,
+html main #articles-page #reserved-devices .reserved-device .dry-reserved-device-number,
 body main #home-page #reserved-devices .reserved-device .wash-reserved-device-number,
-body main #home-page #reserved-devices .reserved-device .dry-reserved-device-number {
+body main #home-page #reserved-devices .reserved-device .dry-reserved-device-number,
+body main #articles-page #reserved-devices .reserved-device .wash-reserved-device-number,
+body main #articles-page #reserved-devices .reserved-device .dry-reserved-device-number {
   width: 16%;
   color: #F7FFF7;
   font-size: 2em;
@@ -11364,47 +11483,63 @@ body main #home-page #reserved-devices .reserved-device .dry-reserved-device-num
 }
 
 html main #home-page #reserved-devices .reserved-device .wash-reserved-device-number,
-body main #home-page #reserved-devices .reserved-device .wash-reserved-device-number {
+html main #articles-page #reserved-devices .reserved-device .wash-reserved-device-number,
+body main #home-page #reserved-devices .reserved-device .wash-reserved-device-number,
+body main #articles-page #reserved-devices .reserved-device .wash-reserved-device-number {
   background: #4ECDC4 url("/img/devices/wm-blue-cut.png") no-repeat left;
   background-size: 90% 90%;
 }
 
 html main #home-page #reserved-devices .reserved-device .dry-reserved-device-number,
-body main #home-page #reserved-devices .reserved-device .dry-reserved-device-number {
+html main #articles-page #reserved-devices .reserved-device .dry-reserved-device-number,
+body main #home-page #reserved-devices .reserved-device .dry-reserved-device-number,
+body main #articles-page #reserved-devices .reserved-device .dry-reserved-device-number {
   background: #FFE66D url("/img/devices/dry-yellow-cut.png") no-repeat left;
   background-size: 90% 90%;
 }
 
 html main #home-page #reserved-devices .reserved-device .reserved-device-information,
-body main #home-page #reserved-devices .reserved-device .reserved-device-information {
+html main #articles-page #reserved-devices .reserved-device .reserved-device-information,
+body main #home-page #reserved-devices .reserved-device .reserved-device-information,
+body main #articles-page #reserved-devices .reserved-device .reserved-device-information {
   width: 80%;
   text-align: right;
   padding-right: 20px;
 }
 
 html main #home-page #reserved-devices .reserved-device .reserved-device-information .reserved-device-status,
-body main #home-page #reserved-devices .reserved-device .reserved-device-information .reserved-device-status {
+html main #articles-page #reserved-devices .reserved-device .reserved-device-information .reserved-device-status,
+body main #home-page #reserved-devices .reserved-device .reserved-device-information .reserved-device-status,
+body main #articles-page #reserved-devices .reserved-device .reserved-device-information .reserved-device-status {
   font-size: 1.5em;
   font-weight: 500;
 }
 
 html main #home-page #reserved-devices .reserved-device .reserved-device-information .reserved-device-status.done,
-body main #home-page #reserved-devices .reserved-device .reserved-device-information .reserved-device-status.done {
+html main #articles-page #reserved-devices .reserved-device .reserved-device-information .reserved-device-status.done,
+body main #home-page #reserved-devices .reserved-device .reserved-device-information .reserved-device-status.done,
+body main #articles-page #reserved-devices .reserved-device .reserved-device-information .reserved-device-status.done {
   color: #6BFF95;
 }
 
 html main #home-page #reserved-devices .reserved-device .reserved-device-information .reserved-device-status.in-use,
-body main #home-page #reserved-devices .reserved-device .reserved-device-information .reserved-device-status.in-use {
+html main #articles-page #reserved-devices .reserved-device .reserved-device-information .reserved-device-status.in-use,
+body main #home-page #reserved-devices .reserved-device .reserved-device-information .reserved-device-status.in-use,
+body main #articles-page #reserved-devices .reserved-device .reserved-device-information .reserved-device-status.in-use {
   color: #ffd36b;
 }
 
 html main #home-page #reserved-devices .reserved-device .reserved-device-information .reserved-device-extra-information,
-body main #home-page #reserved-devices .reserved-device .reserved-device-information .reserved-device-extra-information {
+html main #articles-page #reserved-devices .reserved-device .reserved-device-information .reserved-device-extra-information,
+body main #home-page #reserved-devices .reserved-device .reserved-device-information .reserved-device-extra-information,
+body main #articles-page #reserved-devices .reserved-device .reserved-device-information .reserved-device-extra-information {
   font-size: 1em;
 }
 
 html main #home-page .app-block,
-body main #home-page .app-block {
+html main #articles-page .app-block,
+body main #home-page .app-block,
+body main #articles-page .app-block {
   text-align: center;
   margin: 0;
   width: 100%;
@@ -11413,42 +11548,79 @@ body main #home-page .app-block {
 }
 
 html main #home-page .app-block.app-block-8,
-body main #home-page .app-block.app-block-8 {
+html main #articles-page .app-block.app-block-8,
+body main #home-page .app-block.app-block-8,
+body main #articles-page .app-block.app-block-8 {
   height: 10vh;
 }
 
+html main #home-page .app-block.app-block-8 .app-block-icon,
+html main #articles-page .app-block.app-block-8 .app-block-icon,
+body main #home-page .app-block.app-block-8 .app-block-icon,
+body main #articles-page .app-block.app-block-8 .app-block-icon {
+  padding-top: 5%;
+}
+
+html main #home-page .app-block.app-block-8 .app-block-right,
+html main #articles-page .app-block.app-block-8 .app-block-right,
+body main #home-page .app-block.app-block-8 .app-block-right,
+body main #articles-page .app-block.app-block-8 .app-block-right {
+  padding-top: 3%;
+}
+
+html main #home-page .app-block.app-block-8 .app-block-text,
+html main #articles-page .app-block.app-block-8 .app-block-text,
+body main #home-page .app-block.app-block-8 .app-block-text,
+body main #articles-page .app-block.app-block-8 .app-block-text {
+  padding-top: 6%;
+}
+
 html main #home-page .app-block.app-block-6,
-body main #home-page .app-block.app-block-6 {
+html main #articles-page .app-block.app-block-6,
+body main #home-page .app-block.app-block-6,
+body main #articles-page .app-block.app-block-6 {
   height: 13.33vh;
 }
 
 html main #home-page .app-block.app-block-5,
-body main #home-page .app-block.app-block-5 {
+html main #articles-page .app-block.app-block-5,
+body main #home-page .app-block.app-block-5,
+body main #articles-page .app-block.app-block-5 {
   height: 16vh;
 }
 
 html main #home-page .app-block.app-block-4,
-body main #home-page .app-block.app-block-4 {
+html main #articles-page .app-block.app-block-4,
+body main #home-page .app-block.app-block-4,
+body main #articles-page .app-block.app-block-4 {
   height: 20vh;
 }
 
 html main #home-page .app-block.app-block-3,
-body main #home-page .app-block.app-block-3 {
+html main #articles-page .app-block.app-block-3,
+body main #home-page .app-block.app-block-3,
+body main #articles-page .app-block.app-block-3 {
   height: 26.6vh;
 }
 
 html main #home-page .app-block.app-block-2,
-body main #home-page .app-block.app-block-2 {
+html main #articles-page .app-block.app-block-2,
+body main #home-page .app-block.app-block-2,
+body main #articles-page .app-block.app-block-2 {
   height: 40vh;
 }
 
 html main #home-page .app-block.app-block-2 a,
-body main #home-page .app-block.app-block-2 a {
+html main #articles-page .app-block.app-block-2 a,
+body main #home-page .app-block.app-block-2 a,
+body main #articles-page .app-block.app-block-2 a {
   text-decoration: none;
 }
 
 html main #home-page .app-block.app-block-2 .big-text,
-body main #home-page .app-block.app-block-2 .big-text {
+html main #articles-page .app-block.app-block-2 .big-text,
+body main #home-page .app-block.app-block-2 .big-text,
+body main #articles-page .app-block.app-block-2 .big-text {
   text-align: right;
   padding-top: 15%;
   font-weight: 500;
@@ -11456,67 +11628,91 @@ body main #home-page .app-block.app-block-2 .big-text {
 }
 
 html main #home-page .app-block.app-block-2 .big-text .device-info,
-body main #home-page .app-block.app-block-2 .big-text .device-info {
+html main #articles-page .app-block.app-block-2 .big-text .device-info,
+body main #home-page .app-block.app-block-2 .big-text .device-info,
+body main #articles-page .app-block.app-block-2 .big-text .device-info {
   font-size: 0.8em;
 }
 
 html main #home-page .app-block.light-blue-block,
-body main #home-page .app-block.light-blue-block {
+html main #articles-page .app-block.light-blue-block,
+body main #home-page .app-block.light-blue-block,
+body main #articles-page .app-block.light-blue-block {
   background-color: #4ECDC4;
 }
 
 html main #home-page .app-block.dark-blue-block,
-body main #home-page .app-block.dark-blue-block {
+html main #articles-page .app-block.dark-blue-block,
+body main #home-page .app-block.dark-blue-block,
+body main #articles-page .app-block.dark-blue-block {
   background-color: #1A535C;
 }
 
 html main #home-page .app-block.pink-block,
-body main #home-page .app-block.pink-block {
+html main #articles-page .app-block.pink-block,
+body main #home-page .app-block.pink-block,
+body main #articles-page .app-block.pink-block {
   background-color: #FF6B6B;
 }
 
 html main #home-page .app-block.yellow-block,
-body main #home-page .app-block.yellow-block {
+html main #articles-page .app-block.yellow-block,
+body main #home-page .app-block.yellow-block,
+body main #articles-page .app-block.yellow-block {
   color: #FF6B6B;
   background-color: #FFE66D;
 }
 
 html main #home-page .app-block.white-block,
-body main #home-page .app-block.white-block {
+html main #articles-page .app-block.white-block,
+body main #home-page .app-block.white-block,
+body main #articles-page .app-block.white-block {
   background-color: #F7FFF7;
   color: #434343;
 }
 
 html main #home-page .app-block.transparant-block,
-body main #home-page .app-block.transparant-block {
+html main #articles-page .app-block.transparant-block,
+body main #home-page .app-block.transparant-block,
+body main #articles-page .app-block.transparant-block {
   background-color: #e9e8e8;
   color: #434343;
 }
 
 html main #home-page .app-block.block-margin,
-body main #home-page .app-block.block-margin {
+html main #articles-page .app-block.block-margin,
+body main #home-page .app-block.block-margin,
+body main #articles-page .app-block.block-margin {
   margin-top: 1% !important;
 }
 
 html main #home-page .app-block.non-active,
-body main #home-page .app-block.non-active {
+html main #articles-page .app-block.non-active,
+body main #home-page .app-block.non-active,
+body main #articles-page .app-block.non-active {
   display: none;
 }
 
 html main #home-page .app-block.wasmachine-background-img,
-body main #home-page .app-block.wasmachine-background-img {
+html main #articles-page .app-block.wasmachine-background-img,
+body main #home-page .app-block.wasmachine-background-img,
+body main #articles-page .app-block.wasmachine-background-img {
   background: #4ECDC4 url("/img/devices/wm-blue-cut.png") no-repeat left;
   background-size: auto 90%;
 }
 
 html main #home-page .app-block.dryer-background-img,
-body main #home-page .app-block.dryer-background-img {
+html main #articles-page .app-block.dryer-background-img,
+body main #home-page .app-block.dryer-background-img,
+body main #articles-page .app-block.dryer-background-img {
   background: #FFE66D url("/img/devices/dry-yellow-cut.png") no-repeat left;
   background-size: auto 90%;
 }
 
 html main #home-page .app-block#laundry-room-map.large,
-body main #home-page .app-block#laundry-room-map.large {
+html main #articles-page .app-block#laundry-room-map.large,
+body main #home-page .app-block#laundry-room-map.large,
+body main #articles-page .app-block#laundry-room-map.large {
   position: absolute !important;
   height: 64vh;
   margin-top: 10vh;
@@ -11525,13 +11721,17 @@ body main #home-page .app-block#laundry-room-map.large {
 }
 
 html main #home-page .app-block.hide-large-map-block,
-body main #home-page .app-block.hide-large-map-block {
+html main #articles-page .app-block.hide-large-map-block,
+body main #home-page .app-block.hide-large-map-block,
+body main #articles-page .app-block.hide-large-map-block {
   position: absolute;
   bottom: 0;
 }
 
 html main #home-page .app-block .step-block,
-body main #home-page .app-block .step-block {
+html main #articles-page .app-block .step-block,
+body main #home-page .app-block .step-block,
+body main #articles-page .app-block .step-block {
   font-size: 1.2em;
   font-weight: 500;
   color: #434343;
@@ -11540,12 +11740,16 @@ body main #home-page .app-block .step-block {
 }
 
 html main #home-page .app-block .step-block.step-block-3,
-body main #home-page .app-block .step-block.step-block-3 {
+html main #articles-page .app-block .step-block.step-block-3,
+body main #home-page .app-block .step-block.step-block-3,
+body main #articles-page .app-block .step-block.step-block-3 {
   width: 33.33%;
 }
 
 html main #home-page .app-block .step-block .step-number-box,
-body main #home-page .app-block .step-block .step-number-box {
+html main #articles-page .app-block .step-block .step-number-box,
+body main #home-page .app-block .step-block .step-number-box,
+body main #articles-page .app-block .step-block .step-number-box {
   border-radius: 100%;
   background-color: #e9e8e8;
   margin: 0 auto;
@@ -11555,20 +11759,26 @@ body main #home-page .app-block .step-block .step-number-box {
 }
 
 html main #home-page .app-block .step-block .step-number-box.active,
-body main #home-page .app-block .step-block .step-number-box.active {
+html main #articles-page .app-block .step-block .step-number-box.active,
+body main #home-page .app-block .step-block .step-number-box.active,
+body main #articles-page .app-block .step-block .step-number-box.active {
   background-color: #4ECDC4;
   color: #F7FFF7;
 }
 
 html main #home-page .app-block .step-block .step-number-box .step-number,
-body main #home-page .app-block .step-block .step-number-box .step-number {
+html main #articles-page .app-block .step-block .step-number-box .step-number,
+body main #home-page .app-block .step-block .step-number-box .step-number,
+body main #articles-page .app-block .step-block .step-number-box .step-number {
   display: inline-block;
   vertical-align: middle;
   padding-top: 15%;
 }
 
 html main #home-page .app-block .step-bar,
-body main #home-page .app-block .step-bar {
+html main #articles-page .app-block .step-bar,
+body main #home-page .app-block .step-bar,
+body main #articles-page .app-block .step-bar {
   width: 33%;
   height: 8%;
   background-color: #e9e8e8;
@@ -11577,41 +11787,55 @@ body main #home-page .app-block .step-bar {
 }
 
 html main #home-page .app-block .step-bar.active,
-body main #home-page .app-block .step-bar.active {
+html main #articles-page .app-block .step-bar.active,
+body main #home-page .app-block .step-bar.active,
+body main #articles-page .app-block .step-bar.active {
   background-color: #FF6B6B;
 }
 
 html main #home-page .app-block .step-bar#step-bar-1,
-body main #home-page .app-block .step-bar#step-bar-1 {
+html main #articles-page .app-block .step-bar#step-bar-1,
+body main #home-page .app-block .step-bar#step-bar-1,
+body main #articles-page .app-block .step-bar#step-bar-1 {
   left: 20%;
   top: 50%;
 }
 
 html main #home-page .app-block .step-bar#step-bar-2,
-body main #home-page .app-block .step-bar#step-bar-2 {
+html main #articles-page .app-block .step-bar#step-bar-2,
+body main #home-page .app-block .step-bar#step-bar-2,
+body main #articles-page .app-block .step-bar#step-bar-2 {
   right: 20%;
   top: 50%;
 }
 
 html main #home-page .app-block .app-block-icon,
-body main #home-page .app-block .app-block-icon {
+html main #articles-page .app-block .app-block-icon,
+body main #home-page .app-block .app-block-icon,
+body main #articles-page .app-block .app-block-icon {
   padding: 10% 0 0 0;
   text-align: center;
   width: 30%;
 }
 
 html main #home-page .app-block .app-block-icon img,
-body main #home-page .app-block .app-block-icon img {
+html main #articles-page .app-block .app-block-icon img,
+body main #home-page .app-block .app-block-icon img,
+body main #articles-page .app-block .app-block-icon img {
   height: 50%;
 }
 
 html main #home-page .app-block .app-block-icon i,
-body main #home-page .app-block .app-block-icon i {
+html main #articles-page .app-block .app-block-icon i,
+body main #home-page .app-block .app-block-icon i,
+body main #articles-page .app-block .app-block-icon i {
   font-size: 2.4em;
 }
 
 html main #home-page .app-block .app-block-icon .delete-image-cross,
-body main #home-page .app-block .app-block-icon .delete-image-cross {
+html main #articles-page .app-block .app-block-icon .delete-image-cross,
+body main #home-page .app-block .app-block-icon .delete-image-cross,
+body main #articles-page .app-block .app-block-icon .delete-image-cross {
   position: absolute;
   top: 5%;
   left: 20%;
@@ -11620,14 +11844,20 @@ body main #home-page .app-block .app-block-icon .delete-image-cross {
 }
 
 html main #home-page .app-block .app-block-icon .delete-image-cross.active,
-body main #home-page .app-block .app-block-icon .delete-image-cross.active {
+html main #articles-page .app-block .app-block-icon .delete-image-cross.active,
+body main #home-page .app-block .app-block-icon .delete-image-cross.active,
+body main #articles-page .app-block .app-block-icon .delete-image-cross.active {
   display: block;
 }
 
 html main #home-page .app-block .app-block-text,
 html main #home-page .app-block .app-block-right,
+html main #articles-page .app-block .app-block-text,
+html main #articles-page .app-block .app-block-right,
 body main #home-page .app-block .app-block-text,
-body main #home-page .app-block .app-block-right {
+body main #home-page .app-block .app-block-right,
+body main #articles-page .app-block .app-block-text,
+body main #articles-page .app-block .app-block-right {
   padding: 10% 0 0 0;
   font-size: 2em;
   font-weight: 500;
@@ -11636,28 +11866,87 @@ body main #home-page .app-block .app-block-right {
 
 html main #home-page .app-block .app-block-text.normal-text,
 html main #home-page .app-block .app-block-right.normal-text,
+html main #articles-page .app-block .app-block-text.normal-text,
+html main #articles-page .app-block .app-block-right.normal-text,
 body main #home-page .app-block .app-block-text.normal-text,
-body main #home-page .app-block .app-block-right.normal-text {
+body main #home-page .app-block .app-block-right.normal-text,
+body main #articles-page .app-block .app-block-text.normal-text,
+body main #articles-page .app-block .app-block-right.normal-text {
   font-size: 1em;
 }
 
 html main #home-page .app-block .app-block-text,
-body main #home-page .app-block .app-block-text {
+html main #articles-page .app-block .app-block-text,
+body main #home-page .app-block .app-block-text,
+body main #articles-page .app-block .app-block-text {
   width: 55%;
 }
 
 html main #home-page .app-block .app-block-right,
-body main #home-page .app-block .app-block-right {
+html main #articles-page .app-block .app-block-right,
+body main #home-page .app-block .app-block-right,
+body main #articles-page .app-block .app-block-right {
   width: 15%;
 }
 
 html main #home-page .app-block .app-block-right.big-icon-block,
-body main #home-page .app-block .app-block-right.big-icon-block {
+html main #articles-page .app-block .app-block-right.big-icon-block,
+body main #home-page .app-block .app-block-right.big-icon-block,
+body main #articles-page .app-block .app-block-right.big-icon-block {
   padding-top: 25%;
 }
 
+html main #home-page .app-block.article-block,
+html main #articles-page .app-block.article-block,
+body main #home-page .app-block.article-block,
+body main #articles-page .app-block.article-block {
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
+
+html main #home-page .app-block.article-block .app-block-icon,
+html main #articles-page .app-block.article-block .app-block-icon,
+body main #home-page .app-block.article-block .app-block-icon,
+body main #articles-page .app-block.article-block .app-block-icon {
+  width: 20%;
+  background-color: #000;
+  opacity: 0.5;
+  color: #F7FFF7;
+  padding-top: 5%;
+}
+
+html main #home-page .app-block.article-block .app-block-icon i,
+html main #articles-page .app-block.article-block .app-block-icon i,
+body main #home-page .app-block.article-block .app-block-icon i,
+body main #articles-page .app-block.article-block .app-block-icon i {
+  font-size: 1em;
+}
+
+html main #home-page .app-block.article-block .normal-text,
+html main #articles-page .app-block.article-block .normal-text,
+body main #home-page .app-block.article-block .normal-text,
+body main #articles-page .app-block.article-block .normal-text {
+  position: absolute;
+  bottom: 10%;
+  left: 8%;
+  color: #F7FFF7;
+  font-size: 1.3em;
+  width: 80%;
+  text-align: left;
+}
+
+html main #home-page .app-block.article-block .normal-text .article-date,
+html main #articles-page .app-block.article-block .normal-text .article-date,
+body main #home-page .app-block.article-block .normal-text .article-date,
+body main #articles-page .app-block.article-block .normal-text .article-date {
+  font-size: 0.8em;
+  font-weight: 400;
+}
+
 html main #home-page .app-text-row,
-body main #home-page .app-text-row {
+html main #articles-page .app-text-row,
+body main #home-page .app-text-row,
+body main #articles-page .app-text-row {
   background-color: #F7FFF7;
   color: #434343;
   padding: 3% 0;
@@ -11665,92 +11954,124 @@ body main #home-page .app-text-row {
 }
 
 html main #home-page .app-text-row .big-text,
-body main #home-page .app-text-row .big-text {
+html main #articles-page .app-text-row .big-text,
+body main #home-page .app-text-row .big-text,
+body main #articles-page .app-text-row .big-text {
   font-weight: 500;
 }
 
 html main #home-page .app-text-row .small-text,
-body main #home-page .app-text-row .small-text {
+html main #articles-page .app-text-row .small-text,
+body main #home-page .app-text-row .small-text,
+body main #articles-page .app-text-row .small-text {
   font-size: 0.8em;
 }
 
 html main #home-page .app-text-row label,
-body main #home-page .app-text-row label {
+html main #articles-page .app-text-row label,
+body main #home-page .app-text-row label,
+body main #articles-page .app-text-row label {
   color: #434343;
   font-size: 1.0em;
 }
 
 html main #home-page .app-text-row .bold-label,
-body main #home-page .app-text-row .bold-label {
+html main #articles-page .app-text-row .bold-label,
+body main #home-page .app-text-row .bold-label,
+body main #articles-page .app-text-row .bold-label {
   font-weight: 500;
 }
 
 html main #home-page .app-text-row.full,
-body main #home-page .app-text-row.full {
+html main #articles-page .app-text-row.full,
+body main #home-page .app-text-row.full,
+body main #articles-page .app-text-row.full {
   padding: 2% 5%;
 }
 
 html main #home-page .app-text-row.full textarea,
-body main #home-page .app-text-row.full textarea {
+html main #articles-page .app-text-row.full textarea,
+body main #home-page .app-text-row.full textarea,
+body main #articles-page .app-text-row.full textarea {
   width: 100%;
   background-color: #e9e8e8;
 }
 
 html main #home-page .app-text-row .app-text-row-symbol-begin,
-body main #home-page .app-text-row .app-text-row-symbol-begin {
+html main #articles-page .app-text-row .app-text-row-symbol-begin,
+body main #home-page .app-text-row .app-text-row-symbol-begin,
+body main #articles-page .app-text-row .app-text-row-symbol-begin {
   width: 50%;
   padding-left: 5%;
 }
 
 html main #home-page .app-text-row .app-text-row-symbol-begin.charge-date,
-body main #home-page .app-text-row .app-text-row-symbol-begin.charge-date {
+html main #articles-page .app-text-row .app-text-row-symbol-begin.charge-date,
+body main #home-page .app-text-row .app-text-row-symbol-begin.charge-date,
+body main #articles-page .app-text-row .app-text-row-symbol-begin.charge-date {
   padding-top: 2%;
 }
 
 html main #home-page .app-text-row .app-text-row-title,
-body main #home-page .app-text-row .app-text-row-title {
+html main #articles-page .app-text-row .app-text-row-title,
+body main #home-page .app-text-row .app-text-row-title,
+body main #articles-page .app-text-row .app-text-row-title {
   width: 50%;
   padding-left: 5%;
 }
 
 html main #home-page .app-text-row .app-text-row-title.charge-date,
-body main #home-page .app-text-row .app-text-row-title.charge-date {
+html main #articles-page .app-text-row .app-text-row-title.charge-date,
+body main #home-page .app-text-row .app-text-row-title.charge-date,
+body main #articles-page .app-text-row .app-text-row-title.charge-date {
   padding-top: 2%;
 }
 
 html main #home-page .app-text-row .app-text-row-title.form-label,
-body main #home-page .app-text-row .app-text-row-title.form-label {
+html main #articles-page .app-text-row .app-text-row-title.form-label,
+body main #home-page .app-text-row .app-text-row-title.form-label,
+body main #articles-page .app-text-row .app-text-row-title.form-label {
   padding-top: 1%;
   width: 45%;
   font-weight: 500;
 }
 
 html main #home-page .app-text-row .app-text-row-value,
-body main #home-page .app-text-row .app-text-row-value {
+html main #articles-page .app-text-row .app-text-row-value,
+body main #home-page .app-text-row .app-text-row-value,
+body main #articles-page .app-text-row .app-text-row-value {
   text-align: right;
   width: 50%;
   padding-right: 5%;
 }
 
 html main #home-page .app-text-row .app-text-row-tab,
-body main #home-page .app-text-row .app-text-row-tab {
+html main #articles-page .app-text-row .app-text-row-tab,
+body main #home-page .app-text-row .app-text-row-tab,
+body main #articles-page .app-text-row .app-text-row-tab {
   margin: 0 5%;
 }
 
 html main #home-page .app-text-row .app-text-row-tab .faq-carret,
-body main #home-page .app-text-row .app-text-row-tab .faq-carret {
+html main #articles-page .app-text-row .app-text-row-tab .faq-carret,
+body main #home-page .app-text-row .app-text-row-tab .faq-carret,
+body main #articles-page .app-text-row .app-text-row-tab .faq-carret {
   width: 15%;
   text-align: center;
 }
 
 html main #home-page .app-text-row .app-text-row-tab .app-text-row-tab-text,
-body main #home-page .app-text-row .app-text-row-tab .app-text-row-tab-text {
+html main #articles-page .app-text-row .app-text-row-tab .app-text-row-tab-text,
+body main #home-page .app-text-row .app-text-row-tab .app-text-row-tab-text,
+body main #articles-page .app-text-row .app-text-row-tab .app-text-row-tab-text {
   width: 85%;
   font-weight: 500;
 }
 
 html main #home-page .app-text-row .app-text-row-tab-value,
-body main #home-page .app-text-row .app-text-row-tab-value {
+html main #articles-page .app-text-row .app-text-row-tab-value,
+body main #home-page .app-text-row .app-text-row-tab-value,
+body main #articles-page .app-text-row .app-text-row-tab-value {
   display: none;
   background-color: #e9e8e8;
   width: 100%;
@@ -11758,34 +12079,46 @@ body main #home-page .app-text-row .app-text-row-tab-value {
 }
 
 html main #home-page .app-text-row .app-text-row-large,
-body main #home-page .app-text-row .app-text-row-large {
+html main #articles-page .app-text-row .app-text-row-large,
+body main #home-page .app-text-row .app-text-row-large,
+body main #articles-page .app-text-row .app-text-row-large {
   width: 70%;
   padding-left: 5%;
 }
 
 html main #home-page .app-text-row .app-text-row-extra-large,
-body main #home-page .app-text-row .app-text-row-extra-large {
+html main #articles-page .app-text-row .app-text-row-extra-large,
+body main #home-page .app-text-row .app-text-row-extra-large,
+body main #articles-page .app-text-row .app-text-row-extra-large {
   width: 90%;
   padding-left: 5%;
   padding-top: 1%;
 }
 
 html main #home-page .app-text-row .app-text-row-large-value,
-body main #home-page .app-text-row .app-text-row-large-value {
+html main #articles-page .app-text-row .app-text-row-large-value,
+body main #home-page .app-text-row .app-text-row-large-value,
+body main #articles-page .app-text-row .app-text-row-large-value {
   width: 20%;
   padding-top: 2%;
 }
 
 html main #home-page .app-text-row .app-text-row-large-end,
-body main #home-page .app-text-row .app-text-row-large-end {
+html main #articles-page .app-text-row .app-text-row-large-end,
+body main #home-page .app-text-row .app-text-row-large-end,
+body main #articles-page .app-text-row .app-text-row-large-end {
   width: 10%;
   padding-top: 1%;
 }
 
 html main #home-page #credit-charge-amount-section,
 html main #home-page .choose-section,
+html main #articles-page #credit-charge-amount-section,
+html main #articles-page .choose-section,
 body main #home-page #credit-charge-amount-section,
-body main #home-page .choose-section {
+body main #home-page .choose-section,
+body main #articles-page #credit-charge-amount-section,
+body main #articles-page .choose-section {
   margin-top: 1%;
   padding: 5% 0;
   text-align: center;
@@ -11793,56 +12126,82 @@ body main #home-page .choose-section {
 }
 
 html main #home-page #credit-charge-amount-section,
-body main #home-page #credit-charge-amount-section {
+html main #articles-page #credit-charge-amount-section,
+body main #home-page #credit-charge-amount-section,
+body main #articles-page #credit-charge-amount-section {
   height: 30%;
 }
 
 html main #home-page .choose-section,
-body main #home-page .choose-section {
+html main #articles-page .choose-section,
+body main #home-page .choose-section,
+body main #articles-page .choose-section {
   position: relative;
   height: 30%;
 }
 
 html main #home-page .choose-section .payment-methode-row,
 html main #home-page .choose-section .choose-section-row,
+html main #articles-page .choose-section .payment-methode-row,
+html main #articles-page .choose-section .choose-section-row,
 body main #home-page .choose-section .payment-methode-row,
-body main #home-page .choose-section .choose-section-row {
+body main #home-page .choose-section .choose-section-row,
+body main #articles-page .choose-section .payment-methode-row,
+body main #articles-page .choose-section .choose-section-row {
   position: relative;
   margin: 5% 0 0 0;
 }
 
 html main #home-page .choose-section .payment-methode-row div,
 html main #home-page .choose-section .choose-section-row div,
+html main #articles-page .choose-section .payment-methode-row div,
+html main #articles-page .choose-section .choose-section-row div,
 body main #home-page .choose-section .payment-methode-row div,
-body main #home-page .choose-section .choose-section-row div {
+body main #home-page .choose-section .choose-section-row div,
+body main #articles-page .choose-section .payment-methode-row div,
+body main #articles-page .choose-section .choose-section-row div {
   width: 33%;
 }
 
 html main #home-page .choose-section .payment-methode-row div.choose-option-4,
 html main #home-page .choose-section .choose-section-row div.choose-option-4,
+html main #articles-page .choose-section .payment-methode-row div.choose-option-4,
+html main #articles-page .choose-section .choose-section-row div.choose-option-4,
 body main #home-page .choose-section .payment-methode-row div.choose-option-4,
-body main #home-page .choose-section .choose-section-row div.choose-option-4 {
+body main #home-page .choose-section .choose-section-row div.choose-option-4,
+body main #articles-page .choose-section .payment-methode-row div.choose-option-4,
+body main #articles-page .choose-section .choose-section-row div.choose-option-4 {
   width: 50%;
 }
 
 html main #home-page .choose-section .payment-methode-row div label,
 html main #home-page .choose-section .choose-section-row div label,
+html main #articles-page .choose-section .payment-methode-row div label,
+html main #articles-page .choose-section .choose-section-row div label,
 body main #home-page .choose-section .payment-methode-row div label,
-body main #home-page .choose-section .choose-section-row div label {
+body main #home-page .choose-section .choose-section-row div label,
+body main #articles-page .choose-section .payment-methode-row div label,
+body main #articles-page .choose-section .choose-section-row div label {
   color: #434343;
   font-size: 1.2em;
 }
 
 html main #home-page .choose-section .payment-methode-row div .pay-method-img,
 html main #home-page .choose-section .choose-section-row div .pay-method-img,
+html main #articles-page .choose-section .payment-methode-row div .pay-method-img,
+html main #articles-page .choose-section .choose-section-row div .pay-method-img,
 body main #home-page .choose-section .payment-methode-row div .pay-method-img,
-body main #home-page .choose-section .choose-section-row div .pay-method-img {
+body main #home-page .choose-section .choose-section-row div .pay-method-img,
+body main #articles-page .choose-section .payment-methode-row div .pay-method-img,
+body main #articles-page .choose-section .choose-section-row div .pay-method-img {
   max-width: 100%;
   height: 60px;
 }
 
 html main #home-page #reserve-device-btn,
-body main #home-page #reserve-device-btn {
+html main #articles-page #reserve-device-btn,
+body main #home-page #reserve-device-btn,
+body main #articles-page #reserve-device-btn {
   position: fixed;
   bottom: 12%;
   right: 3%;
@@ -11854,7 +12213,9 @@ body main #home-page #reserve-device-btn {
 }
 
 html main #home-page #reserve-device-btn i,
-body main #home-page #reserve-device-btn i {
+html main #articles-page #reserve-device-btn i,
+body main #home-page #reserve-device-btn i,
+body main #articles-page #reserve-device-btn i {
   margin-top: 25%;
   color: #F7FFF7;
 }
@@ -11883,7 +12244,9 @@ body .navbar #navbar-row {
 }
 
 html .navbar #navbar-row a,
-body .navbar #navbar-row a {
+html .navbar #navbar-row div,
+body .navbar #navbar-row a,
+body .navbar #navbar-row div {
   padding-top: 4%;
   padding-left: 0;
   padding-right: 0;
@@ -11893,7 +12256,9 @@ body .navbar #navbar-row a {
 }
 
 html .navbar #navbar-row a i,
-body .navbar #navbar-row a i {
+html .navbar #navbar-row div i,
+body .navbar #navbar-row a i,
+body .navbar #navbar-row div i {
   color: gray;
 }
 

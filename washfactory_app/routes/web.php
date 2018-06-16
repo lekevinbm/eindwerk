@@ -27,9 +27,14 @@ Route::group(['middleware' => ['auth']], function () {
     Route::get('reservation/create/step3', 'Front\ReservationController@createStep3Device')->name('reservation.create.step3_device');
     Route::get('reservation/create/step4', 'Front\ReservationController@createStep4Confirm')->name('reservation.create.step4_confirm');
     Route::get('reservation/open', 'Front\ReservationController@open')->name('reservation.open');
+    Route::get('reservation/opentest', 'Front\ReservationController@opentest')->name('reservation.opentest');
+    Route::post('reservation/store', 'Front\ReservationController@store')->name('reservation.store');
 
     //Location
     Route::get('locations/getall', 'Front\LocationController@getAll')->name('reservation.getall');
+
+    //device
+    Route::get('devices/getdevice', 'Front\DeviceController@getDevice')->name('reservation.getdevice');
 
     Route::get('user/charge/', 'Front\UserController@openCharge')->name('user.charge.open');
     Route::post('user/charge/', 'Front\UserController@charge')->name('user.charge.create');
@@ -38,6 +43,10 @@ Route::group(['middleware' => ['auth']], function () {
     Route::post('user/update/', 'Front\UserController@update')->name('user.update');
     Route::post('user/password/update', 'Front\UserController@updatePassword')->name('user.password.update');
     Route::get('user/getaddress', 'Front\UserController@getAddress')->name('user.getAddress');
+
+    //Tips & trick
+    Route::get('articles/index', 'Front\ArticleController@index')->name('articles.index');
+    Route::get('articles/open/{article}', 'Front\ArticleController@open')->name('articles.open');
 
     Route::group(['middleware' => ['role:Administrator']], function () {
         Route::get('admin/devices', 'Back\DeviceController@index')->name('admin.devices');

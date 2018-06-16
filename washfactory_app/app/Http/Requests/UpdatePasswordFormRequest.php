@@ -32,12 +32,12 @@ class UpdatePasswordFormRequest extends FormRequest
     }
 
     public function withValidator($validator)
-{
-    $validator->after(function ($validator) {
-        $old_password = $this->input('old_password');
-        if (!Hash::check($old_password, Auth::user()->getAuthPassword())) {
-            $validator->errors()->add('old_password', "The old password that you inserted is not right.");
-        }
-    });
-}
+    {
+        $validator->after(function ($validator) {
+            $old_password = $this->input('old_password');
+            if (!Hash::check($old_password, Auth::user()->getAuthPassword())) {
+                $validator->errors()->add('old_password', "The old password that you inserted is not right.");
+            }
+        });
+    }
 }
