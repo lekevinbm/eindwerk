@@ -44,9 +44,12 @@ Route::group(['middleware' => ['auth']], function () {
     Route::post('user/password/update', 'Front\UserController@updatePassword')->name('user.password.update');
     Route::get('user/getaddress', 'Front\UserController@getAddress')->name('user.getAddress');
 
-    //Tips & trick
+    //Tips & tricks
     Route::get('articles/index', 'Front\ArticleController@index')->name('articles.index');
     Route::get('articles/open/{article}', 'Front\ArticleController@open')->name('articles.open');
+    Route::get('articles/addtofavorites/{article}', 'Front\ArticleController@addToFavorites')->name('articles.addToFavorites');
+    Route::get('articles/removefromfavorites/{article}', 'Front\ArticleController@removeFromFavorites')->name('articles.removeFromFavorites');
+    Route::get('articles/favorites', 'Front\ArticleController@favorites')->name('articles.favorites');
 
     Route::group(['middleware' => ['role:Administrator']], function () {
         Route::get('admin/devices', 'Back\DeviceController@index')->name('admin.devices');

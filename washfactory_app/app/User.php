@@ -32,4 +32,8 @@ class User extends Authenticatable
     public function credit_charges(){
         return $this->hasMany('App\Credit_charge','user_id')->orderBy('created_at','desc');
     }
+
+    public function favorite_articles(){
+        return $this->belongsToMany('App\Article','favorite_articles');
+    }
 }
