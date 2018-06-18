@@ -21,7 +21,7 @@
                         <tr>
                             <td>
                                 @if($article->publication_date)
-                                    {{$article->publication_date}}
+                                {{date('d-m-Y', strtotime($article->publication_date))}}
                                 @else
                                     Nog niet gepubliceerd
                                 @endif

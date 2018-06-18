@@ -20,6 +20,12 @@
                         <i class="fas fa-angle-right"></i>
                     </div>
                 </div>
+                <a class="row app-text-row" href="{{route('user.delete')}}">           
+                    <div class="app-text-row-extra-large red-text">Account verwijderen</div>
+                    <div class="app-text-row-large-end">
+                        <i class="fas fa-angle-right"></i>
+                    </div>
+                </a>
             </div>
         </div>
 

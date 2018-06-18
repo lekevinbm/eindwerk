@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Back;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\CreateArticleFormRequest;
+use App\Http\Requests\UpdateArticleFormRequest;
 use Intervention\Image\Facades\Image;
 use App\Article;
 use File;
@@ -91,9 +92,37 @@ class ArticleController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(UpdateArticleFormRequest $request, Article $article)
     {
-        //
+        if(File::exists($article->image)) {
+            File::delete($article->image);
+        }
+
+        $image = $request->image;
+        if($image){
+            $img = Image::make($image)->encode('jpg', 75);
+            $img = $img->resize(400, null, function ($constraint) {
+                $constraint->aspectRatio();
+                $constraint->upsize();
+            });
+            //$extension = pathinfo(storage_path().$img->getClientOriginalName(), PATHINFO_EXTENSION);
+
+            $imageName = 'article-'.date("d-m-Y").'-'.str_random(5).'.jpg';
+            $img->save("img/articles/".$imageName);
+            $imagePath = 'img/articles/'.$imageName;
+        }
+        if($request->publication_status == 'online'){
+            $publication_date = date("Y-m-d");
+        }else{
+            $publication_date = null;
+        }
+
+        $article->title = $request->title;
+        $article->content = $request->content;
+        $article->image = $imagePath;
+        $article->publication_date = $publication_date;
+        $article->save();
+        return redirect()->route('admin.articles');
     }
 
     /**

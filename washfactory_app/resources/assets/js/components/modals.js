@@ -5,7 +5,7 @@ $('.device-square.unoccupied').click(function(){
             'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
         }
     });
-    $.ajax({url: "/devices/getdevice", method:"get",data:{device:device_id},success: function(device){             
+    $.ajax({url: "/app/devices/getdevice", method:"get",data:{device:device_id},success: function(device){             
         var device_number = device.code_name.split('-')[2];
         if(device.type == 'wash'){
             $('#confirm_modal .device-type-number').text('Wasmachine '+device_number);
@@ -19,4 +19,15 @@ $('.device-square.unoccupied').click(function(){
 });
 $('.device-square.occupied').click(function(){
 
+});
+
+$('#settings-footer-btn').click(function(){
+    $('.settings-menu').addClass('active');
+    $('.settings-menu-content').addClass('active');
+});
+
+$('.settings-menu').click(function(){
+    $('.settings-menu-content').removeClass('active');
+    $('.settings-menu').removeClass('active');
+    
 });

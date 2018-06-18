@@ -47,7 +47,7 @@
         </div>
 
         <div class="form-group row">
-            <label for="publication_status" class="col-md-3 col-form-label text-md-right">Publicatiestatus</label>
+            <label for="publication_status" class="col-md-3 col-form-label text-md-right">Publicatiestatus*</label>
 
             <div class="col-md-4">
                 <div class="form-check">
@@ -76,7 +76,7 @@
         <div class="form-group row mb-0">
             <div class="col-md-3 offset-md-3">
                 <button type="submit" class="btn btn-primary">
-                    Artikel toevoegen
+                    Artikel wijzigen
                 </button>
             </div>
         </div>

@@ -23,5 +23,9 @@ class LocationsTableSeeder extends Seeder
         Location::create([
             'name' => 'Prinsstraat', 'street_name' => 'Prinsstraat', 'street_number' => '64', 'postcode' => '2000','city' => 'Antwerpen','location_code' => 'PRINST','description' => '',
         ]);
+
+        Location::create([
+            'name' => 'De Studio', 'street_name' => 'Maarschalk Gerardstraat', 'street_number' => '4', 'postcode' => '2000','city' => 'Antwerpen','location_code' => 'MAADES','description' => '',
+        ]);
     }
 }

@@ -18,7 +18,7 @@
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     </head>
-    <body>
+    <body id="app-body">
         <main>
             @yield('content')
         </main>
@@ -36,7 +36,7 @@
                     <i class="fas fa-lightbulb fa-2x"></i><br>
                     Tips & tricks
                 </a>
-                <div class="col align-items-center" data-toggle="modal" data-target="#menu_modal">
+                <div id="settings-footer-btn" class="col align-items-center">
                     <i class="fas fa-cog fa-2x"></i><br>
                     Instellingen
                 </div>

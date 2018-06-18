@@ -36,4 +36,8 @@ class User extends Authenticatable
     public function favorite_articles(){
         return $this->belongsToMany('App\Article','favorite_articles');
     }
+
+    public function reservations(){
+        return $this->hasMany('App\Reservation','user_id');
+    }
 }

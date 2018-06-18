@@ -18,5 +18,12 @@ class ArticlesTableSeeder extends Seeder
             'image' => 'img/articles/hoofdkussen-artikel.jpg',
             'publication_date' => '2018-06-18'
         ]);
+
+        Article::create([
+            'title' => 'Welke wasmiddelen zouden het beste zijn?',
+            'content' => 'De wasmiddelen van Dash zouden de beste zijn.',
+            'image' => 'img/articles/article-18-06-2018-R9tDs.jpg',
+            'publication_date' => '2018-06-18'
+        ]);
     }
 }

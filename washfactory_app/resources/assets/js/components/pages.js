@@ -27,3 +27,13 @@ for(var i=0;i<a.length;i++) {
         }
     }
 }
+
+if($('#admin-body').length){
+    var page_location = window.location.pathname.split('/')[2];
+    $('#'+page_location+'-nav-link').addClass('active');
+}
+
+if($('#app-body').length){
+    var page_location = window.location.pathname.split('/')[2];
+    
+}

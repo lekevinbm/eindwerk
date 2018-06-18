@@ -12,3 +12,5 @@ require('./components/forms');
 require('./components/tabs');
 require('./components/maps');
 require('./components/modals');
+require('./components/reservation');
+require('./components/device');

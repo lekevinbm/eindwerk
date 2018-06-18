@@ -5,6 +5,8 @@ namespace App\Http\Controllers\Front;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\CreateReportFormRequest;
+use App\Reservation;
+
 
 class HomeController extends Controller
 {
@@ -16,6 +18,10 @@ class HomeController extends Controller
     public function __construct()
     {
         $this->middleware('auth');
+    }
+
+    public function test(){
+        return 'yatta';
     }
 
     public function faq(){

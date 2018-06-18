@@ -66,8 +66,14 @@ class UserController extends Controller
         return view('front.home.user.edit');
     }
 
-    public function getAddress(){
-        
+    public function delete(){
+        if (count(Auth::user()->reservations->where('status','!=','canceled')->where('status','!=','archived')) == 0){
+            Auth::user()->delete();
+        }        
+        return redirect()->route('user.edit');
+    }
+
+    public function getAddress(){        
         return Auth::user()->street_name.' '.Auth::user()->street_number.', '.Auth::user()->postcode.' '.Auth::user()->city.', België';
     }
 }

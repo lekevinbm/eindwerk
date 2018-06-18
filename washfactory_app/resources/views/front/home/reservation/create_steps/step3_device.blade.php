@@ -16,9 +16,15 @@
                         </div>
                     @endforeach          
 
-                    @foreach($devices->where('task_status','occupied')->where('activation_status','active') as $device)
+                    @foreach($devices->where('task_status','!=','unoccupied')->where('activation_status','active') as $device)
                         <div id="device-{{$device->id}}" class="device-square occupied" data-toggle="modal" data-target="#confirm_modal">
-                            <div class="time-box"><i class="far fa-clock"></i> 7:34</div>
+                            @if($device->task_status == 'reserved')
+                                <div class="time-box">Gereserveerd</div>
+                            @elseif(!$device->current_reservation->first()->device_ended_on)
+                                <div class="time-box">Gepauzeerd</div>
+                            @else
+                                <div class="time-box"><!--<i class="far fa-clock"></i>-->Bezet</div>
+                            @endif
                             {{explode('-',$device->code_name)[2]}}                        
                         </div>
                     @endforeach            

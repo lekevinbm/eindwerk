@@ -13,7 +13,7 @@
                     <div class="app-block-text big-text">
                         Wasmachine<br>
                         <span class="device-info">{{$location->washing_machines->where('activation_status','active')->where('task_status','unoccupied')->count()}} vrij</span><br>
-                        <span class="device-info">{{$location->washing_machines->where('activation_status','active')->where('task_status','occupied')->count()}} bezet</span>
+                        <span class="device-info">{{$location->washing_machines->where('activation_status','active')->where('task_status','!=','unoccupied')->count()}} bezet</span>
                     </div>
                     <div class="app-block-right big-icon-block"><i class="fas fa-angle-right"></i></div>
                 </div>
@@ -24,7 +24,7 @@
                     <div class="app-block-text big-text">
                         Wasdroger<br>
                         <span class="device-info">{{$location->dryers->where('activation_status','active')->where('task_status','unoccupied')->count()}} vrij</span><br>
-                        <span class="device-info">{{$location->dryers->where('activation_status','active')->where('task_status','occupied')->count()}} bezet</span>
+                        <span class="device-info">{{$location->dryers->where('activation_status','active')->where('task_status','!=','unoccupied')->count()}} bezet</span>
                     </div>
                     <div class="app-block-right big-icon-block"><i class="fas fa-angle-right"></i></div>
                 </div>

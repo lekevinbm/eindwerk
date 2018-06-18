@@ -14,44 +14,57 @@
 Auth::routes();
 
 Route::group(['middleware' => ['auth']], function () {
-    Route::get('/', 'Front\ReservationController@index')->name('home');
+    Route::get('/test', 'Front\HomeController@test')->name('test');
 
-    Route::get('faq','Front\HomeController@faq')->name('faq');
-    Route::get('contact','Front\HomeController@contact')->name('contact');
-    Route::get('problem','Front\HomeController@problem')->name('problem');
-    Route::post('problem/report/','Front\HomeController@reportProblem')->name('problem.report');
+    Route::get('/', 'Front\ReservationController@index')->name('home');
+    Route::get('/app', 'Front\ReservationController@index')->name('home');
+
+    Route::get('app/faq','Front\HomeController@faq')->name('faq');
+    Route::get('app/contact','Front\HomeController@contact')->name('contact');
+    Route::get('app/problem','Front\HomeController@problem')->name('problem');
+    Route::post('app/problem/report/','Front\HomeController@reportProblem')->name('problem.report');
 
     //Reservation 
-    Route::get('reservation/create/step1', 'Front\ReservationController@createStep1Location')->name('reservation.create.step1_location');
-    Route::get('reservation/create/step2', 'Front\ReservationController@createStep2Type')->name('reservation.create.step2_type');
-    Route::get('reservation/create/step3', 'Front\ReservationController@createStep3Device')->name('reservation.create.step3_device');
-    Route::get('reservation/create/step4', 'Front\ReservationController@createStep4Confirm')->name('reservation.create.step4_confirm');
-    Route::get('reservation/open', 'Front\ReservationController@open')->name('reservation.open');
-    Route::get('reservation/opentest', 'Front\ReservationController@opentest')->name('reservation.opentest');
-    Route::post('reservation/store', 'Front\ReservationController@store')->name('reservation.store');
+    Route::get('app/reservation/create/step1', 'Front\ReservationController@createStep1Location')->name('reservation.create.step1_location');
+    Route::get('app/reservation/create/step2', 'Front\ReservationController@createStep2Type')->name('reservation.create.step2_type');
+    Route::get('app/reservation/create/step3', 'Front\ReservationController@createStep3Device')->name('reservation.create.step3_device');
+    Route::get('app/reservation/create/step4', 'Front\ReservationController@createStep4Confirm')->name('reservation.create.step4_confirm');
+    Route::get('app/reservation/open/{reservation}', 'Front\ReservationController@open')->name('reservation.open');
+    Route::get('app/reservation/opentest', 'Front\ReservationController@opentest')->name('reservation.opentest');
+    Route::post('app/reservation/store', 'Front\ReservationController@store')->name('reservation.store');
+    Route::get('app/reservation/clearunusedreservations', 'Front\ReservationController@clearUnusedReservations')->name('reservation.clearUnusedReservations');
+    Route::get('app/reservation/cancel', 'Front\ReservationController@cancel')->name('reservation.cancel');
+    Route::get('app/reservation/finishreservations', 'Front\ReservationController@finishReservations')->name('reservation.finishReservations');
+    
 
     //Location
-    Route::get('locations/getall', 'Front\LocationController@getAll')->name('reservation.getall');
+    Route::get('app/locations/getall', 'Front\LocationController@getAll')->name('reservation.getall');
 
     //device
-    Route::get('devices/getdevice', 'Front\DeviceController@getDevice')->name('reservation.getdevice');
+    Route::get('app/devices/getdevice', 'Front\DeviceController@getDevice')->name('devices.getdevice');
+    Route::get('app/devices/open/{device}', 'Front\DeviceController@open')->name('devices.open');
+    Route::get('app/devices/run/{device}', 'Front\DeviceController@run')->name('devices.run');
+    Route::get('app/devices/end/{device}', 'Front\DeviceController@end')->name('devices.end');
 
-    Route::get('user/charge/', 'Front\UserController@openCharge')->name('user.charge.open');
-    Route::post('user/charge/', 'Front\UserController@charge')->name('user.charge.create');
-    Route::get('user/charge/history', 'Front\UserController@chargeHistory')->name('user.charge.history');
-    Route::get('user/edit/', 'Front\UserController@edit')->name('user.edit');
-    Route::post('user/update/', 'Front\UserController@update')->name('user.update');
-    Route::post('user/password/update', 'Front\UserController@updatePassword')->name('user.password.update');
-    Route::get('user/getaddress', 'Front\UserController@getAddress')->name('user.getAddress');
+    //user
+    Route::get('app/user/charge/', 'Front\UserController@openCharge')->name('user.charge.open');
+    Route::post('app/user/charge/', 'Front\UserController@charge')->name('user.charge.create');
+    Route::get('app/user/charge/history', 'Front\UserController@chargeHistory')->name('user.charge.history');
+    Route::get('app/user/edit/', 'Front\UserController@edit')->name('user.edit');
+    Route::post('app/user/update/', 'Front\UserController@update')->name('user.update');
+    Route::post('app/user/password/update', 'Front\UserController@updatePassword')->name('user.password.update');
+    Route::get('app/user/getaddress', 'Front\UserController@getAddress')->name('user.getAddress');
+    Route::get('app/user/delete', 'Front\UserController@delete')->name('user.delete');
 
     //Tips & tricks
-    Route::get('articles/index', 'Front\ArticleController@index')->name('articles.index');
-    Route::get('articles/open/{article}', 'Front\ArticleController@open')->name('articles.open');
-    Route::get('articles/addtofavorites/{article}', 'Front\ArticleController@addToFavorites')->name('articles.addToFavorites');
-    Route::get('articles/removefromfavorites/{article}', 'Front\ArticleController@removeFromFavorites')->name('articles.removeFromFavorites');
-    Route::get('articles/favorites', 'Front\ArticleController@favorites')->name('articles.favorites');
+    Route::get('app/articles/index', 'Front\ArticleController@index')->name('articles.index');
+    Route::get('app/articles/open/{article}', 'Front\ArticleController@open')->name('articles.open');
+    Route::get('app/articles/addtofavorites/{article}', 'Front\ArticleController@addToFavorites')->name('articles.addToFavorites');
+    Route::get('app/articles/removefromfavorites/{article}', 'Front\ArticleController@removeFromFavorites')->name('articles.removeFromFavorites');
+    Route::get('app/articles/favorites', 'Front\ArticleController@favorites')->name('articles.favorites');
 
     Route::group(['middleware' => ['role:Administrator']], function () {
+        Route::get('admin', 'Back\DeviceController@index')->name('admin.devices');
         Route::get('admin/devices', 'Back\DeviceController@index')->name('admin.devices');
         Route::get('admin/devices/create', 'Back\DeviceController@create')->name('admin.devices.create');
         Route::post('admin/devices/store', 'Back\DeviceController@store')->name('admin.devices.store');

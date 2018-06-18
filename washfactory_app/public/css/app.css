@@ -422,6 +422,10 @@ input:checked + .slider:before {
   font-size: 5em;
 }
 
+.open-reservation .time-status.text-status {
+  font-size: 2em;
+}
+
 .open-reservation .time-status-extra {
   font-size: 1.2em;
   margin-bottom: 10%;
@@ -491,6 +495,10 @@ input:checked + .slider:before {
   width: 50%;
 }
 
+#admin-body {
+  height: auto;
+}
+
 #admin-body #admin-nav {
   height: 100%;
   width: 15%;
@@ -512,12 +520,80 @@ input:checked + .slider:before {
 #admin-body #admin-nav #nav-links {
   text-decoration: none;
   color: #F7FFF7;
-  padding-left: 10%;
 }
 
 #admin-body #admin-nav #nav-links .nav-link {
   color: #F7FFF7;
   font-size: 1.2em;
+  padding-left: 10%;
+}
+
+#admin-body #admin-nav #nav-links .nav-link .active-icon {
+  display: none;
+}
+
+#admin-body #admin-nav #nav-links .nav-link .non-active-icon {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  #admin-body #admin-nav #nav-links .nav-link {
+    text-align: center;
+    padding: 20% 0;
+  }
+
+  #admin-body #admin-nav #nav-links .nav-link .active-icon {
+    display: none;
+  }
+
+  #admin-body #admin-nav #nav-links .nav-link .non-active-icon {
+    display: inline-block;
+  }
+}
+
+#admin-body #admin-nav #nav-links .nav-link.active {
+  background-color: #F7FFF7;
+  color: #434343;
+}
+
+#admin-body #admin-nav #nav-links .nav-link.active i {
+  color: #FF6B6B;
+}
+
+@media (max-width: 768px) {
+  #admin-body #admin-nav #nav-links .nav-link.active .active-icon {
+    display: inline-block;
+  }
+
+  #admin-body #admin-nav #nav-links .nav-link.active .non-active-icon {
+    display: none;
+  }
+}
+
+#admin-body #admin-nav #nav-links .nav-link .nav-link-text {
+  display: inline-block;
+}
+
+@media (max-width: 768px) {
+  #admin-body #admin-nav #nav-links .nav-link .nav-link-text {
+    display: none;
+  }
+}
+
+#admin-body #admin-nav #nav-links .nav-link i,
+#admin-body #admin-nav #nav-links .nav-link img {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  #admin-body #admin-nav #nav-links .nav-link i,
+  #admin-body #admin-nav #nav-links .nav-link img {
+    display: inline-block;
+  }
+}
+
+#admin-body #admin-nav #nav-links .nav-link i {
+  font-size: 1.5em;
 }
 
 #admin-body main {
@@ -11074,58 +11150,82 @@ body .app-page {
   margin: 0;
 }
 
-html #menu_modal .modal-dialog,
-body #menu_modal .modal-dialog {
-  margin: 0;
-}
-
-html #menu_modal .modal-dialog .modal-content,
-body #menu_modal .modal-dialog .modal-content {
-  text-align: center;
-  background-color: #FF6B6B;
-  width: 75%;
+html .settings-menu,
+body .settings-menu {
+  display: none;
+  width: 100%;
   height: 100vh;
   border: none;
-  border-radius: 0;
-  position: relative;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 2000;
+  background: rgba(0, 0, 0, 0.5);
 }
 
-html #menu_modal .modal-dialog .modal-content #logo,
-body #menu_modal .modal-dialog .modal-content #logo {
+html .settings-menu.active,
+body .settings-menu.active {
+  display: block;
+}
+
+html .settings-menu .settings-menu-content,
+body .settings-menu .settings-menu-content {
+  height: 100%;
+  right: -75vh;
+  text-align: center;
+  background-color: #FF6B6B;
+  position: absolute;
+  width: 75%;
+  -webkit-transition: right 1s;
+  /* For Safari 3.1 to 6.0 */
+  transition: right 1s;
+}
+
+html .settings-menu .settings-menu-content.active,
+body .settings-menu .settings-menu-content.active {
+  right: 0;
+}
+
+html .settings-menu .settings-menu-content #logo,
+body .settings-menu .settings-menu-content #logo {
   margin: 10% auto;
   width: 75%;
   max-height: 25%;
 }
 
-html #menu_modal .modal-dialog .modal-content a,
-body #menu_modal .modal-dialog .modal-content a {
-  margin: 5% 0;
+html .settings-menu .settings-menu-content .menu-link-block,
+body .settings-menu .settings-menu-content .menu-link-block {
+  margin: 10% 0;
+}
+
+html .settings-menu .settings-menu-content a,
+body .settings-menu .settings-menu-content a {
   text-decoration: none;
   color: #F7FFF7;
   font-weight: 500;
 }
 
-html #menu_modal .modal-dialog .modal-content #menu-footer,
-body #menu_modal .modal-dialog .modal-content #menu-footer {
+html .settings-menu .settings-menu-content #menu-footer,
+body .settings-menu .settings-menu-content #menu-footer {
   color: #F7FFF7;
   margin: 50% 0 !important;
   font-weight: 500;
 }
 
-html #menu_modal .modal-dialog .modal-content #menu-footer .col,
-body #menu_modal .modal-dialog .modal-content #menu-footer .col {
+html .settings-menu .settings-menu-content #menu-footer .col,
+body .settings-menu .settings-menu-content #menu-footer .col {
   height: 100%;
   margin: 0;
   padding: 0 5%;
 }
 
-html #menu_modal .modal-dialog .modal-content #menu-footer .col img,
-body #menu_modal .modal-dialog .modal-content #menu-footer .col img {
+html .settings-menu .settings-menu-content #menu-footer .col img,
+body .settings-menu .settings-menu-content #menu-footer .col img {
   width: 28.8px;
 }
 
-html #menu_modal .modal-dialog .modal-content #menu-footer .col .menu-footer-text,
-body #menu_modal .modal-dialog .modal-content #menu-footer .col .menu-footer-text {
+html .settings-menu .settings-menu-content #menu-footer .col .menu-footer-text,
+body .settings-menu .settings-menu-content #menu-footer .col .menu-footer-text {
   font-size: 0.8em;
   line-height: 1.3;
   display: inline-block;
@@ -11641,11 +11741,18 @@ body main #articles-page .app-block.light-blue-block {
   background-color: #4ECDC4;
 }
 
+html main #home-page .app-block.light-blue-block-2,
+html main #articles-page .app-block.light-blue-block-2,
+body main #home-page .app-block.light-blue-block-2,
+body main #articles-page .app-block.light-blue-block-2 {
+  background-color: #53DAD0;
+}
+
 html main #home-page .app-block.dark-blue-block,
 html main #articles-page .app-block.dark-blue-block,
 body main #home-page .app-block.dark-blue-block,
 body main #articles-page .app-block.dark-blue-block {
-  background-color: #1A535C;
+  background-color: #1a535c;
 }
 
 html main #home-page .app-block.pink-block,
@@ -11966,6 +12073,13 @@ html main #articles-page .app-text-row .small-text,
 body main #home-page .app-text-row .small-text,
 body main #articles-page .app-text-row .small-text {
   font-size: 0.8em;
+}
+
+html main #home-page .app-text-row .red-text,
+html main #articles-page .app-text-row .red-text,
+body main #home-page .app-text-row .red-text,
+body main #articles-page .app-text-row .red-text {
+  color: red;
 }
 
 html main #home-page .app-text-row label,

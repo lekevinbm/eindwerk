@@ -1,12 +1,10 @@
-<!-- Modal -->
-<div class="modal left fade" id="menu_modal" tabindex="-1" role="dialog" aria-labelledby="menu_modal" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
+<div class="settings-menu">
+    <div class="settings-menu-content">
         <img id="logo" src="{{ asset('img/logo-white.png') }}" alt="Logo of washfactory in white">
-        <a href="{{route('user.edit')}}">Accountgegevens</a>
-        <a href="{{route('user.charge.history')}}">Oplaadgeschiedenis</a>
-        <a href="#">Vorige wasbeurten</a>
-        <a onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Uitloggen</a>
+        <div class="menu-link-block"><a href="{{route('user.edit')}}">Accountgegevens</a></div>
+        <div class="menu-link-block"><a href="{{route('user.charge.history')}}">Oplaadgeschiedenis</a></div>
+        <div class="menu-link-block"><a href="#">Vorige wasbeurten</a></div>
+        <div class="menu-link-block"><a onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Uitloggen</a></div>
         <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
             @csrf
         </form>
@@ -22,5 +20,4 @@
             </div>
         </div>
     </div>
-  </div>
 </div>

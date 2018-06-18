@@ -18,7 +18,7 @@ $(document).ready(function(){
                 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
             }
         });
-        $.ajax({url: "/locations/getall", method:"get",success: function(result){             
+        $.ajax({url: "/app/locations/getall", method:"get",success: function(result){             
             locations = result;
             navigator.geolocation.getCurrentPosition(setCurrentPosition,setPostitionBasedOnAddress);
         }});
@@ -47,7 +47,7 @@ var setPostitionBasedOnAddress = function(){
             'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
         }
     });
-    $.ajax({url: "/user/getaddress", method:"get",success: function(result){             
+    $.ajax({url: "/app/user/getaddress", method:"get",success: function(result){             
         currentPosition = result;
         $('#laundry-room-map').gmap3({
             address: currentPosition,
@@ -87,7 +87,7 @@ var showDetailsOfMap = function(){
             if(index == locations.length - 1){
                 var sorted_locations = locations.sort(function(a,b) {return (a.distance > b.distance) ? 1 : ((b.distance > a.distance) ? -1 : 0);} );
                 $.each(locations,function(index,location){
-                    $('#page-content').append("<a href='/reservation/create/step2?location="+location.id+"'><div id='choose-device-type-page-activator' class='row app-text-row page-slide-activator'>\
+                    $('#page-content').append("<a href='/app/reservation/create/step2?location="+location.id+"'><div id='choose-device-type-page-activator' class='row app-text-row page-slide-activator'>\
                         <div class='app-text-row-large'><span class='big-text'>"+location.name+"</span><br><span class='small-text'>"+location.postcode+" "+location.city+"</span></div>\
                         <div class='app-text-row-large-value'>"+location.distance+" km</div>\
                         <div class='app-text-row-large-end'><i class='fas fa-angle-right'></i></div>\
@@ -98,7 +98,6 @@ var showDetailsOfMap = function(){
                 .then(function (infowindow) {
                     var map = this.get(0);
                     var marker = this.get(1);
-                    console.log(this);
                     marker.addListener('click', function() {
                       infowindow.open(map, marker);
                     });

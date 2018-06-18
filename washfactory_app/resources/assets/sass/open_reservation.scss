@@ -4,6 +4,9 @@
     color: $white;
     .time-status{
         font-size: 5em;
+        &.text-status{
+            font-size: 2em;
+        }
     }
     .time-status-extra{
         font-size: 1.2em;
